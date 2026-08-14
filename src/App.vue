@@ -15,8 +15,8 @@ const sideCollapsed = ref(false)
         <div class="seal">魂これ</div>
         <div>
           <h1 class="site-title">
-            魂これ　やまとまほろば 地魂これくしょん
-            <span class="ruby">TAMA COLLECTION · 中文和风译站</span>
+            魂これ やまとまほろば 地魂これくしょん
+            <span class="ruby">TAMA COLLECTION</span>
           </h1>
         </div>
         <div class="site-sub">
@@ -51,7 +51,7 @@ const sideCollapsed = ref(false)
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <div class="f-brand">魂これ（地魂收藏）中文 Wiki</div>
+        <div class="f-brand">魂これ（地魂男儿）中文 Wiki</div>
         <div>
           本网站为玩家自发制作的非官方中文翻译，与开发运营方「にじたま」无任何关联。<br />
           游戏名、角色名、图像等权利均归原作者与官方所有；原文内容出自

@@ -1,10 +1,8 @@
-# 魂これ（地魂收藏）中文 Wiki · 和风译站
+# 魂これ（地魂收藏）中文 Wiki
 
-将日本同人游戏《魂これ　やまとまほろば 地魂これくしょん》的非官方 Wiki（[wikiwiki.jp/tamacolle](https://wikiwiki.jp/tamacolle/)）翻译成中文的镜像站点。
+将日本同人游戏《魂これ やまとまほろば 地魂これくしょん》的非官方 Wiki（[wikiwiki.jp/tamacolle](https://wikiwiki.jp/tamacolle/)）翻译成中文的站点。
 
-- 技术栈：**Vite + Vue 3 + vue-router**（SPA，hash 路由）
-- 风格：日式古风配色（和色）＋明朝体（Zen Old Mincho / 宋体）
-- 图片：原 Wiki 图片经代理下载后保存于 `public/images`，本地引用
+- 图片：原 Wiki 图片经代理下载后保存，本地引用
 
 ## 快速开始
 
