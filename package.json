@@ -16,12 +16,5 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.2",
     "vite": "^5.4.2"
-  },
-  "devEngines": {
-    "packageManager": {
-      "name": "npm",
-      "version": "10.9.2",
-      "onFail": "download"
-    }
   }
 }
