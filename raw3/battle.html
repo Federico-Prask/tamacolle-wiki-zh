@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#"><script src="https://web-static.archive.org/_static/js/athena.js" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app263.us.archive.org';v.server_ms=328;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=2N_sDSC0" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=o9P2E1FK" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://wikiwiki.jp/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6","20260724094536","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1784886336");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=980">
+
+    <meta name="description" content="同人ブラウザゲーム・魂これ の情報・攻略wikiです">
+        <meta property="og:url" content="https://web.archive.org/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="戦闘について - 魂これ Wiki*"/>
+    <meta property="og:description" content="同人ブラウザゲーム・魂これ の情報・攻略wikiです"/>
+    <meta property="og:site_name" content="魂これ Wiki*"/>
+    <meta property="og:image" content="https://web.archive.org/web/20260724094536im_/https://icon.wikiwiki.jp/symbolicon/tamacolle/ogImage/87602c20c669.png"/>
+    <title>戦闘について - 魂これ Wiki*</title>
+
+    <link rel="alternate" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/mixirss" type="application/rss+xml" title="RSS"/>
+        <link rel="icon" href="https://web.archive.org/web/20260724094536im_/https://icon.wikiwiki.jp/symbolicon/tamacolle/favicon/061a9938f7c1.png"/>
+    <link rel="apple-touch-icon" href="https://web.archive.org/web/20260724094536im_/https://icon.wikiwiki.jp/symbolicon/tamacolle/appleTouchIcon/46844c2014c9.png"/>
+    <link rel="manifest" href="https://web.archive.org/web/20260724094536/https://icon.wikiwiki.jp/symbolicon/tamacolle/manifest.webmanifest">
+    <link rel="stylesheet" href="https://web.archive.org/web/20260724094536cs_/https://cdn.wikiwiki.jp/to/w/common/assets/dist/wikiwiki-dbc3538ca778dc7fcfbe.min.css" type="text/css">
+<link rel="stylesheet" href="https://web.archive.org/web/20260724094536cs_/https://cdn.wikiwiki.jp/to/w/common/assets/dist/skin-default-8896c2d3fdf78b1e81a0.min.css" type="text/css">
+    
+    <script type="text/javascript" src="https://web.archive.org/web/20260724094536js_/https://cdn.wikiwiki.jp/to/w/common/assets/dist/ad-1bf004520fc167abbea6.min.js"></script>
+    <script>
+    var wi_stay = (function () {
+        var wi_data_raw = localStorage.getItem('browsingStatistics');
+        var wi_data = wi_data_raw ? (JSON.parse(wi_data_raw) || {}) : {};
+        var stay = Number(wi_data.stay);
+        if (isNaN(stay)) {
+            stay = 0;
+        }
+        return stay;
+    })();
+    var wi_data_raw = localStorage.getItem('usageStatistics');
+    var wi_data =     wi_data_raw ? (JSON.parse(wi_data_raw) || {}) : {};
+    var wi_edit =     String(wi_data.edit || 0);
+    var wi_freeze =   String(wi_data.freeze || 0);
+    var wi_comment =  String(wi_data.comment || 0);
+    var wi_group = String(wi_data.group || "N");
+    var wi_smsAuth = wi_data.smsAuth || false;
+    var wi_hasPosted = wi_data.hasPosted || false;
+    var wi_agreement = String(wi_data.agreementStatus || "false");
+    if (document.referrer.length !== 0) {
+        var wi_uri = new URL(document.referrer);
+        var wi_referer = wi_uri.hostname;
+    } else {
+        var wi_referer = "unknown";
+    }
+
+    // Chromium系判定
+    function isChromium() {
+        var ua = navigator.userAgent;
+        // Edge, Opera, Chrome, Chromium, Brave など
+        return /\b(Chrome|Chromium|Edg|OPR|Brave)\b/.test(ua) && !/Silk|UCBrowser|SamsungBrowser|CriOS|FxiOS|OPiOS|EdgiOS/.test(ua);
+    }
+
+    var wi_ismobile;
+    var wi_device;
+    if (isChromium() && navigator.userAgentData) {
+        wi_ismobile = navigator.userAgentData.mobile;
+        if (wi_ismobile) {
+            if (navigator.userAgentData.platform === "Android") {
+                wi_device = "and";
+            } else {
+                wi_device = "ios";
+            }
+        } else {
+            wi_device = "pc";
+        }
+    } else {
+        wi_ismobile = !!navigator.userAgent.match(/iPhone|Android.+Mobile/);
+        if (navigator.userAgent.match(/Android.+Mobile/)) {
+            wi_device = "and";
+        } else if (navigator.userAgent.match(/iPhone/)) {
+            wi_device = "ios";
+        } else {
+            wi_device = "pc";
+        }
+    }
+
+    var wi_isportrait = window.matchMedia("(orientation: portrait)").matches;
+    var wi_isinbound = wi_referer.includes(window.location.hostname) ? false : true;
+    var wi_random100 = Math.floor(Math.random() * (100 - 1) + 1);
+    var wi_random110 = Math.floor(Math.random() * 10) + 1;
+    var wi_isread_yet = true;
+    var wi_location_hash = location.hash || false;
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://web.archive.org/web/20260724094536js_/https://www.googletagmanager.com/gtag/js?id=G-3Y8FN9EFS7"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3Y8FN9EFS7', {
+        'content_group': 'tamacolle',
+        'user_properties': {
+            'user_group':     wi_group,
+            'user_agreement': wi_agreement,
+            'edit_count':     wi_edit,
+            'comment_count':  wi_comment,
+            'sms_auth':       String(wi_smsAuth)
+        }
+    });
+    
+</script>
+
+<script>
+    window.wikiFq = createWikiFq();
+</script>
+<script>
+    var wi_recref = recordReferrerDomain();
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://web.archive.org/web/20260724094536/https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KQ52VZ3');</script>
+<!-- End Google Tag Manager -->
+
+    <link rel="canonical" href="https://web.archive.org/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">
+    <style>
+@media screen and (min-width: 820px) {
+  .container-wrapper {
+    min-width: 930px;
+    max-width: 930px;
+  }
+}
+</style>
+<style>
+  body {
+      font-family: Verdana, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+      font-size: 12px;
+  }
+</style>
+<style>
+  @media screen and (max-width: 819px), print and (max-width: 180mm) {
+    body {
+        font-size: 13px;
+    }
+  }
+</style>
+        <script>
+        window.globalParamsContainer = {"smsAuthParams":{"actionTrollingDefenceCheck":"\/tamacolle\/::cmd\/trolling_defence_pass","actionSubmitNumber":"\/p\/sms-auth\/code\/request","actionSubmitCode":"\/p\/sms-auth\/code\/activate","cookieName":"authkey"},"editAssistantImgSrc":{"face_smile":"https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/smile.png?v=4","face_bigsmile":"https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/bigsmile.png?v=4","face_huh":"https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/huh.png?v=4","face_oh":"https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/oh.png?v=4","face_wink":"https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/wink.png?v=4","face_sad":"https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/sad.png?v=4","face_worried":"https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/worried.png?v=4","face_tear":"https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/tear.png?v=4","face_tere":"https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/tere.png?v=4","face_shock":"https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/shock.png?v=4","face_heart":"https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/heart.png?v=4","face_star":"https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/star.gif?v=4","face_hatena":"https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/hatena.gif?v=4","face_tip":"https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/tip.gif?v=4"},"experimentalFeature":false};
+    </script>
+</head>
+<body class=""><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;" toolbar-mode="auto">
+<div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="donato" style="position:relative;width:100%;height:0;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=https%3A//web.archive.org/web/20260724094536/https%3A//wikiwiki.jp/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+	    scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><div id="wm-ipp-inside">
+  <div id="wm-toolbar" style="position:relative;display:flex;flex-flow:row nowrap;justify-content:space-between;" nav="async">
+    <div id="wm-logo" style="/*width:110px;*/padding-top:12px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-100.png, https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0" /></a>
+    </div>
+    <div class="c" style="display:flex;flex-flow:column nowrap;justify-content:space-between;flex:1;">
+      <form class="u" style="display:flex;flex-direction:row;flex-wrap:nowrap;" target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="https://wikiwiki.jp/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" onfocus="this.focus();this.select();" style="flex:1;"/><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20260724094536" /><input type="submit" value="Go" />
+      </form>
+      <div style="display:flex;flex-flow:row nowrap;align-items:flex-end;">
+                <div class="s" id="wm-nav-captures" style="flex:1;">
+                    <a class="t" href="/web/20260724094536*/https://wikiwiki.jp/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" title="See a list of every capture for this URL">14 captures</a>
+          <div class="r" title="Timespan for captures of this URL">28 Nov 2022 - 24 Jul 2026</div>
+          </div>
+        <div class="k">
+          <a href="" id="wm-graph-anchor">
+            <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+              <canvas id="wm-sparkline-canvas" width="775" height="27" border="0"></canvas>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="n">
+      <table>
+        <tbody>
+          <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+          <tr class="m">
+            <td class="b" nowrap="nowrap">Jun</td>
+            <td class="c" id="displayMonthEl" title="You are here: 09:45:36 Jul 24, 2026">JUL</td>
+            <td class="f" nowrap="nowrap">Aug</td>
+          </tr>
+          <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+          <tr class="d">
+            <td class="b" nowrap="nowrap"><span class="ta"></span></td>
+            <td class="c" id="displayDayEl" style="width:34px;font-size:22px;white-space:nowrap;" title="You are here: 09:45:36 Jul 24, 2026">24</td>
+            <td class="f" nowrap="nowrap"><span class="ta"></span></td>
+          </tr>
+          <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+          <tr class="y">
+            <td class="b" nowrap="nowrap">2025</td>
+            <td class="c" id="displayYearEl" title="You are here: 09:45:36 Jul 24, 2026">2026</td>
+            <td class="f" nowrap="nowrap">2027</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="r" style="display:flex;flex-flow:column nowrap;align-items:flex-end;justify-content:space-between;">
+      <div id="wm-btns" style="text-align:right;height:23px;">
+                <span class="xxs">
+          <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="#" title="Share via My Web Archive" >
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php" title="Sign In" id="wm-sign-in">
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        </span>
+                <a class="xxs" href="https://help.archive.org/help/category/the-wayback-machine/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+        <a id="wm-tb-close" href="#close" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share" class="xxs">
+        <a href="/web/20260724094536/http://web.archive.org/screenshot/https://wikiwiki.jp/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+           id="wm-screenshot"
+           title="screenshot">
+          <span class="wm-icon-screen-shot"></span>
+        </a>
+        <a href="#" id="wm-video" title="video">
+          <span class="iconochive-movies"></span>
+        </a>
+        <a id="wm-share-facebook" href="#" data-url="https://web.archive.org/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+        <a id="wm-share-twitter" href="#" data-url="https://web.archive.org/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+      <div style="padding-right:2px;text-align:right;white-space:nowrap;">
+        <a id="wm-expand" class="wm-btn wm-closed" href="#expand"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span class="xxs" style="font-size:80%;">About this capture</span></a>
+      </div>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+        <div id="wm-capinfo-notice" source="api"></div>
+                <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center;padding:2px 0;">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/save-page-now-outlinks)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/save-page-now-outlinks" target="_new"><span class="wm-title">Save Page Now Outlinks</span></a></div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center;padding:2px 0;" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="https://web-static.archive.org/_static/images/loading.gif" alt="loading" /></div>
+    </div>
+    </div>
+  </div></div></div></div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(775,27,25,2,"web","https://wikiwiki.jp/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6","20260724094536",1996,"https://web-static.archive.org/_static/",["https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3","https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+ 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://web.archive.org/web/20260724094536if_/https://www.googletagmanager.com/ns.html?id=GTM-KQ52VZ3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><noscript>
+    <div class="noscript-alert">
+        <i class="fa-solid fa-exclamation-triangle"></i>
+        ブラウザの JavaScript がオフ（ブロックまたは許可しない）に設定されているため、このページは正常に機能しません。
+    </div>
+</noscript>
+<div class="container-wrapper">
+
+    <div class="container clearfix">
+                    <div id="header" class="default-header">
+                <a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/" title="魂これ Wiki*">
+                    <span class="title2">魂これ Wiki*</span>
+                </a>
+            </div>
+                <div class="toolbox-container system-ui clearfix" id="naviframe">
+            <div class="toolbox toolbox-desktop navibar-container">
+                <div id="navigator">[ <a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/">ホーム</a> | <a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/newpage?refer=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" rel="nofollow">新規</a> | <a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" rel="nofollow">編集</a> | <a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/attach?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" rel="nofollow">添付</a> ]</div>            </div>
+            <div class="toolbox toolbox-desktop toolbar-container">
+                <div class="toolbar"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/list" title="一覧" rel="nofollow"><span class="system-icon toolbar list"></span></a>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/RecentChanges" title="最終更新" rel="nofollow"><span class="system-icon toolbar recent"></span></a>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/diff?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" title="差分" rel="nofollow"><span class="system-icon toolbar diff"></span></a>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/backup?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" title="バックアップ" rel="nofollow"><span class="system-icon toolbar backup"></span></a>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/freeze?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" title="凍結" rel="nofollow"><span class="system-icon toolbar freeze"></span></a>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/template?refer=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" title="複製" rel="nofollow"><span class="system-icon toolbar copy"></span></a>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/rename?refer=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" title="名前変更" rel="nofollow"><span class="system-icon toolbar rename"></span></a>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/help" title="ヘルプ" rel="nofollow"><span class="system-icon toolbar help"></span></a></div>            </div>
+            <div class="toolbox toolbox-mobile toolbar-container">
+                <div class="toolbar"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/" title="ホーム"><span class="system-icon toolbar top"></span></a>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/RecentChanges" title="最終更新" rel="nofollow"><span class="system-icon toolbar recent"></span></a>
+<a id="menu-in-nav" href="#menubar" class="menu-in-nav">Menu<i class="fa-solid fa-arrow-alt-down"></i></a></div>            </div>
+            <div class="toolbox toolbox-searchbar">
+                <form action="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/search" method="get">
+                    <input type="search" name="word" value="" size="16" placeholder="サイト内検索">
+                    <input type="hidden" name="type" value="AND">
+                    <input type="submit" value="検索">
+                </form>
+            </div>
+        </div>
+            <div id="responsive-navigation"></div>
+    <div style="display: none;">
+        <div id="edit-menu" class="system-ui">
+            <div id="edit-menu-items">
+                <ul><li><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/newpage?refer=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" rel="nofollow"><span class="system-icon toolbar new"></span> 新規</a></li><li><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" rel="nofollow"><span class="system-icon toolbar edit"></span> 編集</a></li><li><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/attach?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" rel="nofollow"><span class="system-icon toolbar upload"></span> 添付</a></li></ul>
+<ul><li><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/list" rel="nofollow"><span class="system-icon toolbar list"></span> 一覧</a></li><li><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/RecentChanges" rel="nofollow"><span class="system-icon toolbar recent"></span> 最終更新</a></li><li><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/diff?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" rel="nofollow"><span class="system-icon toolbar diff"></span> 差分</a></li><li><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/backup?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" rel="nofollow"><span class="system-icon toolbar backup"></span> バックアップ</a></li></ul>
+<ul><li><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/freeze?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" rel="nofollow"><span class="system-icon toolbar freeze"></span> 凍結</a></li><li><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/template?refer=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" rel="nofollow"><span class="system-icon toolbar copy"></span> 複製</a></li><li><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/rename?refer=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" rel="nofollow"><span class="system-icon toolbar rename"></span> 名前変更</a></li></ul>
+<ul><li><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/help" rel="nofollow"><span class="system-icon toolbar help"></span> ヘルプ</a></li></ul>
+
+            </div>
+        </div>
+    </div>    </div>
+
+    <div class="container">
+        <div class="clearfix">
+            <div id="breadcrumbs" class="system-ui">
+                <div id="topicpath"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/" title="FrontPage"><i class="fa-solid fa-home" style="margin-left: 6px; display: inline-block; min-width: 1.2em;"></i></a> &gt; 戦闘について</div>            </div>
+            <div id="system-icon-container" class="system-ui">
+                                <span id="share-button-root"></span>                <span id="admin-contact-root" class="single-system-icon"></span>
+                <div id="load-panel-root"></div>
+                <span id="admin-login" class="single-system-icon">
+                    
+<a class="admin-login-status" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/admin_login?return_to=%2Ftamacolle%2F%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" title="未ログイン">
+    <i class="fa-solid fa-cog"></i>
+</a>
+                </span>
+            </div>
+        </div>
+        <hr/>
+    </div>
+
+    <div id="contents" class="columns-container three-columns-container container clearfix has-left-column">
+
+        <div class="column-center clearfix">
+            <div id="body">
+                                                <div id="title">
+                                            <h1 class="title">戦闘について</h1>
+                                                                <div id="lastmodified">
+                            Last-modified: 2026-07-19 (日) 21:17:16                                                            <span class="lastmodified-file-itself tooltip" data-tooltip-content="このページ自体の更新: 2026-06-06 (土) 23:08:06"><i class="fa-solid fa-file-signature"></i></span>
+                                                    </div>
+                                    </div>
+
+                
+                <div class="search-words small" style="display: none;">
+    <div class="small">これらのキーワードがハイライトされています：<ul class="search-words-words"></ul></div>
+    <hr class="full_hr">
+</div>
+                <div id="content">
+                                        <div class="fold-container  clearfix">
+    <button class="fold-toggle-button hidden-on-open"><i class="fal fa-plus-square"></i></button>
+    <button class="fold-toggle-button visible-on-open"><i class="fal fa-minus-square"></i></button>
+    <div class="fold-summary hidden-on-open">目次</div>
+    <div class="fold-content visible-on-open"><div class="contents">
+<a id="contents-index"></a>
+<ul class="list1"><li><a href="#info">概要 </a>
+<ul class="list2"><li><a href="#initiative"> 魂圧勝負 </a></li>
+<li><a href="#battle">戦闘の流れ </a></li>
+<li><a href="#status"> 戦闘のステータス表示 </a></li>
+<li><a href="#weapon"> 武器種 </a>
+<ul class="list3"><li><a href="#dagger"> 短刀 </a></li>
+<li><a href="#katana"> 刀 </a></li>
+<li><a href="#spear"> 槍 </a></li>
+<li><a href="#ax"> 重装 </a></li>
+<li><a href="#bow"> 弓 </a></li>
+<li><a href="#canon">大砲 </a></li>
+<li><a href="#jutsu">術 </a></li></ul></li>
+<li><a href="#element"> 属性 </a></li>
+<li><a href="#targeting"> 戦法と攻撃目標 </a></li>
+<li><a href="#life"> 魂守とHP </a>
+<ul class="list3"><li><a href="#life_d"> 負傷と鎮魂 </a></li></ul></li>
+<li><a href="#special"> CPと抜魂技 </a>
+<ul class="list3"><li><a href="#one-kill"> 一刀両断 </a></li></ul></li>
+<li><a href="#special_range"> 抜魂技範囲 </a>
+<ul class="list3"><li><a href="#special_range_1"> 武器と同じ範囲 </a></li>
+<li><a href="#special_range_2"> 敵１体に </a></li>
+<li><a href="#special_range_6"> いずれかの敵３体に </a></li>
+<li><a href="#special_range_3"> 縦１列 </a></li>
+<li><a href="#special_range_4"> 敵１体を中心に </a></li>
+<li><a href="#special_range_5"> 敵全体 </a></li></ul></li>
+<li><a href="#buff_debuff"> バフ・デバフ </a></li></ul></li></ul>
+</div>
+</div>
+</div>
+<h2 id="h2_content_1_0">概要  <a class="anchor_super" name="info"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=info" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h2>
+<p>クエスト道中で、赤マスか紫マスに着いた場合に発生する。<br/>
+『敵性反応あり』の表示の後、<ruby>喰魂<rp>(</rp><rt>はみたま</rt><rp>)</rp></ruby>が出現。戦闘へと突入する。</p>
+<h3 id="h3_content_1_1" class="heading-after-first">魂圧勝負  <a class="anchor_super" name="initiative"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=initiative" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h3>
+<p><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/::ref/konatsu.jpg.webp?rev=4bf9987772eaa0e2709d150f5d3c7277&amp;t=20240527230125" alt="konatsu.jpg" title="konatsu.jpg" width="300" height="168" loading="lazy"></p>
+<p>戦闘開始時に必ず発生する。<br/>
+味方と敵と互いの魂圧値を比べ、味方が勝れば優勢となる。<br/>
+優勢となると味方全体に<strong>SPD▲</strong>が付与され、行動速度が多少早まる。<br/>
+　<br/>
+勝負時には最大三名の地魂が表示されるが、恐らく数値は参加している全員から参照していると思われる。</p>
+<h3 id="h3_content_1_2" class="heading-after-first">戦闘の流れ  <a class="anchor_super" name="battle"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=battle" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h3>
+<p>戦闘が開始されると、速さの高い順に、敵味方入り交じって行動(攻撃)を互いに行いあう。<br/>
+速さが一番遅い者が行動しおわったら、また一番速い者へと戻る。<br/>
+　　<br/>
+全員、行動権を2回所持しており、攻撃を行う度に消費する。<br/>
+行動権は緑のHPバーの上に、黄色い菱形『<span class="wikicolor" style="color:gold">◆</span>』で表される。<br/>
+　<br/>
+どちらかが全滅するか、全員が行動権を使いきったら戦闘終了となる。<br/>
+互いに与えた合計ダメージが表示され、残りキャラ数は関係なく、数値が高かった方の勝利となる。</p>
+<h3 id="h3_content_1_3" class="heading-after-first">戦闘のステータス表示  <a class="anchor_super" name="status"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=status" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h3>
+<p>戦闘中は、画面左側に参加している地魂の状態が表示される。<br/>
+表示と各々の解説は次の通り</p>
+<p><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/::ref/battle_character2.png.webp?rev=e8b3d12e1170e6d58266b5a85de68441&amp;t=20230103170839" alt="300,300" title="300,300" width="322" height="188" loading="lazy"></p>
+<ol class="list1"><li><strong>地魂男児</strong></li>
+<li><strong>武器種</strong></li>
+<li><strong>装備中の魂守</strong></li>
+<li><strong>HPゲージ</strong><br/>
+上の太いゲージが地魂のHP<br/>
+下の細いゲージが魂守による追加HP</li>
+<li><strong>残行動数</strong></li>
+<li><strong>CP</strong><br/>
+100%を越える事で抜魂技を放てる</li>
+<li><strong>あやかし</strong></li>
+<li><strong>バフ・デバフ</strong><br/>
+任務環境や景勝地等で付与される</li></ol>
+<h3 id="h3_content_1_4" class="heading-after-first">武器種  <a class="anchor_super" name="weapon"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=weapon" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h3>
+<p>地魂や喰魂にはそれぞれ武器種が設定されており、<br/>
+攻撃時の相性や範囲はそれに依存している。</p>
+<ul class="list1"><li><strong>相性表</strong></li></ul>
+<p><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/::ref/weapons.png.webp?rev=cf7393dd9facb96c5937f84d90f36f0d&amp;t=20221226185507" alt="400,300" title="400,300" width="387" height="257" loading="lazy"></p>
+<p>以下、それぞれ解説。</p>
+<h4 id="h4_content_1_5" class="heading-after-first">短刀  <a class="anchor_super" name="dagger"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=dagger" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h4>
+<ul class="list1"><li><strong>敵一体に3回攻撃</strong>
+<ul class="list2"><li>初撃は強く、2･3撃目はその半分ほど</li></ul></li>
+<li>「槍」に強く、「刀」に弱い</li></ul>
+<p>単体攻撃特化な武器種。<br/>
+性質は「重装」と似ているが、比較的すばやいキャラが多い。<br/>
+先手を取って確実に敵を削る事に長ける。</p>
+<h4 id="h4_content_1_6" class="heading-after-first">刀  <a class="anchor_super" name="katana"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=katana" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h4>
+<ul class="list1"><li><strong>敵一体と隣合う敵に1回攻撃</strong>
+<ul class="list2"><li>たとえ前線に敵が複数いようと、隣接してなければ一体のみとなる</li></ul></li>
+<li>「短刀」に強く、「槍」に弱い</li></ul>
+<p>該当地魂数も多いスタンダードな武器種。<br/>
+複数に同等のダメージを入れられるのが強み。みっちり敵が詰まって出現する戦闘で活きる。<br/>
+多少状況次第な所がある武器種といえる。</p>
+<h4 id="h4_content_1_7" class="heading-after-first">槍  <a class="anchor_super" name="spear"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=spear" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h4>
+<ul class="list1"><li><strong>前衛と後衛の敵に1回ずつ攻撃</strong>
+<ul class="list2"><li>前衛へのダメージが大きく、後衛は多少ちいさくなる</li>
+<li>前線を詰めた場合、相手は前衛＝後衛となるためか、隣接二体にダメージを入れられるようになる。(刀と同等に)</li></ul></li>
+<li>「刀」に強く、「短刀」に弱い</li></ul>
+<p>前後そろって登場する喰魂が多いため、活きる場面の多い武器種。<br/>
+イメージから前後に真っ直ぐ並んでないと当たらないかと思えるが、離れていても前後二体を攻撃できる。<br/>
+横攻撃は後衛のみが残ってる場面でのみ。前衛だけが残った場合は、1体のみ殴ることとなる</p>
+<h4 id="h4_content_1_8" class="heading-after-first">重装  <a class="anchor_super" name="ax"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=ax" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h4>
+<ul class="list1"><li><strong>敵一体に2回攻撃</strong>
+<ul class="list2"><li>同等のダメージを2回与える</li></ul></li>
+<li>「短刀・刀・槍」にやや強く、「弓・大砲・術」にやや弱い
+<ul class="list2"><li>“前衛にやや強い”ためか、「重装」へのダメージも増える</li></ul></li></ul>
+<p>三竦みから外れた特殊な立ち位置の武器種。<br/>
+短刀と似た攻撃だが、あちらと比べると比較的遅いキャラが多い。<br/>
+その相性から、前衛が残る戦闘前半に強く、後衛を後始末する戦闘後半は活躍しづらい。</p>
+<h4 id="h4_content_1_9" class="heading-after-first">弓  <a class="anchor_super" name="bow"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=bow" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h4>
+<ul class="list1"><li><strong>いずれかの敵に2回攻撃</strong>
+<ul class="list2"><li>戦術指定がない場合、前後衛関係なく敵全体からニ体が対象となる</li>
+<li>同一敵を2回攻撃する事もある</li></ul></li>
+<li>「術」に強く、「大砲」に弱い</li></ul>
+<p>複数を削るのもよし、敵一体を射貫くもよし、わりと融通のきく攻撃を放てる武器種。</p>
+<h4 id="h4_content_1_10" class="heading-after-first">大砲  <a class="anchor_super" name="canon"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=canon" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h4>
+<ul class="list1"><li><strong>敵一体と両隣の敵に1回攻撃</strong>
+<ul class="list2"><li>前後衛狙える、刀の範囲拡大版のような攻撃。隣接してないと複数にならないのも同じ。</li>
+<li>中央(ターゲット)にした相手へのダメージが大きく、両隣は多少すくなくなる。</li></ul></li>
+<li>「弓」に強く、「術」に弱い</li></ul>
+<p>他後衛と比べると敵の配列に影響を受ける武器種。密で出現する戦闘で活きるが、行動は少々遅めの傾向。<br/>
+また初期戦術が「まえを狙う」なため、後衛を先に狙うには絆を高めるのが必須となる</p>
+<h4 id="h4_content_1_11" class="heading-after-first">術  <a class="anchor_super" name="jutsu"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=jutsu" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h4>
+<ul class="list1"><li><strong>いずれかの敵に3回攻撃</strong>
+<ul class="list2"><li>どこでも狙えて分散もできるようになった「短刀」みたいな武器種。もちろん同一相手を3回攻撃することも。</li>
+<li>一撃目(橙色)のダメージが大きく、他ニ撃(水色)は多少すくなくなる</li></ul></li>
+<li>「大砲」に強く、「弓」に弱い</li></ul>
+<p>一番自由に敵を殴る武器種。分散するか、敵一体に向かうかは男児の気分しだい。</p>
+<h3 id="h3_content_1_12" class="heading-after-first">属性  <a class="anchor_super" name="element"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=element" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h3>
+<p><span class="wikicolor" style="color:red">現状、断片的情報での編集です。</span><br/>
+<span class="wikicolor" style="color:red">より詳しい内容は、情報の解禁次第。</span></p>
+<p>サイドストーリーやイベントにより解禁される『あやかし』を付ける事によって、地魂男児が属性を帯びるようになる。<br/>
+(通常、地魂そのものには属性は付与されていない)<br/>
+また、敵が属性を持って出現する事もある。</p>
+<p>属性の種類は<strong><span class="wikicolor" style="color:green">木</span><span class="wikicolor" style="color:red">火</span><span class="wikicolor" style="color:maroon">土</span><span class="wikicolor" style="color:orange">金</span><span class="wikicolor" style="color:blue">水</span></strong>の五種。五行が基となっている。</p>
+<div class="fold-container  clearfix">
+    <button class="fold-toggle-button hidden-on-open"><i class="fal fa-plus-square"></i></button>
+    <button class="fold-toggle-button visible-on-open"><i class="fal fa-minus-square"></i></button>
+    <div class="fold-summary hidden-on-open"><strong>属性表</strong></div>
+    <div class="fold-content visible-on-open"><p><strong>属性表</strong></p>
+<ul class="list1"><li><a class="ext" href="https://web.archive.org/web/20260724094536/https://nijitama.fanbox.cc/posts/5149231" rel="nofollow">一部開示されている情報<span class="system-icon ext pukiwiki-open-uri" data-href="https://nijitama.fanbox.cc/posts/5149231" data-frame="_blank"></span></a>からの推測となるものなため、注意</li></ul>
+<div class="h-scrollable"><table><thead><tr><td style="text-align:center; width:100px;"><strong>属性</strong></td><td style="text-align:center; width:100px;"><strong>予ダメ<br class="spacer">UP</strong></td><td style="text-align:center; width:100px;"><strong>予ダメ<br class="spacer">DOWN</strong></td></tr></thead><tbody><tr><th style="text-align:center; width:100px;"><span class="wikicolor" style="color:green">木</span></th><td style="text-align:center; width:100px;"><span class="wikicolor" style="color:maroon">土</span></td><td style="text-align:center; width:100px;"><span class="wikicolor" style="color:red">火</span></td></tr><tr><th style="text-align:center; width:100px;"><span class="wikicolor" style="color:red">火</span></th><td style="text-align:center; width:100px;"><span class="wikicolor" style="color:orange">金</span></td><td style="text-align:center; width:100px;"><span class="wikicolor" style="color:maroon">土</span></td></tr><tr><th style="text-align:center; width:100px;"><span class="wikicolor" style="color:maroon">土</span></th><td style="text-align:center; width:100px;"><span class="wikicolor" style="color:blue">水</span></td><td style="text-align:center; width:100px;"><span class="wikicolor" style="color:orange">金</span></td></tr><tr><th style="text-align:center; width:100px;"><span class="wikicolor" style="color:orange">金</span></th><td style="text-align:center; width:100px;"><span class="wikicolor" style="color:green">木</span></td><td style="text-align:center; width:100px;"><span class="wikicolor" style="color:blue">水</span></td></tr><tr><th style="text-align:center; width:100px;"><span class="wikicolor" style="color:blue">水</span></th><td style="text-align:center; width:100px;"><span class="wikicolor" style="color:red">火</span></td><td style="text-align:center; width:100px;"><span class="wikicolor" style="color:green">木</span></td></tr></tbody></table></div>
+</div>
+</div>
+<div class="fold-container  clearfix">
+    <button class="fold-toggle-button hidden-on-open"><i class="fal fa-plus-square"></i></button>
+    <button class="fold-toggle-button visible-on-open"><i class="fal fa-minus-square"></i></button>
+    <div class="fold-summary hidden-on-open"><strong>属性つき敵の判別</strong></div>
+    <div class="fold-content visible-on-open"><p><strong>属性つき敵の判別</strong></p>
+<ul class="list1"><li>敵に属性がついているかは、主に三か所で判別可能。以下で解説</li></ul>
+<div class="h-scrollable"><table><tbody><tr><td><a href="https://web.archive.org/web/20260724094536/https://cdn.wikiwiki.jp/to/w/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/::attach/element_01.jpg?rev=d79c59de4e5115bbba3572484cfcbc94&amp;t=20250710092418" title="element_01.jpg" data-lightbox="imageset"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/::ref/element_01.jpg?rev=d79c59de4e5115bbba3572484cfcbc94&amp;t=20250710092418" alt="element_01.jpg" title="element_01.jpg" width="200" height="127" loading="lazy"></a></td><td>敵キャラの背後に属性に応じた色が見える。<br class="spacer">画像では上の敵に『水属性』の「黒色」のエフェクトがかかっている。(下の敵キャラは無属性)</td></tr><tr><td><a href="https://web.archive.org/web/20260724094536/https://cdn.wikiwiki.jp/to/w/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/::attach/element_02.jpg?rev=7df990d015a4ff77970a5a13e7851e03&amp;t=20250710092440" title="element_02.jpg" data-lightbox="imageset"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/::ref/element_02.jpg?rev=7df990d015a4ff77970a5a13e7851e03&amp;t=20250710092440" alt="element_02.jpg" title="element_02.jpg" width="199" height="106" loading="lazy"></a></td><td>攻撃時の立ち絵アップ時に、画面下部が属性色に変わる。<br class="spacer">画像では『火属性』の「赤色」に変化している。</td></tr><tr><td><a href="https://web.archive.org/web/20260724094536/https://cdn.wikiwiki.jp/to/w/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/::attach/element_03.jpg?rev=04a83028bce8a8a2ab3123b5a34e7cb7&amp;t=20250710092502" title="element_03.jpg" data-lightbox="imageset"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/::ref/element_03.jpg?rev=04a83028bce8a8a2ab3123b5a34e7cb7&amp;t=20250710092502" alt="element_03.jpg" title="element_03.jpg" width="89" height="200" loading="lazy"></a></td><td>戦闘のリザルト画面にて<br class="spacer">キャラアイコンの枠が属性の色に変わっている。<br class="spacer">(無属性では灰色)</td></tr></tbody></table></div>
+</div>
+</div>
+<h3 id="h3_content_1_13" class="heading-after-first">戦法と攻撃目標  <a class="anchor_super" name="targeting"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=targeting" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h3>
+<p>戦闘全体がオートであるため、攻撃がどの敵に向かうかは、自動的に決められ行われる。<br/>
+「何処を攻撃する」等の直接的な指定は不可能である。<br/>
+一応、各キャラが絆によって習得する『戦法』により、ある程度の法則を付けてやる事は可能</p>
+<ul class="list1"><li>戦法一覧
+
+<div class="h-scrollable"><table><thead><tr><th>アイコン</th><th>戦法</th><th style="text-align:center;">解説</th></tr></thead><tbody><tr><td><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/%E3%82%AD%E3%83%A3%E3%83%A9%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC/::ref/%E6%88%A6%E7%95%A5_%E7%B4%A0%E7%9B%B4.png?rev=a47f59de1896809fd8257be76eba5f7d&amp;t=20221122121336" alt="戦略_素直.png" title="戦略_素直.png" width="50" height="42" loading="lazy"></td><th>素直に攻める</th><td>攻撃可能な敵を狙う</td></tr><tr><td><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/%E3%82%AD%E3%83%A3%E3%83%A9%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC/::ref/%E6%88%A6%E7%95%A5_%E4%B8%80%E5%BF%83%E4%B8%8D%E4%B9%B1.png?rev=c73ecc060a658717542deeb909f56552&amp;t=20221122121352" alt="戦略_一心不乱.png" title="戦略_一心不乱.png" width="50" height="42" loading="lazy"></td><th>一心不乱に攻める</th><td>攻撃力が上がるが、ミスをしやすくなる</td></tr><tr><td><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/%E3%82%AD%E3%83%A3%E3%83%A9%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC/::ref/%E6%88%A6%E7%95%A5_%E5%89%8D.png?rev=1b2e01f7a68e3be26c9890e7810dc2d1&amp;t=20221122121406" alt="戦略_前.png" title="戦略_前.png" width="50" height="42" loading="lazy"></td><th>まえを攻める</th><td>前衛の敵を優先して狙う</td></tr><tr><td><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/%E3%82%AD%E3%83%A3%E3%83%A9%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC/::ref/%E6%88%A6%E7%95%A5_%E5%BE%8C%E3%82%8D.png?rev=200998f611c61897a95eac98de96f217&amp;t=20221122121420" alt="戦略_後ろ.png" title="戦略_後ろ.png" width="50" height="42" loading="lazy"></td><th>うしろを攻める</th><td>後衛の敵を優先して狙う</td></tr><tr><td><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/%E3%82%AD%E3%83%A3%E3%83%A9%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC/::ref/%E6%88%A6%E7%95%A5_%E7%9A%86.png?rev=209e6fc5339b12a7a2fd7a318f00737b&amp;t=20221125031823" alt="戦略_皆.png" title="戦略_皆.png" width="50" height="42" loading="lazy"></td><th>みんなで攻める</th><td>味方が攻撃した敵を優先して狙う</td></tr><tr><td><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/%E3%82%AD%E3%83%A3%E3%83%A9%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC/::ref/%E6%88%A6%E7%95%A5_%E5%BC%B1%E3%81%84.png?rev=46e1af5d5a97c0e7225df648cdebecfb&amp;t=20221122124601" alt="戦略_弱い.png" title="戦略_弱い.png" width="50" height="42" loading="lazy"></td><th>弱いところを攻める</th><td>弱った敵を優先して狙う</td></tr></tbody></table></div></li></ul>
+<hr class="full_hr"/>
+<ul class="list1"><li>前衛は前衛のみを狙う（槍の2撃目のような巻き込みを除く）。前線を崩すと後衛も狙えるようになる。</li>
+<li>戦法で指定されてない場合には、最大限効果を発揮するよう動く傾向がある。
+<ul class="list2"><li>武器種が『刀』や『大砲』ならば、単独の敵より複数並んだ敵を狙う事が多い。</li>
+<li>『弓』や『術』の場合は少々異なる。１つの敵に集中することもあれば、全てバラけさせる事も。<br/>
+丁度で倒せるか見てる様子も感じられないため、ランダム性があるのかも？</li></ul></li></ul>
+<ul class="list1"><li>当人が攻撃するのには丁度いい場所を選ぶが、続く攻撃の事などは考慮してはくれない。
+<ul class="list2"><li>次が『大砲』だったとしても、３体並んだ真ん中を攻撃して落とし、歯抜けにさせたり……等。</li></ul></li></ul>
+<h3 id="h3_content_1_14" class="heading-after-first">魂守とHP  <a class="anchor_super" name="life"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=life" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h3>
+<p>戦闘に際し、地魂は必ず『魂守』を装備して参加する。</p>
+<p>魂守の主な役割は<strong>「追加HP」</strong><br/>
+地魂が負うべき敵からの攻撃を肩代わりし、そのHPを守るものである。<br/>
+敵からのダメージによって、まず先に魂守のものである細いゲージが削られる。<br/>
+魂守のゲージが削りきられると、地魂本体の太いゲージが削られ始める。地魂のゲージが削られると、その分が<span class="wikicolor" style="color:red"><strong>赤く</strong></span>なるため見分けやすい。</p>
+<h4 id="h4_content_1_15" class="heading-after-first">負傷と鎮魂  <a class="anchor_super" name="life_d"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=life_d" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h4>
+<p>地魂のHPが削られる事で<strong>「負傷」</strong>となる。<br/>
+また、HPが半分以上削られると<strong>負傷演出</strong>が発生する。<br/>
+戦闘リザルトの評価に影響する。</p>
+<p>負傷後もダメージを受け続け、HPを削りきられる事で<strong>「鎮魂」</strong>へと移行する。<br/>
+HPが0になり鎮魂となった地魂は、即座に離脱して戦闘/クエスト中は復帰しなくなる。<br/>
+　<br/>
+地魂そのものの<ruby>消滅<rp>(</rp><rt>ロスト</rt><rp>)</rp></ruby>はしない。<br/>
+　<br/>
+負傷の状態でも戦闘/クエストは続行可能だが、負傷演出が入った状態では他のクエストに続けて送り出すことはできなくなる。<br/>
+御座所へと戻ったらMENUにある『湯殿』で回復させよう。</p>
+<h3 id="h3_content_1_16" class="heading-after-first">CPと抜魂技  <a class="anchor_super" name="special"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=special" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h3>
+<p>戦闘中の様々な行動・影響により、地魂アイコンの右上にあるCPが蓄積していく。<br/>
+CPが100%を超過した状態で地魂に手番が回った場合、通常攻撃の代わりに『抜魂技』が発動する。<br/>
+抜魂技は、各々の地魂毎に攻撃範囲や回数が定められており、基本的に通常攻撃より敵に大ダメージを与えられる。</p>
+<p>抜魂技発動時にCPは100%分、減少する。<br/>
+CPの最大値は300%</p>
+<h4 id="h4_content_1_17" class="heading-after-first">一刀両断  <a class="anchor_super" name="one-kill"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=one-kill" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h4>
+<p><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/::ref/Screenshot_20230203-004755~01.png.webp?rev=27f07345d0646bfb3224a3e726d24284&amp;t=20230406080011" alt="Screenshot_20230203-004755~01.png" title="Screenshot_20230203-004755~01.png" width="300" height="182" loading="lazy"></p>
+<p>敵のHPが満タンの状態から、一度の攻撃により浄化(HP0)まで持っていった場合に表示される。<br/>
+通常の敵撃破よりも多く、全ての地魂へとCPが配られるボーナスが得られる。</p>
+<ul class="list1"><li>ちなみに、攻撃を一度うけた敵はHPバーが表示される。1ダメージでも入ると『一刀両断』は発動しない。
+<ul class="list2"><li>しかし、攻撃がMISSした場合や、魂守に止められた場合には敵HPは減ってないがバーは表示される。この場合には、次の一撃で削りきれれば『一刀両断』となる。</li></ul></li></ul>
+<h3 id="h3_content_1_18" class="heading-after-first">抜魂技範囲  <a class="anchor_super" name="special_range"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=special_range" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h3>
+<p>抜魂技には通常の武器種とは別に攻撃範囲が設定されている。<br/>
+以下ではその攻撃範囲について解説する。</p>
+<h4 id="h4_content_1_19" class="heading-after-first">武器と同じ範囲  <a class="anchor_super" name="special_range_1"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=special_range_1" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h4>
+<div class="h-scrollable"><table><thead><tr><td colspan="3" style="text-align:center;"><strong>主な地魂男児</strong></td></tr></thead><tbody><tr><td style="text-align:center; width:55px;"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E4%BC%8A%E8%B3%80" title="伊賀" class="rel-wiki-page"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E4%BC%8A%E8%B3%80/::ref/iga_icon.png.webp?rev=c383cf3cbb33b7a4316f6efe59c19672&amp;t=20221119131755" alt="iga_icon.png" title="iga_icon.png" width="50" height="50" loading="lazy"></a></td><td style="text-align:center; width:55px;"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E4%BD%86%E9%A6%AC" title="但馬" class="rel-wiki-page"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E4%BD%86%E9%A6%AC/::ref/tajima_icon.png.webp?rev=3fb59f1867f488a747895fa371d2b5e9&amp;t=20221119143612" alt="tajima_icon.png" title="tajima_icon.png" width="50" height="50" loading="lazy"></a></td><td style="text-align:center; width:55px;"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E7%B4%80%E4%BC%8A" title="紀伊" class="rel-wiki-page"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E7%B4%80%E4%BC%8A/::ref/kii_icon.png.webp?rev=db3f5008a51b5fd0193e7390b92b7919&amp;t=20230506093259" alt="kii_icon.png" title="kii_icon.png" width="50" height="50" loading="lazy"></a></td></tr></tbody></table></div>
+<p>文字通り、各々の武器種と同じ範囲で攻撃する。<br/>
+上記例の男児ならば、伊賀なら単体三回、但馬なら前後一体となる。<br/>
+正しく通常攻撃の強化版となるもの。通常と同じ役割を担えるが、そこから逸脱できないとも言える。</p>
+<h4 id="h4_content_1_20" class="heading-after-first">敵１体に  <a class="anchor_super" name="special_range_2"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=special_range_2" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h4>
+<div class="h-scrollable"><table><thead><tr><td colspan="3" style="text-align:center;"><strong>主な地魂男児</strong></td></tr></thead><tbody><tr><td style="text-align:center; width:55px;"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E4%BC%8A%E4%BA%88" title="伊予" class="rel-wiki-page"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E4%BC%8A%E4%BA%88/::ref/iyo_icon.png.webp?rev=53883d5580dba9bcce59e60fbb26cd54&amp;t=20230207224430" alt="iyo_icon.png" title="iyo_icon.png" width="50" height="50" loading="lazy"></a></td><td style="text-align:center; width:55px;"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%9C%9F%E4%BD%90" title="土佐" class="rel-wiki-page"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E5%9C%9F%E4%BD%90/::ref/tosa_icon.png.webp?rev=2ca015e9155f1c67a7c6277651542242&amp;t=20230416151600" alt="tosa_icon.png" title="tosa_icon.png" width="50" height="50" loading="lazy"></a></td><td style="text-align:center; width:55px;"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E7%9B%B8%E6%A8%A1" title="相模" class="rel-wiki-page"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E7%9B%B8%E6%A8%A1/::ref/sagami_icon.png.webp?rev=2bcea95faac30c89b3d92dd1c1c32efb&amp;t=20230630202758" alt="sagami_icon.png" title="sagami_icon.png" width="50" height="50" loading="lazy"></a></td></tr></tbody></table></div>
+<p>一体の敵へと強烈な一撃を与える。<br/>
+範囲が狭まる分、その威力は目を見張るものとなる。状況次第で軽く三桁を出すことも。<br/>
+ただし、抜魂技はキャンセルできずCPが溜まっていると常に範囲が狭まる事になる。<br/>
+通常の範囲攻撃を期待する場合には一応注意。</p>
+<h4 id="h4_content_1_21" class="heading-after-first">いずれかの敵３体に  <a class="anchor_super" name="special_range_6"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=special_range_6" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h4>
+<div class="h-scrollable"><table><thead><tr><td colspan="3" style="text-align:center;"><strong>主な地魂男児</strong></td></tr></thead><tbody><tr><td style="text-align:center; width:55px;"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E4%B8%8B%E9%87%8E" title="下野" class="rel-wiki-page"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E4%B8%8B%E9%87%8E/::ref/shimotsuke_icon.png.webp?rev=07ef90defdd49911b38b7335f89b0708&amp;t=20260114235452" alt="shimotsuke_icon.png" title="shimotsuke_icon.png" width="50" height="50" loading="lazy"></a></td><td style="text-align:center; width:55px;"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E9%99%B8%E5%A5%A5" title="陸奥" class="rel-wiki-page"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%99%B8%E5%A5%A5/::ref/rikuoh_icon.png.webp?rev=01314433d5c993937cf0ea6c137d17de&amp;t=20260606230437" alt="rikuoh_icon.png" title="rikuoh_icon.png" width="50" height="50" loading="lazy"></a></td><td style="background-color:gray; text-align:center; width:55px;"></td></tr></tbody></table></div>
+<p>三回、強化された攻撃を行う。<br/>
+一時的に武器種が『術』へと変わるようなもの、という認識でいい。<br/>
+術の攻撃と同じく、一体の敵に複数回入る事もありえる。</p>
+<h4 id="h4_content_1_22" class="heading-after-first">縦１列  <a class="anchor_super" name="special_range_3"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=special_range_3" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h4>
+<div class="h-scrollable"><table><thead><tr><td colspan="3" style="text-align:center;"><strong>主な地魂男児</strong></td></tr></thead><tbody><tr><td style="text-align:center; width:55px;"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E8%AE%83%E5%B2%90" title="讃岐" class="rel-wiki-page"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E8%AE%83%E5%B2%90/::ref/sanuki_icon.png.webp?rev=dfd968153fda2902e0c88a7726d29657&amp;t=20221118004211" alt="sanuki_icon.png" title="sanuki_icon.png" width="50" height="50" loading="lazy"></a></td><td style="text-align:center; width:55px;"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%A4%A7%E5%92%8C" title="大和" class="rel-wiki-page"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E5%A4%A7%E5%92%8C/::ref/yamato_icon.png.webp?rev=318ca0ef1d5f9a303d21ebea7336d4ba&amp;t=20221116232708" alt="yamato_icon.png" title="yamato_icon.png" width="50" height="50" loading="lazy"></a></td><td style="text-align:center; width:55px;"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E8%8B%A5%E7%8B%AD" title="若狭" class="rel-wiki-page"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E8%8B%A5%E7%8B%AD/::ref/wakasa_icon.png.webp?rev=c2c9dc861115a66e065336e19ea34614&amp;t=20221117124133" alt="wakasa_icon.png" title="wakasa_icon.png" width="50" height="50" loading="lazy"></a></td></tr></tbody></table></div>
+<p>縦一列に並ぶ敵、つまり前衛or後衛をまとめて薙ぎ払う範囲。<br/>
+最大五体を攻撃できる。通常より多くに打撃を与えられるが、敵前衛残り1の時の播磨など稀に例外有り。<br/>
+後衛が使用した場合、敵が多い列のほうを狙う(「まえを/うしろを攻める」時以外)。</p>
+<h4 id="h4_content_1_23" class="heading-after-first">敵１体を中心に  <a class="anchor_super" name="special_range_4"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=special_range_4" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h4>
+<div class="h-scrollable"><table><thead><tr><td colspan="3" style="text-align:center;"><strong>主な地魂男児</strong></td></tr></thead><tbody><tr><td style="text-align:center; width:55px;"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E8%B6%8A%E5%BE%8C" title="越後" class="rel-wiki-page"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E8%B6%8A%E5%BE%8C/::ref/echigo_icon.png.webp?rev=10051c7cf5855097d21d8bc7f8e1bb57&amp;t=20221118020432" alt="echigo_icon.png" title="echigo_icon.png" width="50" height="50" loading="lazy"></a></td><td style="text-align:center; width:55px;"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E4%B8%8A%E7%B7%8F" title="上総" class="rel-wiki-page"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E4%B8%8A%E7%B7%8F/::ref/kazusa_icon.png.webp?rev=9cb5910dcbc81eb32f9d37501bfb967c&amp;t=20221129035342" alt="kazusa_icon.png" title="kazusa_icon.png" width="50" height="50" loading="lazy"></a></td><td style="text-align:center; width:55px;"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E8%82%A5%E5%89%8D" title="肥前" class="rel-wiki-page"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E8%82%A5%E5%89%8D/::ref/hizen_icon.png.webp?rev=3a11e360e018fc72db4e5912e3ff8d04&amp;t=20221120210805" alt="hizen_icon.png" title="hizen_icon.png" width="50" height="50" loading="lazy"></a></td></tr></tbody></table></div>
+<p>敵一体を基点として、縦横斜めの敵に攻撃を与える範囲。<br/>
+前後に届く砲撃のような範囲ともいえる。敵配置にもよるが最大六体に打撃を与えられる。<br/>
+最初の対象選択がランダムではなく、可能な限り多くの敵を巻き込めるよう狙うという独自の強力な特徴がある。<br/>
+ただし前衛が後衛を最初の的に選ぶことはできない。</p>
+<h4 id="h4_content_1_24" class="heading-after-first">敵全体  <a class="anchor_super" name="special_range_5"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=special_range_5" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h4>
+<div class="h-scrollable"><table><thead><tr><td colspan="3" style="text-align:center;"><strong>主な地魂男児</strong></td></tr></thead><tbody><tr><td style="text-align:center; width:55px;"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%AD%A6%E8%94%B5" title="武蔵" class="rel-wiki-page"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E6%AD%A6%E8%94%B5/::ref/musashi_icon.png.webp?rev=2ff9147f93f051b7be467c680991fb14&amp;t=20221129041055" alt="musashi_icon.png" title="musashi_icon.png" width="50" height="50" loading="lazy"></a></td><td style="text-align:center; width:55px;"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%B2%B3%E5%86%85" title="河内" class="rel-wiki-page"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E6%B2%B3%E5%86%85/::ref/kawachi_icon.png.webp?rev=505c86e9173daedc588a097e0cf9ffbb&amp;t=20221118200505" alt="50x50)" title="50x50)" width="235" height="235" loading="lazy"></a></td><td style="text-align:center; width:55px;"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E8%BF%91%E6%B1%9F" title="近江" class="rel-wiki-page"><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E8%BF%91%E6%B1%9F/::ref/oumi_icon.png.webp?rev=2d9f883848ea1816330826effe146eff&amp;t=20221119232751" alt="oumi_icon.png" title="oumi_icon.png" width="50" height="50" loading="lazy"></a></td></tr></tbody></table></div>
+<p>文字通り、敵全体へ打撃を与える範囲。<br/>
+敵配置など気にせずぶっ放す。場合によっては一撃で敵がいなくなる事も。<br/>
+もちろん、残敵一体でもぶっ放す。勿体無さはひとしお。</p>
+<h3 id="h3_content_1_25" class="heading-after-first">バフ・デバフ  <a class="anchor_super" name="buff_debuff"></a> <a class="anchor_super" href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/edit?page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;id=buff_debuff" rel="nofollow"><span class="system-icon paraedit" title="Edit"></span></a></h3>
+<p><ruby>任務<rp>(</rp><rt>クエスト</rt><rp>)</rp></ruby>中、様々な要因で地魂たちに付加される要素。<br/>
+戦闘において有利・不利になる影響をそれぞれ与える。<br/>
+なお、一部公式から解説はあったが、基本的にゲーム内では効果説明は無い。<br/>
+（下記表においても効果説明がまだ出ていない物は該当箇所を空欄にしている）</p>
+<ul class="list1"><li>バフ・デバフ一覧
+
+<div class="h-scrollable"><table><thead><tr><th style="text-align:center;">アイコン</th><th style="text-align:center;">効果名</th><th style="text-align:center;">解説</th><th style="text-align:center;">効果</th></tr></thead><tbody><tr><td><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/::ref/icon_tokui.png?rev=e1c7cea9d5a219e3e5b6f01fac7ed053&amp;t=20240423082429" alt="icon_tokui.png" title="icon_tokui.png" width="49" height="49" loading="lazy"></td><th>得意</th><td>得意環境のステージのとき開始時取得</td><td>命中率上昇</td></tr><tr><td><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/::ref/icon_kaiteki.png?rev=dad5747c69c1aaee2c9ea60bf7c9f222&amp;t=20240423082641" alt="icon_kaiteki.png" title="icon_kaiteki.png" width="49" height="49" loading="lazy"></td><th>快適</th><td>服装が気温に合っているとき開始時取得</td><td>命中率が少し上昇<br class="spacer">魂圧ランクが１上昇<br class="spacer">攻撃ランクが１上昇<br class="spacer">体調不良にならない</td></tr><tr><td><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/::ref/icon_minagiru.png?rev=b7a955b9cdce080e9149733479cbd502&amp;t=20240423082911" alt="icon_minagiru.png" title="icon_minagiru.png" width="49" height="49" loading="lazy"></td><th>みなぎる力</th><td>景勝地に到達したとき取得</td><td>魂圧ランクが１上昇<br class="spacer">攻撃ランクが１上昇<br class="spacer">体調不良が回復</td></tr><tr><td><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/::ref/icon_spdup.png?rev=d5693b037deb2cb5266f4bda2db9cea0&amp;t=20240423082937" alt="icon_spdup.png" title="icon_spdup.png" width="50" height="50" loading="lazy"></td><th>SPD▲</th><td>戦闘開始時の魂圧勝負にて<br class="spacer">形成有利を得たときに取得</td><td></td></tr><tr><td><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/::ref/icon_defup.png?rev=3e0cb4e2013a6faa168cbfa17e531e3c&amp;t=20240423084435" alt="icon_defup.png" title="icon_defup.png" width="50" height="50" loading="lazy"></td><th>DEF▲</th><td>アクシデント発生にて<br class="spacer">目標値を超え突破したときに取得</td><td></td></tr><tr><td><img src="https://web.archive.org/web/20260724094536im_/https://cdn.wikiwiki.jp/to/w/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/::ref/icon_taityoufuryou.png?rev=af8eb0c8df6fe0990c04c54e21b901cd&amp;t=20240423083002" alt="icon_taityoufuryou.png" title="icon_taityoufuryou.png" width="50" height="50" loading="lazy"></td><th>体調不良</th><td>服装が適していない場合<br class="spacer">マップの移動中一定確率で取得</td><td>敵からの攻撃によるダメージが上昇</td></tr></tbody></table></div></li></ul>
+                </div>
+                <div id="main-contents-bottom">
+                    <style>
+#pc-bottom-grandparent-ad-wrapper {
+    height: 200px;
+}
+</style>
+<div id="pc-bottom-grandparent-ad-wrapper"></div>
+                </div>
+
+            </div>
+        </div>
+
+        
+                    <div class="column-left">
+                <div id="menubar">
+                                        <h2 id="h2_content_1_0">基本情報</h2>
+<p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B2%E3%83%BC%E3%83%A0%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" title="ゲームシステムについて" class="rel-wiki-page">ゲームシステムについて</a><br/>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%AC%E3%83%81%E3%83%A3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" title="ガチャについて" class="rel-wiki-page">ガチャについて</a><br/>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F" title="よくある質問" class="rel-wiki-page">よくある質問</a><br/>
+┗<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F/%E5%BA%8F%E7%9B%A4%E3%81%AE%E9%80%B2%E3%82%81%E6%96%B9" title="よくある質問/序盤の進め方" class="rel-wiki-page">序盤の進め方</a><br/>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%9B%B4%E6%96%B0%E3%83%BB%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9%E5%B1%A5%E6%AD%B4" title="更新・メンテナンス履歴" class="rel-wiki-page">更新・メンテナンス履歴</a></p>
+<h2 id="h2_content_1_1" class="heading-after-first">攻略情報</h2>
+<h3 id="h3_content_2_0">クエスト情報</h3>
+
+<div class="fold-container  clearfix">
+    <button class="fold-toggle-button hidden-on-open"><i class="fal fa-plus-square"></i></button>
+    <button class="fold-toggle-button visible-on-open"><i class="fal fa-minus-square"></i></button>
+    <div class="fold-summary hidden-on-open"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC" title="メインストーリー" class="rel-wiki-page">メインストーリー</a></div>
+    <div class="fold-content visible-on-open"><p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC" title="メインストーリー" class="rel-wiki-page">メインストーリー</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/%E7%AC%AC%E4%B8%80%E8%A9%B1" title="メインストーリー/第一話" class="rel-wiki-page">第一話 甲州街道</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/%E7%AC%AC%E4%BA%8C%E8%A9%B1" title="メインストーリー/第二話" class="rel-wiki-page">第二話 讃岐街道</a><br/>
+┗<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/%E7%AC%AC%E4%B8%89%E8%A9%B1" title="メインストーリー/第三話" class="rel-wiki-page">第三話 北陸道</a></p>
+</div>
+</div>
+<div class="fold-container  clearfix">
+    <button class="fold-toggle-button hidden-on-open"><i class="fal fa-plus-square"></i></button>
+    <button class="fold-toggle-button visible-on-open"><i class="fal fa-minus-square"></i></button>
+    <div class="fold-summary hidden-on-open"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B5%E3%82%A4%E3%83%89%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC" title="サイドストーリー" class="rel-wiki-page">サイドストーリー</a></div>
+    <div class="fold-content visible-on-open"><p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B5%E3%82%A4%E3%83%89%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC" title="サイドストーリー" class="rel-wiki-page">サイドストーリー</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B5%E3%82%A4%E3%83%89%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/%E9%A2%A8%E3%81%AB%E5%90%B9%E3%81%8B%E3%82%8C%E3%81%A6%E5%B9%BE%E5%8D%83%E9%87%8C" title="サイドストーリー/風に吹かれて幾千里" class="rel-wiki-page">風に吹かれて幾千里</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B5%E3%82%A4%E3%83%89%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/%E3%81%B5%E3%82%89%E3%82%8A%E4%B8%80%E9%AC%BC%E5%A4%9C%E8%A1%8C" title="サイドストーリー/ふらり一鬼夜行" class="rel-wiki-page">ふらり一鬼夜行</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B5%E3%82%A4%E3%83%89%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/%E6%9C%88%E5%86%B4%E3%82%86%E3%82%8B%E9%9B%AA%E6%B6%88%E3%81%AE%E4%B8%98%E3%81%A7" title="サイドストーリー/月冴ゆる雪消の丘で" class="rel-wiki-page">月冴ゆる雪消の丘で</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B5%E3%82%A4%E3%83%89%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/%E3%82%AA%E3%83%AC%E3%81%AE%E9%AD%82%E3%81%8C%E5%8F%AB%E3%81%B625%E6%99%82" title="サイドストーリー/オレの魂が叫ぶ25時" class="rel-wiki-page">オレの魂が叫ぶ25時</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B5%E3%82%A4%E3%83%89%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/%E9%A2%A8%E3%81%AE%E5%B8%AB%E5%BC%9F" title="サイドストーリー/風の師弟" class="rel-wiki-page">風の師弟</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B5%E3%82%A4%E3%83%89%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/%E5%A4%A2%E5%B9%BB%E3%81%AE%E5%A6%82%E3%81%8F" title="サイドストーリー/夢幻の如く" class="rel-wiki-page">夢幻の如く</a><br/>
+┃<br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E3%81%A9%E3%81%99%E3%81%93%E3%81%84%EF%BC%81%E5%A4%A7%E7%9B%B8%E6%92%B2%E5%A4%A7%E4%BC%9A2025" title="ショートエピソード/どすこい！大相撲大会2025" class="rel-wiki-page">大相撲大会2025</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E3%81%A9%E3%81%99%E3%81%93%E3%81%84%EF%BC%81%E5%A4%A7%E7%9B%B8%E6%92%B2%E5%A4%A7%E4%BC%9A2024" title="ショートエピソード/どすこい！大相撲大会2024" class="rel-wiki-page">大相撲大会2024</a><br/>
+┗<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E3%81%A9%E3%81%99%E3%81%93%E3%81%84%EF%BC%81%E5%A4%A7%E7%9B%B8%E6%92%B2%E5%A4%A7%E4%BC%9A2023" title="ショートエピソード/どすこい！大相撲大会2023" class="rel-wiki-page">大相撲大会2023</a></p>
+</div>
+</div>
+<div class="fold-container  clearfix">
+    <button class="fold-toggle-button hidden-on-open"><i class="fal fa-plus-square"></i></button>
+    <button class="fold-toggle-button visible-on-open"><i class="fal fa-minus-square"></i></button>
+    <div class="fold-summary hidden-on-open"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88" title="フリークエスト" class="rel-wiki-page">フリークエスト</a></div>
+    <div class="fold-content visible-on-open"><p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88" title="フリークエスト" class="rel-wiki-page">フリークエスト</a><br/>
+●メインストーリー<br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88/%E7%AC%AC%E4%B8%80%E8%A9%B1" title="フリークエスト/第一話" class="rel-wiki-page">第一話 甲州街道</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88/%E7%AC%AC%E4%BA%8C%E8%A9%B1" title="フリークエスト/第二話" class="rel-wiki-page">第二話 讃岐街道</a><br/>
+┗<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88/%E7%AC%AC%E4%B8%89%E8%A9%B1" title="フリークエスト/第三話" class="rel-wiki-page">第三話 北陸道</a><br/>
+◆サイドストーリー<br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88/%E9%A2%A8%E3%81%AB%E5%90%B9%E3%81%8B%E3%82%8C%E3%81%A6%E5%B9%BE%E5%8D%83%E9%87%8C" title="フリークエスト/風に吹かれて幾千里" class="rel-wiki-page">風に吹かれて幾千里</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88/%E3%81%B5%E3%82%89%E3%82%8A%E4%B8%80%E9%AC%BC%E5%A4%9C%E8%A1%8C" title="フリークエスト/ふらり一鬼夜行" class="rel-wiki-page">ふらり一鬼夜行</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88/%E6%9C%88%E5%86%B4%E3%82%86%E3%82%8B%E9%9B%AA%E6%B6%88%E3%81%AE%E4%B8%98%E3%81%A7" title="フリークエスト/月冴ゆる雪消の丘で" class="rel-wiki-page">月冴ゆる雪消の丘で</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88/%E3%82%AA%E3%83%AC%E3%81%AE%E9%AD%82%E3%81%8C%E5%8F%AB%E3%81%B625%E6%99%82" title="フリークエスト/オレの魂が叫ぶ25時" class="rel-wiki-page">オレの魂が叫ぶ25時</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88/%E9%A2%A8%E3%81%AE%E5%B8%AB%E5%BC%9F" title="フリークエスト/風の師弟" class="rel-wiki-page">風の師弟</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88/%E5%A4%A2%E5%B9%BB%E3%81%AE%E5%A6%82%E3%81%8F" title="フリークエスト/夢幻の如く" class="rel-wiki-page">夢幻の如く</a><br/>
+┃<br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E3%81%A9%E3%81%99%E3%81%93%E3%81%84%EF%BC%81%E5%A4%A7%E7%9B%B8%E6%92%B2%E5%A4%A7%E4%BC%9A2024#free" title="ショートエピソード/どすこい！大相撲大会2024" class="rel-wiki-page">大相撲大会2024</a><br/>
+┗<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E3%81%A9%E3%81%99%E3%81%93%E3%81%84%EF%BC%81%E5%A4%A7%E7%9B%B8%E6%92%B2%E5%A4%A7%E4%BC%9A2023#free" title="ショートエピソード/どすこい！大相撲大会2023" class="rel-wiki-page">大相撲大会2023</a></p>
+</div>
+</div>
+<div class="fold-container  clearfix">
+    <button class="fold-toggle-button hidden-on-open"><i class="fal fa-plus-square"></i></button>
+    <button class="fold-toggle-button visible-on-open"><i class="fal fa-minus-square"></i></button>
+    <div class="fold-summary hidden-on-open"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%9B%9C%E6%97%A5%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88" title="曜日クエスト" class="rel-wiki-page">曜日クエスト</a></div>
+    <div class="fold-content visible-on-open"><p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%9B%9C%E6%97%A5%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88" title="曜日クエスト" class="rel-wiki-page">曜日クエスト</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%9B%9C%E6%97%A5%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88/%E6%9C%88%E6%9B%9C%E6%97%A5" title="曜日クエスト/月曜日" class="rel-wiki-page">月曜日</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%9B%9C%E6%97%A5%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88/%E7%81%AB%E6%9B%9C%E6%97%A5" title="曜日クエスト/火曜日" class="rel-wiki-page">火曜日</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%9B%9C%E6%97%A5%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88/%E6%B0%B4%E6%9B%9C%E6%97%A5" title="曜日クエスト/水曜日" class="rel-wiki-page">水曜日</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%9B%9C%E6%97%A5%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88/%E6%9C%A8%E6%9B%9C%E6%97%A5" title="曜日クエスト/木曜日" class="rel-wiki-page">木曜日</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%9B%9C%E6%97%A5%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88/%E9%87%91%E6%9B%9C%E6%97%A5" title="曜日クエスト/金曜日" class="rel-wiki-page">金曜日</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%9B%9C%E6%97%A5%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88/%E5%9C%9F%E6%9B%9C%E6%97%A5" title="曜日クエスト/土曜日" class="rel-wiki-page">土曜日</a><br/>
+┗<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%9B%9C%E6%97%A5%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88/%E6%97%A5%E6%9B%9C%E6%97%A5" title="曜日クエスト/日曜日" class="rel-wiki-page">日曜日</a></p>
+</div>
+</div>
+<p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E9%81%A0%E5%BE%81" title="遠征" class="rel-wiki-page">遠征</a></p>
+<p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%B9%95%E9%96%93" title="幕間" class="rel-wiki-page">幕間</a></p>
+<div class="fold-container  clearfix">
+    <button class="fold-toggle-button hidden-on-open"><i class="fal fa-plus-square"></i></button>
+    <button class="fold-toggle-button visible-on-open"><i class="fal fa-minus-square"></i></button>
+    <div class="fold-summary hidden-on-open"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89" title="ショートエピソード" class="rel-wiki-page">ショートエピソード</a></div>
+    <div class="fold-content visible-on-open"><p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89" title="ショートエピソード" class="rel-wiki-page">ショートエピソード</a><br/>
+┗<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E3%82%BB%E3%83%B3%E3%83%88%E3%83%90%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E3%83%87%E3%83%BC2026" title="ショートエピソード/セントバレンタインデー2026" class="rel-wiki-page">セントバレンタインデー2026</a></p>
+<div class="fold-container  clearfix">
+    <button class="fold-toggle-button hidden-on-open"><i class="fal fa-plus-square"></i></button>
+    <button class="fold-toggle-button visible-on-open"><i class="fal fa-minus-square"></i></button>
+    <div class="fold-summary hidden-on-open">2025年</div>
+    <div class="fold-content visible-on-open"><p>2025年<br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E3%82%BB%E3%83%B3%E3%83%88%E3%83%90%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E3%83%87%E3%83%BC2025" title="ショートエピソード/セントバレンタインデー2025" class="rel-wiki-page">セントバレンタインデー2025</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E8%8D%98%E5%9C%92%E3%81%AE%E5%A4%8F%E3%80%81%E6%97%A5%E6%9C%AC%E3%81%AE%E5%A4%8F2025" title="ショートエピソード/荘園の夏、日本の夏2025" class="rel-wiki-page">荘園の夏、日本の夏2025</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%B9%95%E9%96%93#summer_2025" title="幕間" class="rel-wiki-page">ある夏？の浜辺の出来事</a><br/>
+┗<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E3%81%A9%E3%81%99%E3%81%93%E3%81%84%EF%BC%81%E5%A4%A7%E7%9B%B8%E6%92%B2%E5%A4%A7%E4%BC%9A2025" title="ショートエピソード/どすこい！大相撲大会2025" class="rel-wiki-page">大相撲大会2025</a></p>
+</div>
+</div>
+<div class="fold-container  clearfix">
+    <button class="fold-toggle-button hidden-on-open"><i class="fal fa-plus-square"></i></button>
+    <button class="fold-toggle-button visible-on-open"><i class="fal fa-minus-square"></i></button>
+    <div class="fold-summary hidden-on-open">2024年</div>
+    <div class="fold-content visible-on-open"><p>2024年<br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E3%82%BB%E3%83%B3%E3%83%88%E3%83%90%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E3%83%87%E3%83%BC2024" title="ショートエピソード/セントバレンタインデー2024" class="rel-wiki-page">セントバレンタインデー2024</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E8%8D%98%E5%9C%92%E3%81%AE%E5%A4%8F%E3%80%81%E6%97%A5%E6%9C%AC%E3%81%AE%E5%A4%8F2024" title="ショートエピソード/荘園の夏、日本の夏2024" class="rel-wiki-page">荘園の夏、日本の夏2024</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E5%A4%8F%E3%81%AB%E6%81%8B%E3%81%97%E3%81%A6%E7%99%BE%E7%89%A9%E8%AA%9E" title="ショートエピソード/夏に恋して百物語" class="rel-wiki-page">夏に恋して百物語</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E3%81%A9%E3%81%99%E3%81%93%E3%81%84%EF%BC%81%E5%A4%A7%E7%9B%B8%E6%92%B2%E5%A4%A7%E4%BC%9A2024" title="ショートエピソード/どすこい！大相撲大会2024" class="rel-wiki-page">大相撲大会2024</a><br/>
+┗<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E5%B9%B4%E8%B6%8A%E3%81%9723-24" title="ショートエピソード/年越し23-24" class="rel-wiki-page">荘園の大晦日</a></p>
+</div>
+</div>
+<div class="fold-container  clearfix">
+    <button class="fold-toggle-button hidden-on-open"><i class="fal fa-plus-square"></i></button>
+    <button class="fold-toggle-button visible-on-open"><i class="fal fa-minus-square"></i></button>
+    <div class="fold-summary hidden-on-open">2023年</div>
+    <div class="fold-content visible-on-open"><p>2023年<br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E3%82%BB%E3%83%B3%E3%83%88%E3%83%90%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E3%83%87%E3%83%BC2023" title="ショートエピソード/セントバレンタインデー2023" class="rel-wiki-page">セントバレンタインデー2023</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E3%82%B5%E3%83%9E%E3%83%BC%E3%83%95%E3%82%A7%E3%82%B92023" title="ショートエピソード/サマーフェス2023" class="rel-wiki-page">サマーフェス2023</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E5%A4%8F%E3%81%AE%E6%B5%9C%E8%BE%BA%E3%81%AE%E8%AA%BF%E6%9F%BB%E9%9A%8A" title="ショートエピソード/夏の浜辺の調査隊" class="rel-wiki-page">夏の浜辺の調査隊</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E3%81%A9%E3%81%99%E3%81%93%E3%81%84%EF%BC%81%E5%A4%A7%E7%9B%B8%E6%92%B2%E5%A4%A7%E4%BC%9A2023" title="ショートエピソード/どすこい！大相撲大会2023" class="rel-wiki-page">大相撲大会2023</a><br/>
+┗<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89/%E5%B9%B4%E8%B6%8A%E3%81%9723-24" title="ショートエピソード/年越し23-24" class="rel-wiki-page">荘園の大晦日2023</a></p>
+</div>
+</div>
+</div>
+</div>
+<hr class="full_hr"/>
+<p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" title="クエストについて" class="rel-wiki-page">クエストについて</a></p>
+<p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" title="戦闘について" class="rel-wiki-page">戦闘について</a></p>
+<p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%89%E3%83%AD%E3%83%83%E3%83%97%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" title="ドロップについて" class="rel-wiki-page">ドロップについて</a><br/>
+┗<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%89%E3%83%AD%E3%83%83%E3%83%97%E8%A1%A8" title="ドロップ表" class="rel-wiki-page">ドロップ表</a></p>
+<h3 id="h3_content_11_0">キャラ情報</h3>
+
+<p>地魂男児一覧 (<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%9C%B0%E9%AD%82%E7%94%B7%E5%85%90%E3%83%BB%E3%83%98%E3%83%AB%E3%83%97" title="地魂男児・ヘルプ" class="rel-wiki-page">HELP</a>)<br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%9C%B0%E9%AD%82%E7%94%B7%E5%85%90/%E5%9C%B0%E5%9F%9F%E5%88%A5" title="地魂男児/地域別" class="rel-wiki-page">地域別</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%9C%B0%E9%AD%82%E7%94%B7%E5%85%90/%E6%AD%A6%E5%99%A8%E7%A8%AE%E5%88%A5" title="地魂男児/武器種別" class="rel-wiki-page">武器種別</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%9C%B0%E9%AD%82%E7%94%B7%E5%85%90/%E7%95%AA%E5%8F%B7%E9%A0%86" title="地魂男児/番号順" class="rel-wiki-page">番号順</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%9C%B0%E9%AD%82%E7%94%B7%E5%85%90/%E7%B4%A0%E6%9D%90%E5%88%A5" title="地魂男児/素材別" class="rel-wiki-page">素材別</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%9C%B0%E9%AD%82%E7%94%B7%E5%85%90/%E5%BE%97%E6%84%8F%E7%92%B0%E5%A2%83" title="地魂男児/得意環境" class="rel-wiki-page">得意環境別</a><br/>
+┗<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%B0%8F%E3%83%8D%E3%82%BF/%E9%80%9F%E3%81%95%E8%A1%A8" title="小ネタ/速さ表" class="rel-wiki-page">速さ表</a></p>
+<p>あやかし一覧 (<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%81%82%E3%82%84%E3%81%8B%E3%81%97%E3%83%BB%E3%83%98%E3%83%AB%E3%83%97" title="あやかし・ヘルプ" class="rel-wiki-page">HELP</a>)<br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%81%82%E3%82%84%E3%81%8B%E3%81%97/%E7%95%AA%E5%8F%B7%E9%A0%86" title="あやかし/番号順" class="rel-wiki-page">番号順</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%81%82%E3%82%84%E3%81%8B%E3%81%97/%E5%B1%9E%E6%80%A7%E5%88%A5" title="あやかし/属性別" class="rel-wiki-page">属性別</a><br/>
+┗<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%B0%8F%E3%83%8D%E3%82%BF/%E9%80%9F%E3%81%95%E8%A1%A8#list2" title="小ネタ/速さ表" class="rel-wiki-page">速さ表</a></p>
+<p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%AD%E3%82%AF%E3%83%8F%E3%83%A9" title="ロクハラ" class="rel-wiki-page">ロクハラ</a></p>
+<p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E7%8F%BE%E5%9C%B0%E4%BA%BA" title="現地人" class="rel-wiki-page">現地人</a></p>
+<hr class="full_hr"/>
+<p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%AC%E3%83%99%E3%83%AB" title="レベル" class="rel-wiki-page">地魂/声聞士のLvについて</a></p>
+<p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%9C%B0%E9%AD%82%E7%94%B7%E5%85%90/%E7%B7%A8%E6%88%90%E3%81%AE%E3%81%99%E3%82%9D%E3%82%81" title="地魂男児/編成のすゝめ" class="rel-wiki-page">編成のすゝめ</a></p>
+<p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%9C%B0%E9%AD%82%E7%94%B7%E5%85%90/%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E8%A8%88%E7%AE%97%E5%BC%8F" title="地魂男児/ステータス計算式" class="rel-wiki-page">ステータス計算式</a><br/>
+┗<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%9C%B0%E9%AD%82%E7%94%B7%E5%85%90/HP%E6%88%90%E9%95%B7%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3" title="地魂男児/HP成長パターン" class="rel-wiki-page">HP成長パターン</a></p>
+<h2 id="h2_content_1_2" class="heading-after-first">その他情報</h2>
+<p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E8%8D%98%E5%9C%92" title="荘園" class="rel-wiki-page">荘園</a><br/>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0" title="アイテム" class="rel-wiki-page">アイテム</a><br/>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%8A%E3%82%B9" title="ログインボーナス" class="rel-wiki-page">ログインボーナス</a></p>
+<hr class="full_hr"/>
+<p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E7%B5%B5%E5%B8%AB%E4%B8%80%E8%A6%A7" title="絵師一覧" class="rel-wiki-page">絵師一覧</a><br/>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%A3%B0%E5%84%AA%E4%B8%80%E8%A6%A7" title="声優一覧" class="rel-wiki-page">声優一覧</a><br/>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%A5%BD%E6%9B%B2%E4%B8%80%E8%A6%A7" title="楽曲一覧" class="rel-wiki-page">楽曲一覧</a></p>
+<hr class="full_hr"/>
+<p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%90%E3%82%B0%E3%83%BB%E4%B8%8D%E5%85%B7%E5%90%88" title="バグ・不具合" class="rel-wiki-page">バグ・不具合</a><br/>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%B0%8F%E3%83%8D%E3%82%BF" title="小ネタ" class="rel-wiki-page">小ネタ</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%B0%8F%E3%83%8D%E3%82%BF/%E3%83%8F%E3%83%B3%E3%82%B3%E9%9B%86" title="小ネタ/ハンコ集" class="rel-wiki-page">ハンコ集</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%B0%8F%E3%83%8D%E3%82%BF/%E3%82%AB%E3%83%83%E3%83%88%E3%82%A4%E3%83%B3%E9%9B%86" title="小ネタ/カットイン集" class="rel-wiki-page">カットイン集</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%B0%8F%E3%83%8D%E3%82%BF/%E3%82%AD%E3%83%A3%E3%83%A9%E5%8F%A3%E8%AA%BF%E8%A1%A8" title="小ネタ/キャラ口調表" class="rel-wiki-page">キャラ口調表</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%B0%8F%E3%83%8D%E3%82%BF/%E8%A1%A3%E8%A3%85%E8%A1%A8" title="小ネタ/衣装表" class="rel-wiki-page">キャラ衣装表</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%B0%8F%E3%83%8D%E3%82%BF/%E3%83%8F%E3%83%AC%E3%81%AE%E6%97%A5%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC" title="小ネタ/ハレの日カレンダー" class="rel-wiki-page">ハレの日カレンダー</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%B0%8F%E3%83%8D%E3%82%BF/%E6%99%82%E4%BB%A3%E5%8C%BA%E5%88%86" title="小ネタ/時代区分" class="rel-wiki-page">時代区分表</a><br/>
+┗<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%B0%8F%E3%83%8D%E3%82%BF/%E5%96%B0%E9%AD%82%E9%9B%86" title="小ネタ/喰魂集" class="rel-wiki-page">喰魂集</a><br/>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E7%94%A8%E8%AA%9E%E9%9B%86" title="用語集" class="rel-wiki-page">用語集</a></p>
+<hr class="full_hr"/>
+<p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%3A%E6%B0%97%E3%81%BE%E3%81%90%E3%82%8C%E6%8A%95%E7%A5%A8%E7%AE%B1" title=":気まぐれ投票箱" class="rel-wiki-page">気まぐれ投票箱</a><br/>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E5%85%AC%E5%BC%8F%E3%82%B0%E3%83%83%E3%82%BA%E6%83%85%E5%A0%B1" title="公式グッズ情報" class="rel-wiki-page">公式グッズ情報</a><br/>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%AA%E3%83%B3%E3%82%AF%E9%9B%86" title="リンク集" class="rel-wiki-page">リンク集</a></p>
+<h2 id="h2_content_1_3" class="heading-after-first">掲示板</h2>
+<p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E9%9B%91%E8%AB%87%E6%8E%B2%E7%A4%BA%E6%9D%BF" title="雑談掲示板" class="rel-wiki-page">雑談掲示板</a><br/>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E8%B3%AA%E5%95%8F%E6%8E%B2%E7%A4%BA%E6%9D%BF" title="質問掲示板" class="rel-wiki-page">質問掲示板</a><br/>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%83%85%E5%A0%B1%E6%8F%90%E4%BE%9B%E6%8E%B2%E7%A4%BA%E6%9D%BF" title="情報提供掲示板" class="rel-wiki-page">情報提供掲示板</a></p>
+<h2 id="h2_content_1_4" class="heading-after-first">wiki編集関係</h2>
+<p><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/?cmd=edit&amp;page=MenuBar" title="編集:MenuBar" rel="nofollow">編集:MenuBar</a><br/>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/SandBox" title="SandBox" class="rel-wiki-page">SandBox</a><br/>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/wiki%E7%B7%A8%E9%9B%86%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%84%8F%E8%A6%8B%E4%BA%A4%E6%8F%9B" title="wiki編集に関する意見交換" class="rel-wiki-page">wiki編集に関する意見交換</a><br/>
+<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E7%B7%A8%E9%9B%86%E3%82%BF%E3%82%B9%E3%82%AF%E6%83%85%E5%A0%B1" title="編集タスク情報" class="rel-wiki-page">編集タスク情報</a><br/>
+テンプレート<br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/%E3%82%AD%E3%83%A3%E3%83%A9%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC" title="テンプレート/キャラテンプレ" class="rel-wiki-page">キャラテンプレ</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/%E3%81%82%E3%82%84%E3%81%8B%E3%81%97%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC" title="テンプレート/あやかしテンプレ" class="rel-wiki-page">あやかしテンプレ</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/%E3%83%AD%E3%82%AF%E3%83%8F%E3%83%A9%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC" title="テンプレート/ロクハラテンプレ" class="rel-wiki-page">ロクハラテンプレ</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/%E7%8F%BE%E5%9C%B0%E4%BA%BA%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC" title="テンプレート/現地人テンプレ" class="rel-wiki-page">現地人テンプレ</a><br/>
+┗<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC" title="テンプレート/クエストテンプレ" class="rel-wiki-page">クエストテンプレ</a></p>
+<div class="fold-container  clearfix">
+    <button class="fold-toggle-button hidden-on-open"><i class="fal fa-plus-square"></i></button>
+    <button class="fold-toggle-button visible-on-open"><i class="fal fa-minus-square"></i></button>
+    <div class="fold-summary hidden-on-open">編集補助</div>
+    <div class="fold-content visible-on-open"><p>編集補助<br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E3%83%98%E3%83%AB%E3%83%97" title="ヘルプ" class="rel-wiki-page">Help</a><br/>
+┣<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E6%95%B4%E5%BD%A2%E3%83%AB%E3%83%BC%E3%83%AB" title="整形ルール" class="rel-wiki-page">テキスト整形のルール</a></p>
+</div>
+</div>
+<div class="recent-container" data-recent-hash="92807bff7ba049e474ca5b3306137d76"></div>
+<div style="text-align:center">〔<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E4%BA%BA%E6%B0%97100" title="人気100" class="rel-wiki-page"><strong>人気</strong></a>/<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/%E4%BB%8A%E6%97%A5100" title="今日100" class="rel-wiki-page"><strong>今日人気</strong></a>〕〔<a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/RecentChanges" title="RecentChanges" class="rel-wiki-page"><strong>最新</strong></a>〕</div>
+<h3 id="h3_content_1_5" class="heading-after-first">最近のコメント</h3>
+<div class="zawazawa-recent" data-zrecent-hash="ce3768fee26b49fa903ea2f631c12f0d" data-zrecent-data="{&quot;topics&quot;:[{&quot;embeddedSites&quot;:{&quot;wikiwiki&quot;:{&quot;name&quot;:&quot;雑談掲示板&quot;,&quot;url&quot;:&quot;https://wikiwiki.jp/tamacolle/%E9%9B%91%E8%AB%87%E6%8E%B2%E7%A4%BA%E6%9D%BF&quot;}},&quot;forumSlug&quot;:&quot;tamacolle&quot;,&quot;forumTitle&quot;:&quot;魂これ&quot;,&quot;lastCommentNumber&quot;:1682,&quot;lastCommentedAt&quot;:&quot;Fri, 24 Jul 2026 06:24:56 +0900&quot;,&quot;topicNumber&quot;:2,&quot;topicTitle&quot;:&quot;雑談掲示板&quot;,&quot;url&quot;:&quot;https://z.wikiwiki.jp/tamacolle/topic/2&quot;},{&quot;embeddedSites&quot;:{&quot;wikiwiki&quot;:{&quot;name&quot;:&quot;質問掲示板&quot;,&quot;url&quot;:&quot;https://wikiwiki.jp/tamacolle/%E8%B3%AA%E5%95%8F%E6%8E%B2%E7%A4%BA%E6%9D%BF&quot;}},&quot;forumSlug&quot;:&quot;tamacolle&quot;,&quot;forumTitle&quot;:&quot;魂これ&quot;,&quot;lastCommentNumber&quot;:436,&quot;lastCommentedAt&quot;:&quot;Mon, 06 Jul 2026 13:49:43 +0900&quot;,&quot;topicNumber&quot;:3,&quot;topicTitle&quot;:&quot;質問掲示板&quot;,&quot;url&quot;:&quot;https://z.wikiwiki.jp/tamacolle/topic/3&quot;},{&quot;embeddedSites&quot;:{&quot;wikiwiki&quot;:{&quot;name&quot;:&quot;阿波&quot;,&quot;url&quot;:&quot;https://wikiwiki.jp/tamacolle/%E9%98%BF%E6%B3%A2#comment&quot;}},&quot;forumSlug&quot;:&quot;tamacolle&quot;,&quot;forumTitle&quot;:&quot;魂これ&quot;,&quot;lastCommentNumber&quot;:15,&quot;lastCommentedAt&quot;:&quot;Mon, 06 Jul 2026 06:27:59 +0900&quot;,&quot;topicNumber&quot;:68,&quot;topicTitle&quot;:&quot;阿波&quot;,&quot;url&quot;:&quot;https://z.wikiwiki.jp/tamacolle/topic/68&quot;},{&quot;embeddedSites&quot;:{&quot;wikiwiki&quot;:{&quot;name&quot;:&quot;陸奥&quot;,&quot;url&quot;:&quot;https://wikiwiki.jp/tamacolle/%E9%99%B8%E5%A5%A5#comment&quot;}},&quot;forumSlug&quot;:&quot;tamacolle&quot;,&quot;forumTitle&quot;:&quot;魂これ&quot;,&quot;lastCommentNumber&quot;:4,&quot;lastCommentedAt&quot;:&quot;Sat, 04 Jul 2026 07:22:34 +0900&quot;,&quot;topicNumber&quot;:76,&quot;topicTitle&quot;:&quot;陸奥&quot;,&quot;url&quot;:&quot;https://z.wikiwiki.jp/tamacolle/topic/76&quot;},{&quot;embeddedSites&quot;:{&quot;wikiwiki&quot;:{&quot;name&quot;:&quot;気まぐれ投票箱&quot;,&quot;url&quot;:&quot;https://wikiwiki.jp/tamacolle/%3A%E6%B0%97%E3%81%BE%E3%81%90%E3%82%8C%E6%8A%95%E7%A5%A8%E7%AE%B1#comment&quot;}},&quot;forumSlug&quot;:&quot;tamacolle&quot;,&quot;forumTitle&quot;:&quot;魂これ&quot;,&quot;lastCommentNumber&quot;:7,&quot;lastCommentedAt&quot;:&quot;Wed, 01 Jul 2026 02:15:19 +0900&quot;,&quot;topicNumber&quot;:45,&quot;topicTitle&quot;:&quot;投票箱&quot;,&quot;url&quot;:&quot;https://z.wikiwiki.jp/tamacolle/topic/45&quot;},{&quot;embeddedSites&quot;:{&quot;wikiwiki&quot;:{&quot;name&quot;:&quot;周防&quot;,&quot;url&quot;:&quot;https://wikiwiki.jp/tamacolle/%E5%91%A8%E9%98%B2#comment&quot;}},&quot;forumSlug&quot;:&quot;tamacolle&quot;,&quot;forumTitle&quot;:&quot;魂これ&quot;,&quot;lastCommentNumber&quot;:3,&quot;lastCommentedAt&quot;:&quot;Mon, 29 Jun 2026 05:09:31 +0900&quot;,&quot;topicNumber&quot;:73,&quot;topicTitle&quot;:&quot;周防&quot;,&quot;url&quot;:&quot;https://z.wikiwiki.jp/tamacolle/topic/73&quot;},{&quot;embeddedSites&quot;:{&quot;wikiwiki&quot;:{&quot;name&quot;:&quot;小ネタ&quot;,&quot;url&quot;:&quot;https://wikiwiki.jp/tamacolle/%E5%B0%8F%E3%83%8D%E3%82%BF#comment&quot;}},&quot;forumSlug&quot;:&quot;tamacolle&quot;,&quot;forumTitle&quot;:&quot;魂これ&quot;,&quot;lastCommentNumber&quot;:50,&quot;lastCommentedAt&quot;:&quot;Thu, 25 Jun 2026 23:19:14 +0900&quot;,&quot;topicNumber&quot;:39,&quot;topicTitle&quot;:&quot;小ネタ&quot;,&quot;url&quot;:&quot;https://z.wikiwiki.jp/tamacolle/topic/39&quot;},{&quot;embeddedSites&quot;:{&quot;wikiwiki&quot;:{&quot;name&quot;:&quot;アルクトス&quot;,&quot;url&quot;:&quot;https://wikiwiki.jp/tamacolle/%E3%82%A2%E3%83%AB%E3%82%AF%E3%83%88%E3%82%B9#comment&quot;}},&quot;forumSlug&quot;:&quot;tamacolle&quot;,&quot;forumTitle&quot;:&quot;魂これ&quot;,&quot;lastCommentNumber&quot;:1,&quot;lastCommentedAt&quot;:&quot;Mon, 08 Jun 2026 09:45:09 +0900&quot;,&quot;topicNumber&quot;:65,&quot;topicTitle&quot;:&quot;アルクトス&quot;,&quot;url&quot;:&quot;https://z.wikiwiki.jp/tamacolle/topic/65&quot;},{&quot;embeddedSites&quot;:{&quot;wikiwiki&quot;:{&quot;name&quot;:&quot;三河&quot;,&quot;url&quot;:&quot;https://wikiwiki.jp/tamacolle/%E4%B8%89%E6%B2%B3#comment&quot;}},&quot;forumSlug&quot;:&quot;tamacolle&quot;,&quot;forumTitle&quot;:&quot;魂これ&quot;,&quot;lastCommentNumber&quot;:5,&quot;lastCommentedAt&quot;:&quot;Fri, 05 Jun 2026 00:50:56 +0900&quot;,&quot;topicNumber&quot;:8,&quot;topicTitle&quot;:&quot;三河&quot;,&quot;url&quot;:&quot;https://z.wikiwiki.jp/tamacolle/topic/8&quot;},{&quot;embeddedSites&quot;:{&quot;wikiwiki&quot;:{&quot;name&quot;:&quot;情報提供掲示板&quot;,&quot;url&quot;:&quot;https://wikiwiki.jp/tamacolle/%E6%83%85%E5%A0%B1%E6%8F%90%E4%BE%9B%E6%8E%B2%E7%A4%BA%E6%9D%BF&quot;}},&quot;forumSlug&quot;:&quot;tamacolle&quot;,&quot;forumTitle&quot;:&quot;魂これ&quot;,&quot;lastCommentNumber&quot;:57,&quot;lastCommentedAt&quot;:&quot;Wed, 27 May 2026 09:43:11 +0900&quot;,&quot;topicNumber&quot;:18,&quot;topicTitle&quot;:&quot;情報提供掲示板&quot;,&quot;url&quot;:&quot;https://z.wikiwiki.jp/tamacolle/topic/18&quot;}]}"></div>
+<div style="text-align:center">〔<a href="https://web.archive.org/web/20260724094536/https://zawazawa.jp/tamacolle/" rel="nofollow"><strong>zawazawaで見る</strong></a>〕</div>
+<hr class="full_hr"/>
+<div style="text-align:right"><span style="font-size:10px">T.<span class="wikiwiki-counter wikiwiki-counter-today">?</span>　Y.<span class="wikiwiki-counter wikiwiki-counter-yesterday">?</span></span><br/>
+<span style="font-size:10px"><span class="wikicolor" style="color:#663300">NOW.<span class="wikiwiki-online">?</span></span></span>　<span style="font-size:10px">TOTAL.<span class="wikiwiki-counter wikiwiki-counter-total">?</span></span></div>                </div>
+                            </div>
+            </div>
+
+    
+    <div id="footer">
+                <div class="container">
+            <hr/>
+            <div class="footer-block clearfix">
+                <div class="footer-block-item-left" id="signature">
+                    <!-- google_ad_section_start(weight=ignore) -->
+                    レンタルWIKI by <a href="https://web.archive.org/web/20260724094536/https://wikiwiki.jp/" title="無料レンタルWIKIサービス">WIKIWIKI.jp*</a>&nbsp;/&nbsp;
+                    Designed by <a href="https://web.archive.org/web/20260724094536/https://wikiwiki.jp/pp/skin-design-policy" title="スキンデザインのご利用についてのお願い">Olivia</a>&nbsp;/&nbsp;
+                    <a href="https://web.archive.org/web/20260724094536/https://wikiwiki.jp/pp/aboutad" title="広告について">広告について</a>&nbsp;/&nbsp;
+                    無料レンタル掲示板 <a href="https://web.archive.org/web/20260724094536/https://z.wikiwiki.jp/" title="zawazawa">zawazawa</a>
+                    <!-- google_ad_section_end -->
+                </div>
+                <div class="footer-block-item-right">
+                    <div class="footer-mixirss">
+                        <div class="toolbar"><a href="/web/20260724094536/https://wikiwiki.jp/tamacolle/::cmd/mixirss" title="最終更新のRSS" rel="nofollow"><span class="system-icon rss"></span></a></div>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="pageload" style="display: none" data-pageload="{&quot;time&quot;:{&quot;all&quot;:{&quot;real&quot;:0.029882192611694336,&quot;cost&quot;:0.15622401237487793},&quot;body&quot;:{&quot;real&quot;:0.005365848541259766,&quot;cost&quot;:0.10822677612304688},&quot;main&quot;:{&quot;real&quot;:0.10286092758178711,&quot;cost&quot;:0.10286092758178711},&quot;menu&quot;:{&quot;real&quot;:0.023164033889770508,&quot;cost&quot;:0.023164033889770508},&quot;head&quot;:{&quot;real&quot;:0.0001919269561767578,&quot;cost&quot;:0.0001919269561767578},&quot;foot&quot;:{&quot;real&quot;:0.00012493133544921875,&quot;cost&quot;:0.00012493133544921875}},&quot;include&quot;:0,&quot;memory&quot;:1189168,&quot;io&quot;:{&quot;read&quot;:{&quot;files&quot;:1,&quot;bytes&quot;:8,&quot;locks&quot;:1},&quot;write&quot;:{&quot;files&quot;:0,&quot;bytes&quot;:0,&quot;locks&quot;:0},&quot;directory&quot;:{&quot;traversals&quot;:0,&quot;files&quot;:0},&quot;misc&quot;:57},&quot;contentSize&quot;:{&quot;all&quot;:79219,&quot;body&quot;:44377},&quot;timestamp&quot;:&quot;2026-07-24 18:45:36&quot;}"></div>
+
+    <script src="https://web.archive.org/web/20260724094536js_/https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://web.archive.org/web/20260724094536js_/https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+    <script src="https://web.archive.org/web/20260724094536js_/https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+    <script src="https://web.archive.org/web/20260724094536js_/https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/js/fontawesome.min.js" data-auto-replace-svg="false"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20260724094536js_/https://cdn.wikiwiki.jp/to/w/common/assets/dist/wikiwiki-12f12e8e7953dee27a03.min.js"></script>
+    <script>
+        if (window.FontAwesome) {
+            window.FontAwesome.dom.watch();
+        } else {
+            console.warn('FontAwesome is not loaded.');
+        }
+    </script>
+<script type="text/javascript">
+    bootLazy.addJqPluginInit('.fold-container', function() {
+        this.fold({
+            buttonSelector: '.fold-toggle-button',
+            openClassName: 'fold-open'
+        });
+    });
+</script>
+<div id="wikiwiki-pageview-counter" data-endpoint="https://counter.wikiwiki.jp/c/tamacolle/pv/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" style="display: none;"></div>
+<script>
+    $('#wikiwiki-pageview-counter').pageview();
+</script>
+    <script type="text/javascript">
+        bootLazy.addJqPluginInit('.recent-container[data-recent-hash="92807bff7ba049e474ca5b3306137d76"]', function() {
+            this.recent({"timestamp":1784865604,"list":[{"time":1784822055,"page":"リンク集","link":"/tamacolle/%E3%83%AA%E3%83%B3%E3%82%AF%E9%9B%86"},{"time":1784821542,"page":"小ネタ","link":"/tamacolle/%E5%B0%8F%E3%83%8D%E3%82%BF"},{"time":1784729470,"page":"更新・メンテナンス履歴","link":"/tamacolle/%E6%9B%B4%E6%96%B0%E3%83%BB%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9%E5%B1%A5%E6%AD%B4"},{"time":1784463874,"page":"アイテム","link":"/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0"},{"time":1784463436,"page":"下野","link":"/tamacolle/%E4%B8%8B%E9%87%8E"},{"time":1784260015,"page":"小ネタ/キャラ口調表","link":"/tamacolle/%E5%B0%8F%E3%83%8D%E3%82%BF/%E3%82%AD%E3%83%A3%E3%83%A9%E5%8F%A3%E8%AA%BF%E8%A1%A8"},{"time":1784241015,"page":"FrontPage","link":"/tamacolle/"},{"time":1784202323,"page":"小ネタ/速さ表","link":"/tamacolle/%E5%B0%8F%E3%83%8D%E3%82%BF/%E9%80%9F%E3%81%95%E8%A1%A8"},{"time":1784072178,"page":"遠江","link":"/tamacolle/%E9%81%A0%E6%B1%9F"},{"time":1783812513,"page":"現地人/サイド風の師弟","link":"/tamacolle/%E7%8F%BE%E5%9C%B0%E4%BA%BA/%E3%82%B5%E3%82%A4%E3%83%89%E9%A2%A8%E3%81%AE%E5%B8%AB%E5%BC%9F"}]});
+        });
+    </script>
+    <script type="text/javascript">
+        bootLazy.addJqPluginInit('.zawazawa-recent', function() {
+            this.zrecent();
+        });
+    </script>
+    <script>
+        bootLazy.addJqPluginInit('#responsive-navigation', function() {
+            this.responsiveNavigation({
+                menuBarSelector: '#menubar',
+                editMenuSelector: '#edit-menu',
+
+                mainContentsBottomElement: '#main-contents-bottom',
+                sidebarBottomElement: '#sidebar-bottom',
+                menuBarContainerElement: '#contents .column-left',
+                footerElement: '#footer',
+
+                overlayAdRenderedEventName: 'overlay-ad-rendered',
+                overlayAdMarginTop: 25
+            });
+        });
+    </script>
+    <script>
+        $('#share-button-root').sharePanel({
+            title: "戦闘について - 魂これ Wiki*",
+            controlPanelUrl: "https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/c.wikiwiki.jp\/wiki\/tamacolle\/design",
+            imageUrl: "https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/icon.wikiwiki.jp\/symbolicon\/tamacolle\/ogImage\/87602c20c669.png",
+            description: "同人ブラウザゲーム・魂これ の情報・攻略wikiです",
+            shareUrl: "https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/wikiwiki.jp\/tamacolle\/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6",
+            shortUrlRequestUrl: "\/tamacolle\/::cmd\/short_url?mode=json&page=%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6",
+            hasOgSettings: true,
+        })
+    </script>
+<script>
+    $('#admin-contact-root').adminContact({
+        logoImgUrl: "https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/icon.wikiwiki.jp\/symbolicon\/tamacolle\/appleTouchIcon\/46844c2014c9.png",
+        pageTitle: "魂これ Wiki*",
+        controlPanelUrl: "https:\/\/web.archive.org\/web\/20260724094536\/https:\/\/c.wikiwiki.jp\/wiki\/tamacolle\/settings",
+        contact: "編集相談掲示板（書き込まれたら必ず確認します）\r\nhttps:\/\/zawazawa.jp\/tamacolle\/topic\/1",
+        helpLink: 'https://web.archive.org/web/20260724094536/https://wikiwiki.jp/pp/admin_contact',
+    });
+</script>
+<script>
+$("#load-panel-root").loadpanel({
+    dataSelector: "#pageload",
+    helpLink: 'https://web.archive.org/web/20260724094536/https://wikiwiki.jp/pp/page_load_panel'
+});
+</script>
+<script>
+    $('.admin-login-status').adminLoginStatus({
+        cookieName: 'login_session',
+    });
+</script>
+<script>
+    $(function() {
+        $('.search-words').searchWordHighlight({
+            paramName: 'word',
+            selector: "#content,#note",
+            limit: 10,
+            markedClassResolver: function (i) { return "word" + i; }
+        });
+    });
+</script>
+<script>$(".realtime-date").realtimeDate();</script>
+<script>
+    $("body").notificationBar();
+</script>
+<script>
+$("#contents").anchorLink({
+    url: '/tamacolle/%E6%88%A6%E9%97%98%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6',
+});
+</script>
+    <script>
+        bootLazy.addJqPluginInit('.tooltip', function() {
+            this.tooltip();
+        });
+    </script>
+    <script>
+        bootLazy.addPlainScript(function() {
+            lightbox.option({
+                resizeDuration: 0
+            });
+        });
+    </script>
+<script>
+    $(function() {
+        window.bootLazy.bootOn(document);
+    });
+</script>
+<script>
+    $(document).pukiwiki();
+</script>
+
+<script>
+jQuery(function() {
+    $('form').usageStatistics({"keyName":"usageStatistics","smsAuth":false,"hasPosted":false});
+    $(document).browsingStatistics({
+        keyName: 'browsingStatistics'
+    });
+});
+</script>
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 09:45:36 Jul 24, 2026 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:34:32 Aug 14, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.47
+  exclusion.robots: 0.059
+  exclusion.robots.policy: 0.048
+  esindex: 0.006
+  cdx.remote: 6.361
+  LoadShardBlock: 91.226 (3)
+  PetaboxLoader3.resolve: 175.82 (4)
+  PetaboxLoader3.datanode: 56.336 (4)
+  load_resource: 206.681
+  nav: 0.123 (6)
+-->
