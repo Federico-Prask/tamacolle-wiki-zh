@@ -1,7 +1,7 @@
 {
-  "id": "format-rule",
-  "ja": "整形ルール",
-  "zh": "排版规则",
-  "cat": "misc",
-  "body": "## 排版规则\n\n原 Wiki（PukiWiki 系）的文本排版规则说明。\n\n> 见[原文](https://wikiwiki.jp/tamacolle/%E6%95%B4%E5%BD%A2%E3%83%AB%E3%83%BC%E3%83%AB)。\n"
+ "id": "format-rule",
+ "ja": "整形ルール",
+ "zh": "排版规则",
+ "cat": "misc",
+ "body": "## 排版规则\n\n原 Wiki（PukiWiki 系）的文本排版规则说明（标题、列表、表格、链接等语法）。\n\n> 完整规则见[原文页面](https://wikiwiki.jp/tamacolle/%E6%95%B4%E5%BD%A2%E3%83%AB%E3%83%BC%E3%83%AB)。"
 }
