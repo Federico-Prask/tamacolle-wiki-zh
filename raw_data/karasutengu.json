@@ -1,0 +1,49 @@
+{
+ "name": "烏天狗",
+ "kana": "からすてんぐ",
+ "num": "十番",
+ "status": {
+  "HP": "0",
+  "力": "1",
+  "技": "2",
+  "命中": "3",
+  "豊満": "0",
+  "速さ": "3"
+ },
+ "kv": {
+  "分類": "自然霊",
+  "実装": "v ('26/7/10)",
+  "追加効果": "水属性を付与"
+ },
+ "portrait": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E7%83%8F%E5%A4%A9%E7%8B%97/::ref/karasutengu_s01.jpg?rev=ce08e4fced73cb9c82453644354ceb38&t=20260710145211",
+ "desc": "「人にして人ならず、烏にして烏ならず」！その正体は烏天狗！僕ら烏天狗は山の神様。無作法な人間は悪戯して追い返しちゃうんだ",
+ "artist": "",
+ "voice": "",
+ "illusts": [
+  {
+   "label": "通常",
+   "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E7%83%8F%E5%A4%A9%E7%8B%97/::ref/karasutengu_s01.jpg?rev=ce08e4fced73cb9c82453644354ceb38&t=20260710145211",
+   "alt": "karasutengu_s01.jpg"
+  },
+  {
+   "label": "通常",
+   "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E7%83%8F%E5%A4%A9%E7%8B%97/::ref/karasutengu_b01.jpg?rev=57d73f0b6d132110952e7f36213f9225&t=20260710145225",
+   "alt": "karasutengu_b01.jpg"
+  },
+  {
+   "label": "通常",
+   "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E7%83%8F%E5%A4%A9%E7%8B%97/::ref/karasutengu_h01.jpg?rev=a79c769a1351bb4b79fb74709128aea8&t=20260710145235",
+   "alt": "karasutengu_h01.jpg"
+  }
+ ],
+ "illust_notes": [],
+ "tactics": [],
+ "tactics_head": [],
+ "bond": {
+  "信頼・一": "まだ結べる絆がありません。"
+ },
+ "motif": "ネタ\n元ネタの説明を記述してください。",
+ "trivia": "声聞時に流れる\nあやかしにまつわる名称\n鞍馬山・牛若丸・神通力・神隠し・天狗さらい・黒い羽・烏の嘴",
+ "voice_text": "声一覧\nNormal\n荘\n園\n通常\nポロリ\n資料室\n声聞\n僕は烏天狗。しばらくお前のとこにいてやるよ！\nよ・ろ・し・く・な！\nBattle\n神妖連結\n戦闘開始\n僕の力を見せてやる！\n通常攻撃\nばーか！\nノロマだな～\n被弾\nうわぁ！ みるなぁ！！\nうわぁぁぁ！？\n浄化\nくそ～っ、まだ戦えるんだぁ！？",
+ "slug": "karasutengu"
+}

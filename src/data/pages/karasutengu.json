@@ -1,0 +1,90 @@
+{
+ "id": "karasutengu",
+ "ja": "烏天狗",
+ "zh": "乌鸦天狗",
+ "cat": "dex",
+ "kind": "char",
+ "body": "",
+ "char": {
+  "name": "烏天狗",
+  "nameZh": "乌鸦天狗",
+  "kana": "からすてんぐ",
+  "type": "ayakashi",
+  "num": "十番",
+  "numInt": 10,
+  "kv": [
+   [
+    "分类",
+    "自然霊"
+   ],
+   [
+    "实装",
+    "v ('26/7/10)"
+   ],
+   [
+    "追加效果",
+    "水属性を付与"
+   ]
+  ],
+  "status": [
+   [
+    "HP",
+    "0"
+   ],
+   [
+    "力量",
+    "1"
+   ],
+   [
+    "技巧",
+    "2"
+   ],
+   [
+    "命中",
+    "3"
+   ],
+   [
+    "丰满足",
+    "0"
+   ],
+   [
+    "速度",
+    "3"
+   ]
+  ],
+  "desc": "「人にして人ならず、烏にして烏ならず」！その正体は烏天狗！僕ら烏天狗は山の神様。無作法な人間は悪戯して追い返しちゃうんだ",
+  "descZh": "「似人非人，似鸦非鸦」！其真身是乌鸦天狗！我们乌鸦天狗是山神。无礼的人类会被我们恶作剧赶走。",
+  "voice": "ひと美",
+  "artist": "雛原ハジメ",
+  "portrait": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E7%83%8F%E5%A4%A9%E7%8B%97/::ref/karasutengu_s01.jpg?rev=ce08e4fced73cb9c82453644354ceb38&t=20260710145211",
+  "illusts": [
+   {
+    "label": "通常",
+    "labelZh": "通常",
+    "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E7%83%8F%E5%A4%A9%E7%8B%97/::ref/karasutengu_s01.jpg?rev=ce08e4fced73cb9c82453644354ceb38&t=20260710145211",
+    "local": "/images/chars/karasutengu_0.jpg"
+   },
+   {
+    "label": "通常",
+    "labelZh": "通常",
+    "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E7%83%8F%E5%A4%A9%E7%8B%97/::ref/karasutengu_b01.jpg?rev=57d73f0b6d132110952e7f36213f9225&t=20260710145225",
+    "local": "/images/chars/karasutengu_1.jpg"
+   },
+   {
+    "label": "通常",
+    "labelZh": "通常",
+    "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E7%83%8F%E5%A4%A9%E7%8B%97/::ref/karasutengu_h01.jpg?rev=a79c769a1351bb4b79fb74709128aea8&t=20260710145235",
+    "local": "/images/chars/karasutengu_2.jpg"
+   }
+  ],
+  "illustNotes": [],
+  "tactics": [],
+  "bond": {
+   "信赖·一": {
+    "text": "まだ結べる絆がありません。"
+   }
+  },
+  "motif": "",
+  "trivia": "声聞時に流れる\nあやかしにまつわる名称\n鞍馬山・牛若丸・神通力・神隠し・天狗さらい・黒い羽・烏の嘴"
+ }
+}
