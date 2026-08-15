@@ -1290,3 +1290,18 @@ blockquote.ja {
 :root[data-theme='dark'] ::selection {
   background: rgba(224, 91, 77, 0.35);
 }
+
+/* NPC 立绘画廊 */
+.npc-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0 18px;
+}
+.npc-gallery img {
+  width: 190px;
+  max-width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+}
