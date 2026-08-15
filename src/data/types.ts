@@ -48,7 +48,13 @@ export interface CharacterData {
   desc: string
   descZh: string
   voice: string
-  voiceText: string
+  /**
+   * 语音台词表：「分类 / 场景 / 子场景 / 台词」四列，
+   * 使用 [^] [<] 合并单元格语法（见 src/markdown/extensions.ts）。
+   * 最初由 scripts/build_voice_tables.py 从扁平的 voiceText 生成，
+   * 现已作为唯一数据源直接维护。
+   */
+  voiceMd?: string
   artist: string
   portrait: string
   illusts: CharIllust[]

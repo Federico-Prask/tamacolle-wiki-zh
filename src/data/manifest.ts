@@ -213,6 +213,7 @@ export const manifest = [
   P('wiki-opinion', 'wiki編集に関する意見交換', 'Wiki 编辑意见交换', 'misc'),
   P('edit-task', '編集タスク情報', '编辑任务情报', 'misc'),
   P('format-rule', '整形ルール', '排版规则', 'misc'),
+  P('wiki-syntax', '本Wiki拡張記法', '本站扩展语法', 'misc'),
   P('wiki-help', 'ヘルプ', 'Wiki 帮助', 'misc'),
   P('help-ayakashi', 'あやかし・ヘルプ', '妖怪页面编辑帮助', 'misc'),
   P('help-kunidama', '地魂男児・ヘルプ', '地魂男儿页面编辑帮助', 'misc'),

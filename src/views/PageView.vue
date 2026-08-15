@@ -153,7 +153,7 @@ function hideFigure(e: Event): void {
         <!-- 资料室说明 -->
         <section v-if="char.descZh || char.desc">
           <h2>资料室说明</h2>
-          <p style="font-size:15px">{{ char.descZh }}</p>
+          <PageMarkdown class="desc-zh" :markdown="char.descZh" prose />
           <p v-if="char.desc" class="raw-toggle">
             <a href="javascript:;" @click="toggle('desc')">{{ isOpen('desc') ? '▲ 收起原文' : '▼ 查看原文' }}</a>
           </p>
@@ -240,16 +240,22 @@ function hideFigure(e: Event): void {
         </section>
 
         <!-- 语音台词 -->
-        <section v-if="char.voiceText && char.voiceText.length > 10">
+        <section v-if="char.voiceMd">
           <h2>语音台词</h2>
-          <p class="raw-toggle"><a href="javascript:;" @click="toggle('voice')">{{ isOpen('voice') ? '▲ 收起' : '▼ 展开台词（标签已译，台词为原文）' }}</a></p>
-          <blockquote v-if="isOpen('voice')" class="ja">{{ char.voiceText }}</blockquote>
+          <p class="raw-toggle">
+            <a href="javascript:;" @click="toggle('voice')">{{
+              isOpen('voice') ? '▲ 收起台词' : '▼ 展开台词（分类已译，台词为原文）'
+            }}</a>
+          </p>
+          <div v-show="isOpen('voice')">
+            <PageMarkdown class="voice-table" :markdown="char.voiceMd" />
+          </div>
         </section>
 
         <!-- 元ネタ -->
         <section v-if="(char.motifZh || char.motif) && (char.motifZh || char.motif).length > 2">
           <h2>元ネタ · 典故</h2>
-          <div v-if="char.motifZh" class="motif-zh">{{ char.motifZh }}</div>
+          <PageMarkdown v-if="char.motifZh" class="motif-zh" :markdown="char.motifZh" prose />
           <p v-if="char.motif" class="raw-toggle"><a href="javascript:;" @click="toggle('motif')">{{ isOpen('motif') ? '▲ 收起原文' : '▼ 展开日文原文' }}</a></p>
           <blockquote v-if="char.motif && isOpen('motif')" class="ja">{{ char.motif }}</blockquote>
         </section>
@@ -257,7 +263,7 @@ function hideFigure(e: Event): void {
         <!-- 小ネタ -->
         <section v-if="(char.triviaZh || char.trivia) && (char.triviaZh || char.trivia).length > 2">
           <h2>小知识（小ネタ）</h2>
-          <div v-if="char.triviaZh" class="motif-zh">{{ char.triviaZh }}</div>
+          <PageMarkdown v-if="char.triviaZh" class="motif-zh" :markdown="char.triviaZh" prose />
           <p v-if="char.trivia" class="raw-toggle"><a href="javascript:;" @click="toggle('trivia')">{{ isOpen('trivia') ? '▲ 收起原文' : '▼ 展开日文原文' }}</a></p>
           <blockquote v-if="char.trivia && isOpen('trivia')" class="ja">{{ char.trivia }}</blockquote>
         </section>

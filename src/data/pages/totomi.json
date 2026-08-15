@@ -1,156 +1,155 @@
 {
- "id": "totomi",
- "ja": "遠江",
- "zh": "远江",
- "cat": "dex",
- "kind": "char",
- "body": "",
- "char": {
-  "name": "遠江",
-  "nameZh": "远江",
-  "kana": "とおとうみ",
-  "type": "kunidama",
-  "num": "二十八番",
-  "numInt": 28,
-  "kv": [
-   [
-    "武器种",
-    "刀"
-   ],
-   [
-    "所属",
-    "东海道"
-   ],
-   [
-    "国势",
-    "上国"
-   ],
-   [
-    "节庆日",
-    "11月1日"
-   ],
-   [
-    "实装",
-    "v1.521 ('25/8/9)"
-   ],
-   [
-    "擅长地形",
-    "自然"
-   ],
-   [
-    "拔魂技巧名",
-    "破魔名(はまな)を以(もっ)て荒(すさ)ぶ大嵐(おおあらし)"
-   ],
-   [
-    "效果",
-    "攻击纵向一列敌人"
-   ],
-   [
-    "拔魂速度",
-    "快"
-   ]
-  ],
-  "status": [
-   [
-    "HP",
-    "23"
-   ],
-   [
-    "攻击值",
-    "23"
-   ],
-   [
-    "力量",
-    "19"
-   ],
-   [
-    "魂压值",
-    "24"
-   ],
-   [
-    "技巧",
-    "21"
-   ],
-   [
-    "命中",
-    "23"
-   ],
-   [
-    "丰满足",
-    "24"
-   ],
-   [
-    "速度",
-    "18"
-   ]
-  ],
-  "desc": "東海道、遠州、あられ降る遠江！　おらの国は、海風が吹きすさぶ「風の国」だに。三河とは凧糸より強ぇ絆で結ばれてんだ。兄弟、名産のうなぎを食いに来るだら！",
-  "descZh": "东海道、远州、降雹的远江！我的国家，是海风劲吹的「风之国」。和三河以比风筝线还牢固的羁绊相连。兄弟，来吃名产鳗鱼吧！",
-  "voice": "小堀真生",
-  "voiceText": "",
-  "artist": "大地巧太",
-  "portrait": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_s01.jpg.webp?rev=2643eac04ea676eb125e42788b77c493&t=20250809035306",
-  "illusts": [
-   {
-    "label": "通常",
-    "labelZh": "通常",
-    "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_s01.jpg.webp?rev=2643eac04ea676eb125e42788b77c493&t=20250809035306",
-    "local": "/images/chars/totomi_0.jpg"
-   },
-   {
-    "label": "通常",
-    "labelZh": "通常",
-    "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_b01.jpg.webp?rev=163791fcbff0c9582db13837f634486a&t=20250809035326",
-    "local": "/images/chars/totomi_1.jpg"
-   },
-   {
-    "label": "通常",
-    "labelZh": "通常",
-    "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_h01.jpg.webp?rev=90003aad26e5e2e570f61641fa372ec1&t=20250809035340",
-    "local": "/images/chars/totomi_2.jpg"
-   },
-   {
-    "label": "カットイン",
-    "labelZh": "特写",
-    "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_c.jpg?rev=3ef4c4ca0ad077b599f3af8ed920c50d&t=20250809035355",
-    "local": "/images/chars/totomi_3.jpg"
-   },
-   {
-    "label": "入浴タオル",
-    "labelZh": "入浴毛巾",
-    "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_s02.jpg?rev=a25282fe0592396c15a93383d6fc6042&t=20250809043832",
-    "local": "/images/chars/totomi_4.jpg"
-   },
-   {
-    "label": "水着",
-    "labelZh": "泳装",
-    "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_s04.jpg?rev=71f336a4b526cae52987f17a6d04a369&t=20251217202230",
-    "local": "/images/chars/totomi_5.jpg"
-   },
-   {
-    "label": "まわし",
-    "labelZh": "兜裆布",
-    "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_s09.jpg?rev=1e68b37fe89febb87bf2b7aceef89359&t=20251124184344",
-    "local": "/images/chars/totomi_6.jpg"
-   },
-   {
-    "label": "きぐぱ",
-    "labelZh": "きぐぱ",
-    "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_s10.jpg?rev=4bda626fb098ab6c9c33a0c1a5524c1e&t=20260310173822",
-    "local": "/images/chars/totomi_7.jpg"
-   }
-  ],
-  "illustNotes": [
-   {
-    "label": "泳装",
-    "note": "スラップバンドをふとももにパチンと巻き付けて固定する遠江のワンショルダービキニ。うなぎ印のライフジャケットはラフに合わせてベルトで止めるだけ。ものぐさな遠江にも安心だ！"
-   }
-  ],
-  "tactics": [],
-  "bond": {},
-  "motif": "",
-  "trivia": "",
-  "motifZh": "",
-  "triviaZh": ""
- }
+  "id": "totomi",
+  "ja": "遠江",
+  "zh": "远江",
+  "cat": "dex",
+  "kind": "char",
+  "body": "",
+  "char": {
+    "name": "遠江",
+    "nameZh": "远江",
+    "kana": "とおとうみ",
+    "type": "kunidama",
+    "num": "二十八番",
+    "numInt": 28,
+    "kv": [
+      [
+        "武器种",
+        "刀"
+      ],
+      [
+        "所属",
+        "东海道"
+      ],
+      [
+        "国势",
+        "上国"
+      ],
+      [
+        "节庆日",
+        "11月1日"
+      ],
+      [
+        "实装",
+        "v1.521 ('25/8/9)"
+      ],
+      [
+        "擅长地形",
+        "自然"
+      ],
+      [
+        "拔魂技巧名",
+        "破魔名(はまな)を以(もっ)て荒(すさ)ぶ大嵐(おおあらし)"
+      ],
+      [
+        "效果",
+        "攻击纵向一列敌人"
+      ],
+      [
+        "拔魂速度",
+        "快"
+      ]
+    ],
+    "status": [
+      [
+        "HP",
+        "23"
+      ],
+      [
+        "攻击值",
+        "23"
+      ],
+      [
+        "力量",
+        "19"
+      ],
+      [
+        "魂压值",
+        "24"
+      ],
+      [
+        "技巧",
+        "21"
+      ],
+      [
+        "命中",
+        "23"
+      ],
+      [
+        "丰满足",
+        "24"
+      ],
+      [
+        "速度",
+        "18"
+      ]
+    ],
+    "desc": "東海道、遠州、あられ降る遠江！　おらの国は、海風が吹きすさぶ「風の国」だに。三河とは凧糸より強ぇ絆で結ばれてんだ。兄弟、名産のうなぎを食いに来るだら！",
+    "descZh": "东海道、远州、降雹的远江！我的国家，是海风劲吹的「风之国」。和三河以比风筝线还牢固的羁绊相连。兄弟，来吃名产鳗鱼吧！",
+    "voice": "小堀真生",
+    "artist": "大地巧太",
+    "portrait": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_s01.jpg.webp?rev=2643eac04ea676eb125e42788b77c493&t=20250809035306",
+    "illusts": [
+      {
+        "label": "通常",
+        "labelZh": "通常",
+        "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_s01.jpg.webp?rev=2643eac04ea676eb125e42788b77c493&t=20250809035306",
+        "local": "/images/chars/totomi_0.jpg"
+      },
+      {
+        "label": "通常",
+        "labelZh": "通常",
+        "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_b01.jpg.webp?rev=163791fcbff0c9582db13837f634486a&t=20250809035326",
+        "local": "/images/chars/totomi_1.jpg"
+      },
+      {
+        "label": "通常",
+        "labelZh": "通常",
+        "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_h01.jpg.webp?rev=90003aad26e5e2e570f61641fa372ec1&t=20250809035340",
+        "local": "/images/chars/totomi_2.jpg"
+      },
+      {
+        "label": "カットイン",
+        "labelZh": "特写",
+        "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_c.jpg?rev=3ef4c4ca0ad077b599f3af8ed920c50d&t=20250809035355",
+        "local": "/images/chars/totomi_3.jpg"
+      },
+      {
+        "label": "入浴タオル",
+        "labelZh": "入浴毛巾",
+        "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_s02.jpg?rev=a25282fe0592396c15a93383d6fc6042&t=20250809043832",
+        "local": "/images/chars/totomi_4.jpg"
+      },
+      {
+        "label": "水着",
+        "labelZh": "泳装",
+        "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_s04.jpg?rev=71f336a4b526cae52987f17a6d04a369&t=20251217202230",
+        "local": "/images/chars/totomi_5.jpg"
+      },
+      {
+        "label": "まわし",
+        "labelZh": "兜裆布",
+        "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_s09.jpg?rev=1e68b37fe89febb87bf2b7aceef89359&t=20251124184344",
+        "local": "/images/chars/totomi_6.jpg"
+      },
+      {
+        "label": "きぐぱ",
+        "labelZh": "きぐぱ",
+        "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_s10.jpg?rev=4bda626fb098ab6c9c33a0c1a5524c1e&t=20260310173822",
+        "local": "/images/chars/totomi_7.jpg"
+      }
+    ],
+    "illustNotes": [
+      {
+        "label": "泳装",
+        "note": "スラップバンドをふとももにパチンと巻き付けて固定する遠江のワンショルダービキニ。うなぎ印のライフジャケットはラフに合わせてベルトで止めるだけ。ものぐさな遠江にも安心だ！"
+      }
+    ],
+    "tactics": [],
+    "bond": {},
+    "motif": "",
+    "trivia": "",
+    "motifZh": "",
+    "triviaZh": ""
+  }
 }
