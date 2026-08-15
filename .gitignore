@@ -1,17 +1,13 @@
 node_modules/
-
 dist/
+scripts/
 
 raw/
-
 raw2/
-
 raw3/
-
+rau_npc/
 raw_data/
-
-scripts/
+tamacolle_2026/
 
 AUDIT-REPORT.md
 
-rau_npc/
