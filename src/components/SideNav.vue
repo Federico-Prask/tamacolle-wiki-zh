@@ -1,27 +1,33 @@
-<script setup>
-import { ref, watch } from 'vue'
-import { categories, byCategory } from '../data/manifest.js'
-import { charBySlug } from '../data/characters.js'
+<script setup lang="ts">
+import { computed, ref, watch } from 'vue'
+import { categories, byCategory } from '../data/manifest'
+import { charBySlug } from '../data/characters'
 import { useRoute } from 'vue-router'
+import type { PageMeta } from '../data/manifest'
 
 const route = useRoute()
 
+interface NavGroup {
+  key: string
+  title: string | null
+  items: PageMeta[]
+}
+
 // —— 折叠状态 ——
 // 分类是否展开（默认只展开「基本情报」）
-const openCats = ref({ about: true, quest: false, dex: false, misc: false })
+const openCats = ref<Record<string, boolean>>({ about: true, quest: false, dex: false, misc: false })
 // 分组是否展开（未记录时按默认规则）
-const openGroups = ref({})
+const openGroups = ref<Record<string, boolean>>({})
 
-function toggleCat(id) {
+function toggleCat(id: string): void {
   openCats.value[id] = !openCats.value[id]
 }
-function toggleGroup(key) {
-  const cur = isGroupOpen(key)
-  openGroups.value[key] = !cur
+function toggleGroup(key: string): void {
+  openGroups.value[key] = !isGroupOpen(key)
 }
 
 // —— 分组结构 ——
-const QUEST_GROUPS = [
+const QUEST_GROUPS: [string, string][] = [
   ['main', '主线剧情'],
   ['side', '支线剧情'],
   ['free', '自由任务'],
@@ -29,18 +35,18 @@ const QUEST_GROUPS = [
   ['makuma', '幕间'],
   ['short', '短篇故事'],
 ]
-const DEX_GROUPS = [
+const DEX_GROUPS: { key: string; title: string }[] = [
   { key: 'index', title: '列表与索引' },
   { key: 'kunidama', title: '地魂男儿 · 旧国拟人' },
   { key: 'ayakashi', title: '妖怪 · あやかし' },
   { key: 'rokuhara', title: '六原职员 · 其他' },
 ]
 
-function catGroups(catId) {
+function catGroups(catId: string): NavGroup[] {
   const items = byCategory[catId] || []
   if (catId === 'quest') {
-    const out = []
-    const used = new Set()
+    const out: NavGroup[] = []
+    const used = new Set<string>()
     for (const [prefix, title] of QUEST_GROUPS) {
       const g = items.filter((m) => m.slug === prefix || m.slug.startsWith(prefix + '-'))
       g.forEach((m) => used.add(m.slug))
@@ -51,11 +57,12 @@ function catGroups(catId) {
     return out
   }
   if (catId === 'dex') {
-    const out = []
+    const out: NavGroup[] = []
     for (const g of DEX_GROUPS) {
       const list = items.filter((m) => {
         if (g.key === 'index') return m.kind === 'list'
-        const t = charBySlug[m.slug] && charBySlug[m.slug].type
+        const c = charBySlug[m.slug]
+        const t = c && c.type
         return m.kind === 'char' && t === g.key
       })
       if (list.length) out.push({ key: catId + '-' + g.key, title: g.title, items: list })
@@ -69,15 +76,21 @@ function catGroups(catId) {
 }
 
 // 大分组（角色列表）默认收起，其余默认展开
-function groupDefaultOpen(key) {
+function groupDefaultOpen(key: string): boolean {
   return !['dex-kunidama', 'dex-ayakashi', 'dex-rokuhara', 'dex-rest'].includes(key)
 }
-function isGroupOpen(key) {
-  return openGroups.value[key] !== undefined ? openGroups.value[key] : groupDefaultOpen(key)
+function isGroupOpen(key: string): boolean {
+  const v = openGroups.value[key]
+  return v !== undefined ? v : groupDefaultOpen(key)
 }
 
 // 路由变化时自动展开当前页所属的分类与分组
-function reveal(id) {
+const currentId = computed(() => {
+  const v = route.params.id
+  return Array.isArray(v) ? (v[0] || '') : (v || '')
+})
+
+function reveal(id: string): void {
   if (!id) return
   for (const c of categories) {
     for (const g of catGroups(c.id)) {
@@ -88,7 +101,7 @@ function reveal(id) {
     }
   }
 }
-watch(() => route.params.id, reveal, { immediate: true })
+watch(currentId, reveal, { immediate: true })
 </script>
 
 <template>
@@ -130,7 +143,7 @@ watch(() => route.params.id, reveal, { immediate: true })
                     v-for="m in g.items"
                     :key="m.slug"
                     class="tree-link"
-                    :class="{ active: route.params.id === m.slug, lv2: !!g.title }"
+                    :class="{ active: currentId === m.slug, lv2: !!g.title }"
                     :to="'/page/' + m.slug"
                   >{{ m.zh }}</RouterLink>
                 </div>

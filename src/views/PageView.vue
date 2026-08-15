@@ -1,13 +1,14 @@
-<script setup>
+<script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useRoute } from 'vue-router'
-import { pages } from '../data/index.js'
-import { bySlug } from '../data/manifest.js'
+import { pages } from '../data/index'
+import { bySlug } from '../data/manifest'
 import PageMarkdown from '../components/PageMarkdown.vue'
 import CharListTable from '../components/CharListTable.vue'
+import type { CharIllust, CharType } from '../data/types'
 
 const route = useRoute()
-const slug = computed(() => route.params.id)
+const slug = computed(() => String(route.params.id || ''))
 const meta = computed(() => bySlug[slug.value] || null)
 const page = computed(() => pages[slug.value] || null)
 const char = computed(() => (page.value && page.value.char) || null)
@@ -19,7 +20,7 @@ const sourceUrl = computed(() => {
 })
 
 // —— 图鉴列表模式（原 wiki 的「名称+图片」表格）——
-const LIST_MODE = {
+const LIST_MODE: Record<string, string> = {
   'dex-kunidama': 'numbered',
   'dex-kunidama-region': 'region',
   'dex-kunidama-weapon': 'weapon',
@@ -29,54 +30,87 @@ const LIST_MODE = {
 const listMode = computed(() => LIST_MODE[slug.value] || null)
 
 // —— 折叠控制 ——
-const showRaw = ref({})
+const showRaw = ref<Record<string, boolean>>({})
 
-function toggle(key) {
+function toggle(key: string): void {
   showRaw.value[key] = !showRaw.value[key]
 }
-function isOpen(key) {
+function isOpen(key: string): boolean {
   return !!showRaw.value[key]
 }
 
-const typeLabel = (t) =>
-  ({ kunidama: '地魂男儿（旧国拟人）', ayakashi: '妖怪（あやかし）', rokuhara: '六原职员' })[t] || t
+const TYPE_LABEL: Record<CharType, string> = {
+  kunidama: '地魂男儿（旧国拟人）',
+  ayakashi: '妖怪（あやかし）',
+  rokuhara: '六原职员',
+}
+function typeLabel(t: string): string {
+  return TYPE_LABEL[t as CharType] || t
+}
 
 // 关键名片字段（编号/武器/所属/国势/节庆日/实装）
-const keyFields = computed(() => {
+const keyFields = computed<[string, string][]>(() => {
   if (!char.value) return []
   const order = ['武器种', '所属', '国势', '节庆日', '实装', '分类', '擅长地形']
-  const map = Object.fromEntries(char.value.kv || [])
-  const out = []
+  const map: Record<string, string> = Object.fromEntries(char.value.kv || [])
+  const out: [string, string][] = []
   if (char.value.num) out.push(['编号', char.value.num])
   for (const k of order) if (map[k]) out.push([k, map[k]])
   return out
 })
 
 // 拔魂技
-const skill = computed(() => {
+const skill = computed<{ name: string; effect: string; speed: string } | null>(() => {
   if (!char.value) return null
-  const map = Object.fromEntries(char.value.kv || [])
+  const map: Record<string, string> = Object.fromEntries(char.value.kv || [])
   if (!map['拔魂技名']) return null
   return { name: map['拔魂技名'], effect: map['效果'] || '', speed: map['拔魂速度'] || '' }
 })
 
 // 立绘按标签分组
-const illustGroups = computed(() => {
+interface IllustGroup {
+  label: string
+  list: CharIllust[]
+}
+const illustGroups = computed<IllustGroup[]>(() => {
   if (!char.value) return []
-  const order = []
-  const map = {}
+  const order: string[] = []
+  const map: Record<string, CharIllust[]> = {}
   for (const il of char.value.illusts || []) {
     const key = il.labelZh || il.label || '其他'
-    if (!map[key]) { map[key] = []; order.push(key) }
+    if (!map[key]) {
+      map[key] = []
+      order.push(key)
+    }
     map[key].push(il)
   }
   return order.map((k) => ({ label: k, list: map[k] }))
 })
 
-const bondEntries = computed(() => {
+// 羁绊：归一化为「文本」或「表格」两种形态
+type BondEntry =
+  | { key: string; kind: 'text'; text: string }
+  | { key: string; kind: 'tables'; tables: string[][][] }
+
+const bondEntries = computed<BondEntry[]>(() => {
   if (!char.value) return []
-  return Object.entries(char.value.bond || {})
+  return Object.entries(char.value.bond || {}).map(([k, v]) => {
+    if (v && typeof v === 'object' && !Array.isArray(v) && 'text' in v) {
+      return { key: k, kind: 'text' as const, text: String((v as { text: unknown }).text ?? '') }
+    }
+    return { key: k, kind: 'tables' as const, tables: (v as string[][][]) || [] }
+  })
 })
+
+// 图片加载失败时隐藏
+function hideImg(e: Event): void {
+  const el = e.target as HTMLElement | null
+  if (el) el.style.display = 'none'
+}
+function hideFigure(e: Event): void {
+  const el = e.target as HTMLElement | null
+  if (el && el.parentElement) el.parentElement.style.display = 'none'
+}
 </script>
 
 <template>
@@ -84,9 +118,9 @@ const bondEntries = computed(() => {
     <div v-if="meta">
       <div class="page-head">
         <span class="page-kicker">{{ char ? typeLabel(char.type) : (listMode ? '角色一览' : (page && page.body ? '中文翻译' : '翻译整理中')) }}</span>
-        <h2 class="page-title">{{ char ? char.nameZh : meta.zh }}</h2>
+        <h2 class="page-title">{{ char ? char.nameZh : (page && page.title) || meta.zh }}</h2>
         <p class="page-ja" v-if="char">{{ char.name }}（{{ char.kana }}）</p>
-        <p class="page-ja" v-else>{{ meta.ja }}</p>
+        <p class="page-ja" v-else>{{ (page && page.ja) || meta.ja }}</p>
       </div>
 
       <!-- ============ 图鉴列表（表格） ============ -->
@@ -101,7 +135,7 @@ const bondEntries = computed(() => {
             :src="'/images/chars/' + slug + '_0.jpg'"
             :alt="char.nameZh"
             loading="lazy"
-            @error="($event.target).style.display = 'none'"
+            @error="hideImg"
           />
           <div class="char-meta">
             <h3 class="char-name">{{ char.nameZh }}</h3>
@@ -177,8 +211,8 @@ const bondEntries = computed(() => {
             <h3>{{ g.label }}</h3>
             <div class="illust-grid">
               <figure v-for="il in g.list" :key="il.img" class="illust-item">
-                <img :src="il.local" :alt="g.label" loading="lazy" @error="($event.target).parentElement.style.display='none'" />
-                <figcaption class="ja small">{{ il.alt || '' }}</figcaption>
+                <img :src="il.local" :alt="g.label" loading="lazy" @error="hideFigure" />
+                <figcaption class="ja small">{{ il.label || '' }}</figcaption>
               </figure>
             </div>
           </div>
@@ -190,11 +224,11 @@ const bondEntries = computed(() => {
         <!-- 羁绊 -->
         <section v-if="char.bond && bondEntries.length">
           <h2>羁绊</h2>
-          <div v-for="[k, v] in bondEntries" :key="k">
-            <h3>{{ k }}</h3>
-            <div v-if="v.text" class="notice">{{ v.text }}</div>
+          <div v-for="e in bondEntries" :key="e.key">
+            <h3>{{ e.key }}</h3>
+            <div v-if="e.kind === 'text'" class="notice">{{ e.text }}</div>
             <template v-else>
-              <table v-for="(tbl, ti) in v" :key="ti" class="bond-table">
+              <table v-for="(tbl, ti) in e.tables" :key="ti" class="bond-table">
                 <tbody>
                   <tr v-for="(row, ri) in tbl" :key="ri">
                     <th v-for="(c, ci) in row" :key="ci" :class="{ head: ti === 0 }">{{ c }}</th>

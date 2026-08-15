@@ -1,7 +1,7 @@
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue'
-import { manifest, categories, byCategory } from '../data/manifest.js'
-import { pages } from '../data/index.js'
+import { manifest, categories, byCategory } from '../data/manifest'
+import { pages } from '../data/index'
 
 const home = computed(() => pages['home'] || null)
 
@@ -50,7 +50,7 @@ const picks = computed(() =>
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import PageMarkdown from '../components/PageMarkdown.vue'
 export default { components: { PageMarkdown } }
 </script>
