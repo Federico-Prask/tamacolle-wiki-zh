@@ -3,6 +3,10 @@
    用色取自日本传统色（和色）
    ============================================================ */
 
+@import './shippori-mincho.css';
+@import './noto-serif-sc.css';
+@import './noto-serif-jp.css';
+
 :root {
   /* —— 传统和色 —— */
   --sumi: #26221c;            /* 墨色 */
