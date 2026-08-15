@@ -1674,3 +1674,37 @@ blockquote.ja {
   border-color: var(--line-strong);
   opacity: 0.92;
 }
+
+/* ============ 道具表图标列 ============ */
+/*
+ * 道具一览（item.md）各表首列是图标。
+ * 图标本身尺寸不一（153~300px），统一压到 44px 并居中，
+ * 列宽收缩到内容所需，把空间留给说明文字。
+ */
+.md td:has(> img[src^='/images/items/']) {
+  /* 固定给图标留出足够宽度，避免被挤成细条 */
+  width: 72px;
+  min-width: 72px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px 6px;
+}
+.md img[src^='/images/items/'] {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+}
+/* 道具名不折行，说明列吃掉剩余宽度 */
+.md td:has(> img[src^='/images/items/']) + td {
+  white-space: nowrap;
+  font-weight: 600;
+}
+:root[data-theme='dark'] .md img[src^='/images/items/'] {
+  border-color: var(--line-strong);
+  background: #1b1a18;
+}
