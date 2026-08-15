@@ -6,6 +6,8 @@ dist/
 scripts/*
 !scripts/build_voice_tables.py
 !scripts/normalize_motif.py
+!scripts/download_tactic_icons.py
+!scripts/build_font_subset.py
 
 raw/
 raw2/
