@@ -1,0 +1,28 @@
+/* yu-mincho */
+@font-face {
+	font-family: "Yu Mincho";
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: 100%;
+	src: local("Yu Mincho Regular"), local("YuMincho-Regular"), url('/fonts/yu-mincho.woff2') format("woff2");
+	font-display: auto;
+}
+/* yu-mincho-demibold */
+@font-face {
+	font-family: "Yu Mincho";
+	font-style: normal;
+	font-weight: 700;
+	font-stretch: 100%;
+	src: local("Yu Mincho Demibold"), local("YuMincho-Demibold"), url('/fonts/yu-mincho-demibold.woff2') format("woff2");
+	font-display: auto;
+}
+/* yu-mincho-light */
+@font-face {
+	font-family: "Yu Mincho";
+	font-style: normal;
+	font-weight: 300;
+	font-stretch: 100%;
+	src: local("Yu Mincho Light"), local("YuMincho-Light"), url('/fonts/yu-mincho-light.woff2') format("woff2");
+	font-display: auto;
+}
+
