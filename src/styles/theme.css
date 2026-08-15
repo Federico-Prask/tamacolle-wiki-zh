@@ -1639,3 +1639,27 @@ blockquote.ja {
 .desc-zh {
   font-size: 15px;
 }
+
+/* ============ 战法表 ============ */
+.tactic-table .tactic-icon {
+  /* 图标列收缩到内容宽度，垂直居中 */
+  width: 1%;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  padding: 6px 10px;
+}
+.tactic-table .tactic-icon img {
+  width: 44px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  /* 原图是不透明白底，深色模式下直接贴会很刺眼，做一层柔化 */
+  background: #fff;
+  border: 1px solid var(--line);
+}
+:root[data-theme='dark'] .tactic-table .tactic-icon img {
+  border-color: var(--line-strong);
+  opacity: 0.92;
+}

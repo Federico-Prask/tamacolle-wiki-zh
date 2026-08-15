@@ -117,16 +117,18 @@ KANA = re.compile(r"[\u3040-\u309f\u30a0-\u30ff]")
 KNOWN_LABELS: set[str] = set(TOP_LEVELS) | set(SCENE_PARENT) | set(SUBSCENE_PARENT)
 
 # 数据里出现过、但不在标准 schema 中的额外标签（角色专属场景）
+# 数据里出现过、但不在标准 schema 中的额外标签（角色专属场景）。
+#
+# 注意：这里只能放「确实是场景名」的词。
+# 原 wiki 用 ruby 给台词里的汉字注音，抓取后注音字会独立成行
+# （例：阿波舞名句「踊る阿呆に見る阿呆…」里的「阿呆」），
+# 若把这类词误列为标签，台词就会被从中间劈开。
 EXTRA_LABELS = {
     "圣诞",
     "净化",
     "曜日任务",
-    "主",
-    "阿呆",
     "教師",
     "咖啡店员",
-    "手術",
-    "舁",
     "入眠後",
 }
 KNOWN_LABELS |= EXTRA_LABELS

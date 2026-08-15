@@ -192,10 +192,13 @@ function hideFigure(e: Event): void {
         <!-- 战法 -->
         <section v-if="char.tactics && char.tactics.length">
           <h2>战法</h2>
-          <table>
-            <thead><tr><th>战法</th><th>说明</th><th>习得条件</th></tr></thead>
+          <table class="tactic-table">
+            <thead><tr><th>图标</th><th>战法</th><th>说明</th><th>习得条件</th></tr></thead>
             <tbody>
               <tr v-for="(tc, i) in char.tactics" :key="i">
+                <td class="tactic-icon">
+                  <img v-if="tc.icon" :src="tc.icon" :alt="tc.nameZh" loading="lazy" @error="hideImg" />
+                </td>
                 <td><strong>{{ tc.nameZh }}</strong><div class="ja small">{{ tc.name }}</div></td>
                 <td>{{ tc.descZh }}</td>
                 <td>{{ tc.condZh }}</td>

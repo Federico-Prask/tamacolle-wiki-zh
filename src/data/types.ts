@@ -27,6 +27,8 @@ export interface CharIllust {
 
 /** 战法条目 */
 export interface CharTactic {
+  /** 战法图标（本地路径，如 /images/tactics/mae.png）。全站共 6 种战法图标 */
+  icon?: string
   name: string
   nameZh: string
   desc: string

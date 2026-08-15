@@ -172,7 +172,8 @@
         "desc": "攻撃可能な敵を狙う",
         "descZh": "攻击可攻击的敌人",
         "cond": "初期から習得",
-        "condZh": "初期习得"
+        "condZh": "初期习得",
+        "icon": "/images/tactics/sunao.png"
       },
       {
         "name": "一心不乱に攻める",
@@ -180,7 +181,8 @@
         "desc": "攻撃力が上がるが、ミスをしやすくなる",
         "descZh": "攻击力量上升，但更容易失误",
         "cond": "結んだ絆 3で習得",
-        "condZh": "羁绊 3 时习得"
+        "condZh": "羁绊 3 时习得",
+        "icon": "/images/tactics/isshin.png"
       },
       {
         "name": "みんなで攻める",
@@ -188,7 +190,8 @@
         "desc": "味方が攻撃した敵を優先して狙う",
         "descZh": "优先攻击队友攻击过的敌人",
         "cond": "結んだ絆 6で習得",
-        "condZh": "羁绊 6 时习得"
+        "condZh": "羁绊 6 时习得",
+        "icon": "/images/tactics/minna.png"
       },
       {
         "name": "弱いところを攻める",
@@ -196,7 +199,8 @@
         "desc": "弱った敵を優先して狙う",
         "descZh": "优先攻击残血敌人",
         "cond": "結んだ絆 10で習得",
-        "condZh": "羁绊 10 时习得"
+        "condZh": "羁绊 10 时习得",
+        "icon": "/images/tactics/yowai.png"
       }
     ],
     "bond": {
