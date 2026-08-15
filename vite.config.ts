@@ -3,6 +3,9 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [vue()],
+  build: {
+    assetsInlineLimit: 65536,
+  },
   server: {
     host: '0.0.0.0',
     port: 5173,
