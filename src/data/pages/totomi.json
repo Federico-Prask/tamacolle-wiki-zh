@@ -87,6 +87,7 @@
   "desc": "東海道、遠州、あられ降る遠江！　おらの国は、海風が吹きすさぶ「風の国」だに。三河とは凧糸より強ぇ絆で結ばれてんだ。兄弟、名産のうなぎを食いに来るだら！",
   "descZh": "东海道、远州、降雹的远江！我的国家，是海风劲吹的「风之国」。和三河以比风筝线还牢固的羁绊相连。兄弟，来吃名产鳗鱼吧！",
   "voice": "小堀真生",
+  "voiceText": "",
   "artist": "大地巧太",
   "portrait": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E9%81%A0%E6%B1%9F/::ref/totomi_s01.jpg.webp?rev=2643eac04ea676eb125e42788b77c493&t=20250809035306",
   "illusts": [
@@ -148,6 +149,8 @@
   "tactics": [],
   "bond": {},
   "motif": "",
-  "trivia": ""
+  "trivia": "",
+  "motifZh": "",
+  "triviaZh": ""
  }
 }
