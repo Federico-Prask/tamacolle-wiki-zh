@@ -52,20 +52,20 @@ source: https://wikiwiki.jp/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0
 | ![黄金常陆像](/images/items/hitachi_gold.png) | 黄金常陆像 | 纪念殿堂入主的常陆伟业的黄金奖杯。 | 1118 2025 通关 |
 | ![跨年荞麦](/images/items/toshikoshi_soba.png) | 跨年荞麦 | 除夕夜与男儿一起吃的跨年荞麦，温暖又温柔的味道。 | 年末限定幕间「庄园的除夕」通关 |
 | ![正月装饰](/images/items/newyear_decoration.png) | 正月装饰 | 装点新年的桌上正月装饰。 | 兑换码 |
-| ![伊予手办（店员·kemoket13）](/images/items/figev_kemoket13.png) | 伊予手办（店员） | 正在做售货员的伊予的模型，桌上摆着蜜柑。「けもケット13」的纪念品。 | 兑换码 |
-| ![大和手办（店员·kemoket14）](/images/items/figev_kemoket14.png) | 大和手办（店员） | 正在做售货员的大和的模型，桌上摆着鹿仙贝。「けもケット14」的纪念品。 | [^] |
-| ![越后手办（店员·nichoketmini）](/images/items/figev_nichoketmini.png) | 越后手办（店员） | 正在做售货员的越后的模型，桌上摆着笹团子。「にちょけっと！mini」的纪念品。 | [^] |
-| ![下总手办（店员·shinshunkemoket10）](/images/items/figev_shinshunkemoket10.png) | 下总手办（店员） | 正在做售货员的下总的模型，桌上摆着地魂男儿人偶。「新春けもケット10」的纪念品。 | [^] |
-| ![武藏手办（店员·kansaikemoket9）](/images/items/figev_kansaikemoket9.png) | 武藏手办（店员） | 正在做售货员的武藏的模型，桌上摆着鲣鱼。「関西けもけっと9」的纪念品。 | [^] |
-| ![备后手办（店员·boost3）](/images/items/figev_boost3.png) | 备后手办（店员） | 正在做售货员的备后的模型，桌上摆着御好烧。「ブースト！3」的纪念品。 | [^] |
-| ![常陆手办（店员·kemoket15）](/images/items/figev_kemoket15.png) | 常陆手办（店员） | 正在做售货员的常陆的模型，桌上摆着纳豆。「けもケット15」的纪念品。 | [^] |
-| ![讃岐手办（店员·kunitamajichinsai）](/images/items/figev_kunitamajichinsai.png) | 讃岐手办（店员） | 正在做售货员的讃岐的模型，桌上摆着乌冬面。「地魂地镇祭」的纪念品。 | [^] |
-| ![骏河手办（店员·kansaikemoket10）](/images/items/figev_kansaikemoket10.png) | 骏河手办（店员） | 正在做售货员的骏河的模型，桌上摆着茶。「関西けもケット10」的纪念品。 | [^] |
-| ![相模手办（店员·boost4）](/images/items/figev_boost4.png) | 相模手办（店员） | 正在做售货员的相模的模型，桌上摆着可疑药品。「ブースト！4」的纪念品。 | [^] |
-| ![甲斐手办（店员·kemoket16）](/images/items/figev_kemoket16.png) | 甲斐手办（店员） | 正在做售货员的甲斐的模型，桌上摆着葡萄。「けもケット16」的纪念品。 | [^] |
-| ![壱岐手办（店员·kunitamajichinsai2）](/images/items/figev_kunitamajichinsai2.png) | 壱岐手办（店员） | 正在做售货员的壱岐的模型，桌上摆着海胆。「地魂地镇祭 弐」的纪念品。 | [^] |
-| ![筑前手办（店员·kansaikemoket11）](/images/items/figev_kansaikemoket11.png) | 筑前手办（店员） | 正在做售货员的筑前的模型，桌上摆着豚骨拉面。「関西けもケット11」的纪念品。 | [^] |
-| ![备前手办（店员·kunitamajichinsai3）](/images/items/figev_kunitamajichinsai3.png) | 备前手办（店员） | 正在做售货员的备前的模型，桌上摆着一对宝木与日本刀。「地魂地镇祭 参」的纪念品。 | [^] |
+| ![伊予手办（店员）](/images/items/figev_kemoket13.png) | 伊予手办（店员） | 正在做售货员的伊予的模型，桌上摆着蜜柑。「けもケット13」的纪念品。 | 兑换码 |
+| ![大和手办（店员）](/images/items/figev_kemoket14.png) | 大和手办（店员） | 正在做售货员的大和的模型，桌上摆着鹿仙贝。「けもケット14」的纪念品。 | [^] |
+| ![越后手办（店员）](/images/items/figev_nichoketmini.png) | 越后手办（店员） | 正在做售货员的越后的模型，桌上摆着笹团子。「にちょけっと！mini」的纪念品。 | [^] |
+| ![下总手办（店员）](/images/items/figev_shinshunkemoket10.png) | 下总手办（店员） | 正在做售货员的下总的模型，桌上摆着地魂男儿人偶。「新春けもケット10」的纪念品。 | [^] |
+| ![武藏手办（店员）](/images/items/figev_kansaikemoket9.png) | 武藏手办（店员） | 正在做售货员的武藏的模型，桌上摆着鲣鱼。「関西けもけっと9」的纪念品。 | [^] |
+| ![备后手办（店员）](/images/items/figev_boost3.png) | 备后手办（店员） | 正在做售货员的备后的模型，桌上摆着御好烧。「ブースト！3」的纪念品。 | [^] |
+| ![常陆手办（店员）](/images/items/figev_kemoket15.png) | 常陆手办（店员） | 正在做售货员的常陆的模型，桌上摆着纳豆。「けもケット15」的纪念品。 | [^] |
+| ![讃岐手办（店员）](/images/items/figev_kunitamajichinsai.png) | 讃岐手办（店员） | 正在做售货员的讃岐的模型，桌上摆着乌冬面。「地魂地镇祭」的纪念品。 | [^] |
+| ![骏河手办（店员）](/images/items/figev_kansaikemoket10.png) | 骏河手办（店员） | 正在做售货员的骏河的模型，桌上摆着茶。「関西けもケット10」的纪念品。 | [^] |
+| ![相模手办（店员）](/images/items/figev_boost4.png) | 相模手办（店员） | 正在做售货员的相模的模型，桌上摆着可疑药品。「ブースト！4」的纪念品。 | [^] |
+| ![甲斐手办（店员）](/images/items/figev_kemoket16.png) | 甲斐手办（店员） | 正在做售货员的甲斐的模型，桌上摆着葡萄。「けもケット16」的纪念品。 | [^] |
+| ![壱岐手办（店员）](/images/items/figev_kunitamajichinsai2.png) | 壱岐手办（店员） | 正在做售货员的壱岐的模型，桌上摆着海胆。「地魂地镇祭 弐」的纪念品。 | [^] |
+| ![筑前手办（店员）](/images/items/figev_kansaikemoket11.png) | 筑前手办（店员） | 正在做售货员的筑前的模型，桌上摆着豚骨拉面。「関西けもケット11」的纪念品。 | [^] |
+| ![备前手办（店员）](/images/items/figev_kunitamajichinsai3.png) | 备前手办（店员） | 正在做售货员的备前的模型，桌上摆着一对宝木与日本刀。「地魂地镇祭 参」的纪念品。 | [^] |
 | ![丹波手办（福男儿）](/images/items/fig_tamba_fuku.png) | 丹波手办（福男儿） | 第 1 届相扑大会优胜的丹波模型，仿佛散发着丰沛的灵力。 | 短篇 どすこい！大相扑大会2023 通关 |
 | ![骏河手办（福男儿）](/images/items/fig_suruga_fuku.png) | 骏河手办（福男儿） | 第 2 届相扑大会优胜的骏河模型，能感受到福男儿满溢的灵力。 | 短篇 どすこい！大相扑大会2024 通关 |
 | ![周防手办（福男儿）](/images/items/fig_suo_fuku.png) | 周防手办（福男儿） | 第 3 届相扑大会优胜的周防模型，能感受到福男儿满溢的灵力。 | 短篇 どすこい！大相扑大会2025 通关 |
@@ -83,37 +83,37 @@ source: https://wikiwiki.jp/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0
 | ![呼唤主人之声](/images/items/voice.gif) | 呼唤主人之声 | 能听到[地魂]呼唤你名字的声音。（取得后通过邮件收取指引） | 购买：虹色奖牌 x1 |
 | ![伊贺手办](/images/items/fig_iga.png) | 伊贺手办 | 伊贺的模型摆件，可随时放在身边。 | 购买：闪耀奖牌 x1 |
 | ![伊贺手办（照）](/images/items/fig_iga_2.png) | 伊贺手办（照） | [^] | [^] |
-| ![志摩手办](/images/items/fig_shima.png) | 志摩手办 | [^] | [^] |
+| ![志摩手办](/images/items/fig_shima.png) | 志摩手办 | 志摩的模型摆件，可随时放在身边。 | 购买：闪耀奖牌 x1 |
 | ![志摩手办（喜）](/images/items/fig_shima_2.png) | 志摩手办（喜） | [^] | [^] |
-| ![尾张手办](/images/items/fig_owari.png) | 尾张手办 | [^] | [^] |
+| ![尾张手办](/images/items/fig_owari.png) | 尾张手办 | 尾张的模型摆件，可随时放在身边。 | 购买：闪耀奖牌 x1 |
 | ![尾张手办（惊）](/images/items/fig_owari_2.png) | 尾张手办（惊） | [^] | [^] |
-| ![河内手办](/images/items/fig_kawachi.png) | 河内手办 | [^] | [^] |
+| ![河内手办](/images/items/fig_kawachi.png) | 河内手办 | 河内的模型摆件，可随时放在身边。 | 购买：闪耀奖牌 x1 |
 | ![河内手办（喜）](/images/items/fig_kawachi_2.png) | 河内手办（喜） | [^] | [^] |
-| ![大和手办](/images/items/fig_yamato.png) | 大和手办 | [^] | [^] |
+| ![大和手办](/images/items/fig_yamato.png) | 大和手办 | 大和的模型摆件，可随时放在身边。 | 购买：闪耀奖牌 x1 |
 | ![大和手办（照）](/images/items/fig_yamato_2.png) | 大和手办（照） | [^] | [^] |
-| ![三河手办](/images/items/fig_mikawa.png) | 三河手办 | [^] | [^] |
+| ![三河手办](/images/items/fig_mikawa.png) | 三河手办 | 三河的模型摆件，可随时放在身边。 | 购买：闪耀奖牌 x1 |
 | ![三河手办（照）](/images/items/fig_mikawa_2.png) | 三河手办（照） | [^] | [^] |
-| ![甲斐手办](/images/items/fig_kai.png) | 甲斐手办 | [^] | [^] |
+| ![甲斐手办](/images/items/fig_kai.png) | 甲斐手办 | 甲斐的模型摆件，可随时放在身边。 | 购买：闪耀奖牌 x1 |
 | ![甲斐手办（喜）](/images/items/fig_kai_2.png) | 甲斐手办（喜） | [^] | [^] |
-| ![相模手办](/images/items/fig_sagami.png) | 相模手办 | [^] | [^] |
+| ![相模手办](/images/items/fig_sagami.png) | 相模手办 | 相模的模型摆件，可随时放在身边。 | 购买：闪耀奖牌 x1 |
 | ![相模手办（喜）](/images/items/fig_sagami_2.png) | 相模手办（喜） | [^] | [^] |
-| ![上总手办](/images/items/fig_kazusa.png) | 上总手办 | [^] | [^] |
+| ![上总手办](/images/items/fig_kazusa.png) | 上总手办 | 上总的模型摆件，可随时放在身边。 | 购买：闪耀奖牌 x1 |
 | ![上总手办（喜）](/images/items/fig_kazusa_2.png) | 上总手办（喜） | [^] | [^] |
-| ![安房手办](/images/items/fig_awa1.png) | 安房手办 | [^] | [^] |
+| ![安房手办](/images/items/fig_awa1.png) | 安房手办 | 安房的模型摆件，可随时放在身边。 | 购买：闪耀奖牌 x1 |
 | ![安房手办（喜）](/images/items/fig_awa1_2.png) | 安房手办（喜） | [^] | [^] |
-| ![常陆手办](/images/items/fig_hitachi.png) | 常陆手办 | [^] | [^] |
+| ![常陆手办](/images/items/fig_hitachi.png) | 常陆手办 | 常陆的模型摆件，可随时放在身边。 | 购买：闪耀奖牌 x1 |
 | ![常陆手办（喜）](/images/items/fig_hitachi_2.png) | 常陆手办（喜） | [^] | [^] |
-| ![越后手办](/images/items/fig_echigo.png) | 越后手办 | [^] | [^] |
+| ![越后手办](/images/items/fig_echigo.png) | 越后手办 | 越后的模型摆件，可随时放在身边。 | 购买：闪耀奖牌 x1 |
 | ![越后手办（照）](/images/items/fig_echigo_2.png) | 越后手办（照） | [^] | [^] |
-| ![纪伊手办](/images/items/fig_kii.png) | 纪伊手办 | [^] | [^] |
+| ![纪伊手办](/images/items/fig_kii.png) | 纪伊手办 | 纪伊的模型摆件，可随时放在身边。 | 购买：闪耀奖牌 x1 |
 | ![纪伊手办（喜）](/images/items/fig_kii_2.png) | 纪伊手办（喜） | [^] | [^] |
-| ![讃岐手办](/images/items/fig_sanuki.png) | 讃岐手办 | [^] | [^] |
+| ![讃岐手办](/images/items/fig_sanuki.png) | 讃岐手办 | 讃岐的模型摆件，可随时放在身边。 | 购买：闪耀奖牌 x1 |
 | ![讃岐手办（照）](/images/items/fig_sanuki_2.png) | 讃岐手办（照） | [^] | [^] |
-| ![伊予手办](/images/items/fig_iyo.png) | 伊予手办 | [^] | [^] |
+| ![伊予手办](/images/items/fig_iyo.png) | 伊予手办 | 伊予的模型摆件，可随时放在身边。 | 购买：闪耀奖牌 x1 |
 | ![伊予手办（喜）](/images/items/fig_iyo_2.png) | 伊予手办（喜） | [^] | [^] |
-| ![土佐手办](/images/items/fig_tosa.png) | 土佐手办 | [^] | [^] |
+| ![土佐手办](/images/items/fig_tosa.png) | 土佐手办 | 土佐的模型摆件，可随时放在身边。 | 购买：闪耀奖牌 x1 |
 | ![土佐手办（照）](/images/items/fig_tosa_2.png) | 土佐手办（照） | [^] | [^] |
-| ![备前手办](/images/items/fig_bizen.png) | 备前手办 | [^] | [^] |
+| ![备前手办](/images/items/fig_bizen.png) | 备前手办 | 备前的模型摆件，可随时放在身边。 | 购买：闪耀奖牌 x1 |
 | ![备前手办（照）](/images/items/fig_bizen_2.png) | 备前手办（照） | [^] | [^] |
 
 ## 个人房间相关

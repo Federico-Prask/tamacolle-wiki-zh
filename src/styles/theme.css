@@ -1012,18 +1012,20 @@ blockquote.ja {
 
 /* 主题切换按钮 */
 .theme-toggle {
-  margin-left: auto;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 8px 14px;
+  gap: 5px;
+  padding: 0 8px;
+  height: 28px;
+  align-self: center;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(232, 183, 62, 0.35);
-  border-radius: 999px;
+  /* 圆角矩形，不用胶囊 */
+  border-radius: 6px;
   color: #eadfbe;
   font-family: inherit;
   font-size: 13px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.02em;
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
@@ -1707,4 +1709,336 @@ blockquote.ja {
 :root[data-theme='dark'] .md img[src^='/images/items/'] {
   border-color: var(--line-strong);
   background: #1b1a18;
+}
+
+/* ============================================================
+   站内搜索
+   收起：顶栏圆角矩形按钮
+   展开：背景虚化 + 方框就地向左伸长成居中胶囊
+   ============================================================ */
+
+.ss-trigger {
+  /* 接管原本 theme-toggle 的「推到右侧」职责 */
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 8px;
+  height: 28px;
+  align-self: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(232, 183, 62, 0.35);
+  border-radius: 6px;
+  color: #eadfbe;
+  font-family: inherit;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background 0.18s ease, border-color 0.18s ease, opacity 0.12s ease;
+}
+.ss-trigger:hover {
+  background: rgba(232, 183, 62, 0.16);
+  border-color: var(--yamabuki);
+  color: #fff3d6;
+}
+.ss-trigger.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 放大镜用 SVG：字形 ⌕ 的基线天然偏下，flex 也救不回来 */
+.ss-ico {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+.ss-ico svg {
+  display: block;
+}
+.ss-ico.big {
+  color: var(--nezumi);
+}
+.ss-kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 11px;
+  line-height: 1;
+  padding: 2px 4px;
+  color: rgba(234, 223, 190, 0.75);
+  border: 1px solid rgba(232, 183, 62, 0.3);
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+/* —— 背景虚化 —— */
+.ss-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  background: rgba(18, 16, 12, 0.42);
+  backdrop-filter: blur(7px) saturate(0.9);
+  -webkit-backdrop-filter: blur(7px) saturate(0.9);
+}
+:root[data-theme='dark'] .ss-backdrop {
+  background: rgba(0, 0, 0, 0.58);
+}
+.ss-fade-enter-active,
+.ss-fade-leave-active {
+  transition: opacity 0.26s ease;
+}
+.ss-fade-enter-from,
+.ss-fade-leave-to {
+  opacity: 0;
+}
+
+/*
+ * —— 展开层 ——
+ * 全程像素定位，不掺 transform：
+ * 否则 left 与 translateX 同时插值会让右边缘先向右冲出再回收。
+ */
+.ss-layer {
+  position: fixed;
+  z-index: 901;
+  left: var(--to-left);
+  top: var(--to-top);
+  width: var(--to-width);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ss-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 56px;
+  padding: 0 20px;
+  background: var(--card);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+:root[data-theme='dark'] .ss-bar {
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.7);
+}
+
+.ss-field {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+}
+.ss-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  padding: 0;
+}
+/* 提示语用自绘层：原生 placeholder 无法做逐字显现 */
+.ss-ghost {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  color: var(--nezumi);
+  font-family: var(--font-body);
+  font-size: 17px;
+  white-space: nowrap;
+}
+@keyframes ss-pop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ss-esc {
+  flex: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 11px;
+  padding: 3px 7px;
+  color: var(--nezumi);
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+.ss-esc:hover {
+  color: var(--ink);
+  border-color: var(--accent);
+}
+
+/*
+ * 形变过渡：起点 = 顶栏按钮的位置与尺寸。
+ * 右边缘与终点右边缘接近，因此只有左边缘向左延伸。
+ */
+.ss-morph-enter-active,
+.ss-morph-leave-active {
+  transition:
+    left 0.34s cubic-bezier(0.22, 1, 0.36, 1),
+    top 0.34s cubic-bezier(0.22, 1, 0.36, 1),
+    width 0.34s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.ss-morph-enter-active .ss-bar,
+.ss-morph-leave-active .ss-bar {
+  transition:
+    height 0.34s cubic-bezier(0.22, 1, 0.36, 1),
+    padding 0.34s cubic-bezier(0.22, 1, 0.36, 1),
+    border-radius 0.34s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.ss-morph-enter-from,
+.ss-morph-leave-to {
+  left: var(--from-left);
+  top: var(--from-top);
+  width: var(--from-width);
+}
+.ss-morph-enter-from .ss-bar,
+.ss-morph-leave-to .ss-bar {
+  height: 28px;
+  padding: 0 8px;
+  border-radius: 6px;
+}
+.ss-morph-enter-from .ss-results,
+.ss-morph-leave-to .ss-results {
+  opacity: 0;
+}
+/* 提示条退场比主体更快，避免拖尾 */
+.ss-morph-leave-active .ss-tips {
+  transition: opacity 0.18s ease;
+}
+.ss-morph-enter-from .ss-tips,
+.ss-morph-leave-to .ss-tips {
+  opacity: 0;
+}
+
+/* —— 结果列表 —— */
+.ss-results {
+  background: var(--card);
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+  transition: opacity 0.2s ease 0.06s;
+  max-height: 58vh;
+  overflow-y: auto;
+  padding: 6px;
+}
+:root[data-theme='dark'] .ss-results {
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.65);
+}
+
+/*
+ * 底部提示条：几乎不可见的一层灰，只让背景略亮/略暗一点。
+ * 用 0 偏移的 box-shadow 把这层灰向外晕开，边缘渐隐，
+ * 不做实心卡片（与上方胶囊搜索框风格冲突）。
+ */
+.ss-tips {
+  padding: 10px 18px;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  background: #70707023;
+  border: none;
+  border-radius: 999px;
+  box-shadow: 0 0 34px 19px #7070704a;
+  animation: ss-pop 0.22s ease;
+}
+:root[data-theme='dark'] .ss-tips {
+  color: rgba(255, 255, 255, 0.6);
+  background: #7f7f7f15;
+  box-shadow: 0 0 34px 19px #7f7f7f15;
+}
+.ss-tips kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 11px;
+  padding: 2px 6px;
+  margin: 0 2px;
+  color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 3px;
+}
+
+.ss-count,
+.ss-empty {
+  padding: 8px 12px;
+  font-size: 12px;
+  color: var(--nezumi);
+}
+.ss-item {
+  display: block;
+  padding: 9px 12px;
+  border-radius: 6px;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+.ss-item:last-child {
+  border-bottom: none;
+}
+.ss-item.active,
+.ss-item:hover {
+  background: var(--cb-ink);
+}
+.ss-line {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.ss-title {
+  font-family: var(--font-mincho);
+  font-weight: 700;
+  font-size: 15px;
+}
+.ss-ja {
+  font-size: 12px;
+  color: var(--nezumi);
+}
+.ss-cat {
+  margin-left: auto;
+  font-size: 11px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  color: var(--nezumi);
+  white-space: nowrap;
+}
+.ss-snippet {
+  margin-top: 4px;
+  font-size: 12.5px;
+  line-height: 1.75;
+  color: var(--ink-2);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.ss-snippet mark {
+  background: var(--cb-yamabuki);
+  color: var(--ink);
+  padding: 0 1px;
+  border-radius: 2px;
+}
+
+@media (max-width: 640px) {
+  .ss-label {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ss-morph-enter-active,
+  .ss-morph-leave-active,
+  .ss-morph-enter-active .ss-bar,
+  .ss-morph-leave-active .ss-bar {
+    transition: none;
+  }
 }

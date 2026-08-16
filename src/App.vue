@@ -2,6 +2,7 @@
 import { ref, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import SideNav from './components/SideNav.vue'
+import SiteSearch from './components/SiteSearch.vue'
 
 const route = useRoute()
 // 整体侧栏折叠开关
@@ -54,6 +55,7 @@ watch(theme, (t) => {
           <RouterLink class="nav-link" to="/page/dex-kunidama">图鉴</RouterLink>
           <RouterLink class="nav-link" to="/page/glossary">用语集</RouterLink>
           <a class="nav-link" href="https://wikiwiki.jp/tamacolle/" target="_blank" rel="noopener">原文Wiki ↗</a>
+          <SiteSearch />
           <button class="theme-toggle" type="button" @click="toggleTheme" :title="theme === 'dark' ? '切换到浅色模式' : '切换到深色模式'">
             <span class="theme-ico">{{ theme === 'dark' ? '☀' : '☾' }}</span>
             <span>{{ theme === 'dark' ? '昼' : '夜' }}</span>

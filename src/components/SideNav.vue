@@ -15,7 +15,8 @@ interface NavGroup {
 
 // —— 折叠状态 ——
 // 分类是否展开（默认只展开「基本情报」）
-const openCats = ref<Record<string, boolean>>({ about: true, quest: false, dex: false, misc: false })
+// 默认全部折叠，避免首屏目录过长
+const openCats = ref<Record<string, boolean>>({ about: false, quest: false, dex: false, misc: false })
 // 分组是否展开（未记录时按默认规则）
 const openGroups = ref<Record<string, boolean>>({})
 
