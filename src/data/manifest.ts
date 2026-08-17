@@ -96,11 +96,11 @@ export const manifest = [
   P('short-toshikoshi', 'ショートエピソード/年越し23-24', '跨年 23-24', 'quest'),
 
   // ============ 图鉴·角色 ============
-  P('dex-kunidama', '地魂男児/番号順', '地魂男儿 · 编号序', 'dex', 'list'),
-  P('dex-kunidama-region', '地魂男児/地域別', '地魂男儿 · 地域别', 'dex', 'list'),
-  P('dex-kunidama-weapon', '地魂男児/武器種別', '地魂男儿 · 武器种别', 'dex', 'list'),
-  P('dex-kunidama-material', '地魂男児/素材別', '地魂男儿 · 素材别', 'dex', 'list'),
-  P('dex-kunidama-env', '地魂男児/得意環境', '地魂男儿 · 擅长环境', 'dex', 'list'),
+  P('dex-kunidama', '地魂男児/番号順', '地魂男儿 · 按编号', 'dex', 'list'),
+  P('dex-kunidama-region', '地魂男児/地域別', '地魂男儿 · 按地域', 'dex', 'list'),
+  P('dex-kunidama-weapon', '地魂男児/武器種別', '地魂男儿 · 按武器种别', 'dex', 'list'),
+  P('dex-kunidama-material', '地魂男児/素材別', '地魂男儿 · 按素材', 'dex', 'list'),
+  P('dex-kunidama-env', '地魂男児/得意環境', '地魂男儿 · 按擅长环境', 'dex', 'list'),
   P('dex-ayakashi', 'あやかし/番号順', '妖怪 · 编号序', 'dex', 'list'),
   P('dex-ayakashi-attr', 'あやかし/属性別', '妖怪 · 属性别', 'dex', 'list'),
   P('rokuhara', 'ロクハラ', '六原（Rokuhara）', 'dex', 'list'),

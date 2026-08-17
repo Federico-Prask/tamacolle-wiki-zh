@@ -1,11 +1,11 @@
 ---
 id: dex-kunidama-region
-title: "地魂男儿 · 地域别"
+title: "地魂男儿 · 按地域"
 ja: "地魂男児/地域別"
 source: https://wikiwiki.jp/tamacolle/%E5%9C%B0%E9%AD%82%E7%94%B7%E5%85%90/%E5%9C%B0%E5%9F%9F%E5%88%A5
 ---
 
-## 地魂男儿 · 地域别
+## 地魂男儿 · 按地域
 
 按五畿七道分类的地魂男儿一览。
 

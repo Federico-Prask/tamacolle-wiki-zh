@@ -3,9 +3,10 @@
    用色取自日本传统色（和色）
    ============================================================ */
 
-@import './shippori-mincho.css';
-@import './noto-serif-sc.css';
+/* 主用字体先加载：Noto Serif JP / SC（可变字重 200–900） */
 @import './noto-serif-jp.css';
+@import './noto-serif-sc.css';
+@import './shippori-mincho.css';
 @import './yu-mincho.css';
 
 :root {
@@ -47,16 +48,22 @@
   --header-2: var(--kon);
 
   /*
-   * 字体栈顺序：日文明朝体优先于中文。
-   * 站内有大量日文原文（语音台词、元ネタ原文），若先落到简中字形（SC），
-   * 假名笔锋与部分汉字写法（直 / 骨 / 毎 / 類 等）会显示成中文样式。
-   * Noto Serif JP 已随 noto-serif-jp.css 内嵌，作为日文兜底。
+   * 字体栈顺序：自带的 Noto Serif JP / SC 排最前。
+   * 理由：
+   *  1. 这两个是站点内嵌的可变字体（200–900），一定命中，
+   *     所有字重都由同一族真实字形提供，不会出现 fallback 到别家字体
+   *     再被浏览器合成加粗（fake bold）导致的粗细不一致。
+   *  2. JP 在 SC 之前：日文汉字写法（直 / 骨 / 毎 / 類 等）保持日式；
+   *     JP 缺的简体独有字由 SC 顶上。
+   *  3. 假名与汉字风格差异不用担心 —— 假名本身就近似方正楷体，
+   *     汉字是宋/明体，两者观感天然分离。
+   * 后面的本地明朝体只作为极端情况下的兜底（字体加载失败等）。
    */
-  --font-mincho: 'Zen Old Mincho', 'Yu Mincho', 'Hiragino Mincho ProN',
-    'Noto Serif JP', 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC',
+  --font-mincho: 'Noto Serif JP', 'Noto Serif SC', 'Zen Old Mincho',
+    'Yu Mincho', 'Hiragino Mincho ProN', 'Source Han Serif SC', 'Songti SC',
     'STSong', 'SimSun', serif;
-  --font-body: 'Shippori Mincho', 'Yu Mincho', 'Hiragino Mincho ProN',
-    'Noto Serif JP', 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC',
+  --font-body: 'Noto Serif JP', 'Noto Serif SC', 'Shippori Mincho',
+    'Yu Mincho', 'Hiragino Mincho ProN', 'Source Han Serif SC', 'Songti SC',
     'STSong', 'SimSun', serif;
   --font-kai: 'Kaiti SC', 'STKaiti', 'KaiTi', 'DFKai-SB', var(--font-mincho);
 

@@ -1,11 +1,11 @@
 ---
 id: dex-kunidama
-title: "地魂男儿 · 编号序"
+title: "地魂男儿 · 按编号"
 ja: "地魂男児/番号順"
 source: https://wikiwiki.jp/tamacolle/%E5%9C%B0%E9%AD%82%E7%94%B7%E5%85%90/%E7%95%AA%E5%8F%B7%E9%A0%86
 ---
 
-## 地魂男儿 · 编号序
+## 地魂男儿 · 按编号
 
 按资料室编号排列的地魂男儿一览（未实装编号留空）。
 

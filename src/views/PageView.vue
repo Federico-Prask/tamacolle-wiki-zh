@@ -24,10 +24,18 @@ const LIST_MODE: Record<string, string> = {
   'dex-kunidama': 'numbered',
   'dex-kunidama-region': 'region',
   'dex-kunidama-weapon': 'weapon',
+  'dex-kunidama-material': 'material',
+  'dex-kunidama-env': 'env',
   'dex-ayakashi': 'ayakashi',
   rokuhara: 'rokuhara',
 }
 const listMode = computed(() => LIST_MODE[slug.value] || null)
+/**
+ * 这些列表页的 md 正文含图表以外的信息（素材页的羁绊棋盘），需一并显示。
+ * 擅长环境页的正文只是同一批名字的纯文本罗列，与图表重复，故不保留。
+ */
+const KEEP_BODY = new Set(['dex-kunidama-material'])
+const keepBody = computed(() => KEEP_BODY.has(slug.value))
 
 // —— 折叠控制 ——
 const showRaw = ref<Record<string, boolean>>({})
@@ -124,6 +132,15 @@ function hideFigure(e: Event): void {
       </div>
 
       <!-- ============ 图鉴列表（表格） ============ -->
+      <!--
+        素材别 / 擅长环境两页的正文里有羁绊棋盘与说明文字，
+        不能被角色图表取代，因此这两页「正文在上 + 图表在下」并存；
+        其余纯列表页只显示图表。
+      -->
+      <PageMarkdown
+        v-if="listMode && keepBody && page && page.body"
+        :markdown="page.body"
+      />
       <CharListTable v-if="listMode" :mode="listMode" />
 
       <!-- ============ 角色页 ============ -->

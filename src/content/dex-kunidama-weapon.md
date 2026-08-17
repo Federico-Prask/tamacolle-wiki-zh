@@ -1,11 +1,11 @@
 ---
 id: dex-kunidama-weapon
-title: "地魂男儿 · 武器种别"
+title: "地魂男儿 · 按武器种别"
 ja: "地魂男児/武器種別"
 source: https://wikiwiki.jp/tamacolle/%E5%9C%B0%E9%AD%82%E7%94%B7%E5%85%90/%E6%AD%A6%E5%99%A8%E7%A8%AE%E5%88%A5
 ---
 
-## 地魂男儿 · 武器种别
+## 地魂男儿 · 按武器种别
 
 按武器种分类的地魂男儿一览（前卫：短刀·刀·枪·重装；后卫：弓·大炮·术）。
 
