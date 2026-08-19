@@ -25,5 +25,9 @@ raw_data/
 tamacolle_2026/
 
 AUDIT-REPORT.md
+LASKLIST.md
+COMMIT_NOTES.md
+
 
 .ai-stats/
+!scripts/cross_check.py

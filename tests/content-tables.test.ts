@@ -648,3 +648,39 @@ describe('图鉴列表页（批次 11）', () => {
     expect(voices.size).toBe(38)
   })
 })
+
+describe('主线页结构（D8 · 用户指出）', () => {
+  const get = (n: string) => files.find((f) => f.name === n)!.md
+  // 原页各话的章节数（目次逐条数得）
+  const CHAPTERS: Record<string, number> = { 'main-1.md': 27, 'main-2.md': 24, 'main-3.md': 39 }
+
+  it('三话都是「每章节一个 ### 小节」，章节数与原页一致', () => {
+    for (const [name, n] of Object.entries(CHAPTERS)) {
+      expect((get(name).match(/^### /gm) ?? []).length, name).toBe(n)
+    }
+  })
+
+  it('不再有把全部章节压成一张的汇总大表', () => {
+    for (const name of Object.keys(CHAPTERS)) {
+      for (const rows of extractTables(get(name))) {
+        // 单张表最多 9 行（决战情报表 8 行 + 表头）
+        expect(rows.length, `${name} 出现 ${rows.length} 行的大表：${rows[0].slice(0, 40)}`)
+          .toBeLessThan(10)
+      }
+    }
+  })
+
+  it('战斗章节链向自由任务页，而非在主线页铺敌编成', () => {
+    const LINKS: Record<string, number> = { 'main-1.md': 12, 'main-2.md': 8, 'main-3.md': 13 }
+    for (const [name, n] of Object.entries(LINKS)) {
+      expect((get(name).match(/#\/page\/free-\d/g) ?? []).length, name).toBe(n)
+    }
+  })
+
+  it('三话的决战地图都存在', () => {
+    for (const p of ['/images/quest/map_boss_m1.jpg', '/images/quest/map_boss_m2.jpg',
+                     '/images/quest/map_boss_m3.jpg', '/images/quest/map_boss2_m3.jpg']) {
+      expect(fs.existsSync('public' + p), p).toBe(true)
+    }
+  })
+})

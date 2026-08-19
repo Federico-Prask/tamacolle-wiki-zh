@@ -9,7 +9,7 @@
     "name": "富良野アルクトス",
     "nameZh": "富良野·阿克托斯",
     "kana": "ふらのアルクトス",
-    "type": "ayakashi",
+    "type": "rokuhara",
     "num": "九番",
     "numInt": 9,
     "kv": [
@@ -44,11 +44,19 @@
       {
         "label": "通常立ち絵",
         "labelZh": "通常立绘",
-        "img": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%83%AB%E3%82%AF%E3%83%88%E3%82%B9/::ref/arctos_s02.jpg?rev=dfb63ed35f29b2a45da2894ddf6dc709&t=20250818012013",
+        "img": "",
         "local": "/images/chars/arctos_0.jpg"
+      },
+      {
+        "label": "タオル",
+        "labelZh": "毛巾",
+        "img": "",
+        "local": "/images/chars/arctos_1.jpg"
       }
     ],
-    "illustNotes": [],
+    "illustNotes": [
+      "原 wiki 第三张立绘（???）尚未公开，仅有添付占位。"
+    ],
     "tactics": [],
     "bond": {},
     "motif": "名前\n「アルクトス」\nギリシャ語で熊という意味を持つ言葉。\nἄρκτος(arctos)\n星座名としてはおおぐま座あるいはこぐま座を指す。\n北斗七星は「おおぐま座」の一部で、北の空にひときわ目立つ７つの星の並び。\n柄杓\n型ともとれるその見た目は古くから知られ、北極星も導き出せることから目印として使われてきた。\n熊",

@@ -295,6 +295,156 @@ describe('译文覆盖与新角色数据（批次 14）', () => {
     }
     expect(bad).toEqual([])
   })
+
+  // D12：六原职员的 kv 曾只有 3 项（缺年龄/生日），且键名中日混用、实装日有误。
+  it('六原职员的 kv 五项齐全且键顺序一致', () => {
+    const NO_KV = ['riku', 'azukiarai']
+    const EXPECT = ['实装日', '所属', '年龄', '生日', '担当曜日']
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      if (c.type !== 'rokuhara' || NO_KV.includes(id)) continue
+      const keys = (c.kv ?? []).map(([k]) => k)
+      if (JSON.stringify(keys) !== JSON.stringify(EXPECT)) bad.push(`${id}: ${keys.join('/')}`)
+    }
+    expect(bad).toEqual([])
+  })
+
+  it('六原职员的年龄与生日均有值，且无日文键名残留', () => {
+    const NO_KV = ['riku', 'azukiarai']
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      if (c.type !== 'rokuhara' || NO_KV.includes(id)) continue
+      const kv = Object.fromEntries(c.kv ?? [])
+      if (!kv['年龄']) bad.push(`${id}: 缺年龄`)
+      if (!kv['生日']) bad.push(`${id}: 缺生日`)
+      for (const k of ['年齢', '誕生日', '実装日', '実装']) {
+        if (k in kv) bad.push(`${id}: 残留日文键名 ${k}`)
+      }
+    }
+    expect(bad).toEqual([])
+  })
+
+  // 回原页逐字核对过的实装日，曾有 3 人写错（inomori/hatori 误作 v1.30、kotetsumaru 误作 v1.53）
+  // ===== D13 跨字段交叉校验（批次 24）=====
+  // D11/D12 的教训：既有测试只看形式（列数/键数/假名占比），
+  // 一张「别人的、但格式完整」的表能全部通过。以下比对字段之间的一致性。
+
+  it('立绘的本地路径前缀与角色 slug 一致', () => {
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      for (const il of c.illusts ?? []) {
+        const loc = (il as { local?: string }).local ?? ''
+        if (!loc) continue
+        const base = loc.split('/').pop() ?? ''
+        const stem = base.split(/[_.]/)[0]
+        if (stem !== id) bad.push(`${id}: ${base}`)
+      }
+    }
+    expect(bad).toEqual([])
+  })
+
+  it('图片 URL 里的 wiki 页面名与角色名相符', () => {
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      const urls = [c.portrait ?? '', ...(c.illusts ?? []).map((i) => (i as { img?: string }).img ?? '')]
+      for (const u of urls) {
+        const m = /\/tamacolle\/([^/]+)\/::/.exec(u)
+        if (!m) continue
+        const page = decodeURIComponent(m[1])
+        const name = c.name ?? ''
+        if (!page.includes(name) && !name.includes(page)) bad.push(`${id}: URL页=${page}`)
+      }
+    }
+    expect(bad).toEqual([])
+  })
+
+  it('羁绊表里不出现其他角色的名字', () => {
+    const names = chars.map((x) => x.c.name).filter((n): n is string => !!n && n.length >= 2)
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      const txt = JSON.stringify(c.bond ?? {})
+      for (const other of names) {
+        if (other === c.name) continue
+        for (const suf of ['の心', 'のLv上限', 'の技術', 'の豊満']) {
+          if (txt.includes(other + suf)) bad.push(`${id}: ${other}${suf}`)
+        }
+      }
+    }
+    expect(bad).toEqual([])
+  })
+
+  it('num（汉数字）与 numInt 一致', () => {
+    const CN: Record<string, number> = { 一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9 }
+    const cn2int = (raw: string): number | null => {
+      const t = raw.replace('番', '')
+      if (!t) return null
+      if (t === '十') return 10
+      if (t.includes('十')) {
+        const [a, b] = t.split('十')
+        return (a ? CN[a] ?? 1 : 1) * 10 + (b ? CN[b] ?? 0 : 0)
+      }
+      return CN[t] ?? null
+    }
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      if (!c.num || c.numInt == null) continue
+      const got = cn2int(c.num)
+      if (got != null && got !== c.numInt) bad.push(`${id}: ${c.num} vs ${c.numInt}`)
+    }
+    expect(bad).toEqual([])
+  })
+
+  it('地魂的所属必为五畿七道之一', () => {
+    const DO = ['东海道', '东山道', '北陆道', '山阴道', '山阳道', '南海道', '西海道', '畿内']
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      if (c.type !== 'kunidama') continue
+      const belong = Object.fromEntries(c.kv ?? [])['所属']
+      if (!DO.includes(belong)) bad.push(`${id}: ${belong}`)
+    }
+    expect(bad).toEqual([])
+  })
+
+  // 这条能抓住 D11：模拟 echizen 装播磨台词时重合度仅 0.15，正常区间 0.62~1.00
+  it('资料室台词与 descZh 指向同一个人', () => {
+    const hz = (s: string) => new Set(s.match(/[\u4e00-\u9fff]/g) ?? [])
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      const dz = c.descZh ?? ''
+      const row = (c.voiceMd ?? '').split('\n').find((l) => l.includes('资料室'))
+      if (!dz || !row) continue
+      const cell = row.trim().replace(/^\||\|$/g, '').split('|').pop()!.trim().replace(/<br>/g, '')
+      if (cell.length < 20) continue // 六原的短问候语与 desc 不同源
+      const a = hz(cell)
+      const b = hz(dz)
+      if (!b.size) continue
+      let n = 0
+      for (const ch of a) if (b.has(ch)) n++
+      const ov = n / b.size
+      if (ov < 0.4) bad.push(`${id}: ${ov.toFixed(2)}`)
+    }
+    expect(bad).toEqual([])
+  })
+
+  it('六原职员的实装日与原页一致', () => {
+    const EXPECT: Record<string, string> = {
+      natsuhito: "v1.01 ('22/11/05)",
+      inomori: "v1.01 ('22/11/05)",
+      hatori: "v1.01 ('22/11/05)",
+      hyakuta: "v1.01 ('22/11/05)",
+      nekonoya: "v1.01 ('22/11/05)",
+      kotetsumaru: "v1.522 ('25/10/31)",
+      soma: "v1.521 ('25/7/29)",
+      arctos: "v1.521 ('25/7/29)",
+    }
+    const bad: string[] = []
+    for (const [id, want] of Object.entries(EXPECT)) {
+      const c = chars.find((x) => x.id === id)?.c
+      const got = Object.fromEntries(c?.kv ?? [])['实装日']
+      if (got !== want) bad.push(`${id}: ${got} ≠ ${want}`)
+    }
+    expect(bad).toEqual([])
+  })
 })
 
 describe('妖怪与六原职员（批次 15 · 收尾）', () => {
@@ -320,5 +470,130 @@ describe('妖怪与六原职员（批次 15 · 收尾）', () => {
     const NO_VOICE: string[] = []
     const bad = chars.filter((x) => !NO_VOICE.includes(x.id) && !(x.c.voiceMd ?? '').trim())
     expect(bad.map((x) => x.id)).toEqual([])
+  })
+})
+
+describe('角色分类与译文覆盖（用户指出的问题）', () => {
+  // 原 wiki「ロクハラ/人員一覧」的 11 人
+  const ROKUHARA = ['nekonoya', 'natsuhito', 'inomori', 'hatori', 'hyakuta',
+    'riku', 'b', 'azukiarai', 'arctos', 'soma', 'kotetsumaru']
+
+  it('六原职员 11 人分类正确（りく・小豆洗い・アルクトス 曾被误标为妖怪）', () => {
+    const wrong = ROKUHARA.filter((s) => chars.find((x) => x.id === s)?.c.type !== 'rokuhara')
+    expect(wrong).toEqual([])
+    const roku = chars.filter((x) => x.c.type === 'rokuhara').map((x) => x.id).sort()
+    expect(roku).toEqual([...ROKUHARA].sort())
+  })
+
+  it('三类人数与原页一致：51 地魂 / 11 六原 / 10 妖怪', () => {
+    const n = (t: string) => chars.filter((x) => x.c.type === t).length
+    expect({ kunidama: n('kunidama'), rokuhara: n('rokuhara'), ayakashi: n('ayakashi') })
+      .toEqual({ kunidama: 51, rokuhara: 11, ayakashi: 10 })
+  })
+
+  it('アルクトス 有通常与毛巾两张立绘', () => {
+    const a = chars.find((x) => x.id === 'arctos')!
+    const il = (a.c.illusts ?? []) as { local?: string }[]
+    expect(il.length).toBe(2)
+    expect(il.every((x) => x.local && fs.existsSync('public' + x.local))).toBe(true)
+  })
+
+  it('白布的语音已翻译（曾整表为日文原文）', () => {
+    const v = chars.find((x) => x.id === 'shirafu')!.c.voiceMd ?? ''
+    expect(v).toContain('时装创作者')
+    expect(v).not.toContain('ファッションクリエイター')
+  })
+})
+
+describe('语音译文覆盖（D10）', () => {
+  /** 台词列的假名占比：日文原文通常 >0.35，中译接近 0 */
+  function kanaRatio(voiceMd: string): number {
+    const cells = voiceMd.split('\n').slice(2)
+      .filter((r) => r.trim().startsWith('|'))
+      .map((r) => r.trim().replace(/^\||\|$/g, '').split('|').pop()!.trim())
+    const txt = cells.join(' ')
+    const kana = (txt.match(/[ぁ-んァ-ヶ]/g) ?? []).length
+    const cjk = (txt.match(/[\u4e00-\u9fff]/g) ?? []).length
+    return kana + cjk === 0 ? 0 : kana / (kana + cjk)
+  }
+
+  it('全部妖怪与六原职员的语音已翻译', () => {
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      if (c.type === 'kunidama') continue
+      const v = c.voiceMd ?? ''
+      if (!v) continue
+      const r = kanaRatio(v)
+      if (r > 0.35) bad.push(`${id}: ${r.toFixed(2)}`)
+    }
+    expect(bad).toEqual([])
+  })
+
+  // D10 已完成：全站 72 张语音表零未翻译。此断言从「只减不增」升级为「必须为零」。
+  it('全站没有未翻译的语音表（D10 已完成）', () => {
+    const un = chars
+      .filter((x) => kanaRatio(x.c.voiceMd ?? '') > 0.35)
+      .map((x) => `${x.id}: ${kanaRatio(x.c.voiceMd ?? '').toFixed(2)}`)
+    expect(un).toEqual([])
+  })
+
+  // D11：曾发现 echizen 的语音表装的是播磨的台词、izumi 的整表是伊豆的复制品。
+  // 两条校验防止「张冠李戴」再次发生。
+  it('没有两个角色共用同一张语音表', () => {
+    const seen = new Map<string, string>()
+    const dup: string[] = []
+    for (const { id, c } of chars) {
+      const v = (c.voiceMd ?? '').trim()
+      if (!v) continue
+      const prev = seen.get(v)
+      if (prev) dup.push(`${prev} == ${id}`)
+      else seen.set(v, id)
+    }
+    expect(dup).toEqual([])
+  })
+
+  it('任意两个角色的台词重叠率都不超过 30%', () => {
+    const setOf = (c: (typeof chars)[number]['c']) => {
+      const out = new Set<string>()
+      for (const line of (c.voiceMd ?? '').split('\n')) {
+        if (!line.trim().startsWith('|')) continue
+        const cells = line.trim().replace(/^\||\|$/g, '').split('|').map((x) => x.trim())
+        if (cells.length >= 4 && cells[3] && cells[3] !== '台词' && !/^:?-+:?$/.test(cells[3])) {
+          out.add(cells[3])
+        }
+      }
+      return out
+    }
+    const sets = chars.map((x) => ({ id: x.id, s: setOf(x.c) })).filter((x) => x.s.size >= 5)
+    const bad: string[] = []
+    for (let i = 0; i < sets.length; i++) {
+      for (let j = i + 1; j < sets.length; j++) {
+        const a = sets[i]
+        const b = sets[j]
+        let n = 0
+        for (const t of a.s) if (b.s.has(t)) n++
+        const ov = n / Math.min(a.s.size, b.s.size)
+        if (ov > 0.3) bad.push(`${a.id} ~ ${b.id}: ${ov.toFixed(2)}`)
+      }
+    }
+    expect(bad).toEqual([])
+  })
+
+  it('地魂的资料室台词里必须出现自己的名字', () => {
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      if (c.type !== 'kunidama') continue
+      const row = (c.voiceMd ?? '').split('\n').find((l) => l.includes('资料室'))
+      if (!row) {
+        bad.push(`${id}: 无资料室行`)
+        continue
+      }
+      const name = c.name ?? ''
+      const nameZh = c.nameZh ?? ''
+      if (!(name && row.includes(name)) && !(nameZh && row.includes(nameZh))) {
+        bad.push(`${id}: 资料室台词里没有「${nameZh || name}」`)
+      }
+    }
+    expect(bad).toEqual([])
   })
 })
