@@ -50,15 +50,16 @@ source: https://wikiwiki.jp/tamacolle/%E3%82%AC%E3%83%81%E3%83%A3%E3%81%AB%E3%81
 
 ## 出货物与概率（玩家验证，仅供参考）
 
-> 概率为玩家自发验证的**大致数值**，各项相加并不等于 100%。
+- 基于有志玩家的验证整理成表。
+- **出货概率仅为大致数值，各项相加并不等于 100%。**
 
-| 物品 | 数量 / 概率 |  |  |
-| --- | --- | --- | --- |
-| 地魂男儿 | ×1｜约 2% | | |
-| 小魂守 | ×1｜约 50% | ×5｜约 2% | ×10｜约 0.5% |
-| 中魂守 | ×1｜约 10% | ×3｜约 2% | |
-| 大魂守 | ×1｜约 1% | ×3｜约 0.01% | |
-| 稀有·大魂守 | ×1｜0.01% 以下 | ×3｜不明（0.01% 以下） | |
+| 物品 | 数量 / 概率 | [<] | [<] |
+| :-- | :-: | :-: | :-: |
+| <img class="gacha-icon" src="/images/gacha/kunidama.gif" alt="地魂男儿" loading="lazy" /><br>地魂男儿 | ×1<br>约 2% |  |  |
+| <img class="gacha-icon" src="/images/gacha/mamori_small.png" alt="小魂守" loading="lazy" /><br>小魂守 | ×1<br>约 50% | ×5<br>约 2% | ×10<br>约 0.5% |
+| <img class="gacha-icon" src="/images/gacha/mamori_mid.gif" alt="中魂守" loading="lazy" /><br>中魂守 | ×1<br>约 10% | ×3<br>约 2% |  |
+| <img class="gacha-icon" src="/images/gacha/mamori_large.gif" alt="大魂守" loading="lazy" /><br>大魂守 | ×1<br>约 1% | ×3<br>约 0.01% |  |
+| <img class="gacha-icon" src="/images/gacha/mamori_rare.gif" alt="稀有大魂守" loading="lazy" /><br>稀有大魂守 | ×1<br>0.01% 以下 | ×3<br>不明（0.01% 以下） |  |
 
-- 抽到大魂守时，会显示并解锁对应颜色的插画（抽卡时显示，也可在资料室阅览）。
-- 注意：**只有抽卡才会显示和解锁**这些插画——登录奖励获得的大魂守是看不到插画的。
+- 抽到大魂守时，会显示并解锁对应颜色的插画。每次抽到都会显示，也可在资料室阅览。
+- 注意：**只有通过声闻抽到才会显示·解锁**插画 —— 登录奖励获得的大魂守是看不到插画的。

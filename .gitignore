@@ -8,6 +8,14 @@ scripts/*
 !scripts/normalize_motif.py
 !scripts/download_tactic_icons.py
 !scripts/build_font_subset.py
+!scripts/fetch_char_icons.py
+!scripts/fetch_item_icons.py
+!scripts/item_icons.json
+!scripts/fetch_cutins.py
+!scripts/fetch_seals.py
+!scripts/seal_have.json
+!scripts/fetch_kuukon.py
+!scripts/fix_quest_tables.py
 
 raw/
 raw2/

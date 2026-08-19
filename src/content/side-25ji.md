@@ -9,13 +9,13 @@ source: https://wikiwiki.jp/tamacolle/%E3%82%B5%E3%82%A4%E3%83%89%E3%82%B9%E3%83
 
 ### 登场人物
 
-> ※ 含剧透，请注意
-
-| 主要登场 | | | |
-| --- | --- | --- | --- |
-| [备中](#/page/bichu) | [备后](#/page/bingo) | [石见](#/page/iwami) | 部队员×2 |
+:::spoiler 剧透注意
+| 地魂男儿 | [<] | [<] | [<] |
+| :-- | :-: | :-: | :-: |
+| [char:bichu] | [char:bingo] | [char:iwami] | 部队员 ×2 |
 
 部分登场：初期男儿（自选）
+:::
 
 ### 章节流程
 

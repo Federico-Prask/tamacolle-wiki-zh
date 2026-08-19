@@ -1,6 +1,6 @@
 ---
 id: neta-era
-title: "豆知识 · 时代划分"
+title: "小趣闻 · 时代划分"
 ja: "小ネタ/時代区分"
 source: https://wikiwiki.jp/tamacolle/%E5%B0%8F%E3%83%8D%E3%82%BF/%E6%99%82%E4%BB%A3%E5%8C%BA%E5%88%86
 ---

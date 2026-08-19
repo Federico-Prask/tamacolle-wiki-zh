@@ -19,7 +19,7 @@ export const categories: Category[] = [
   { id: 'about', zh: '基本情报', ja: '基本情報', desc: '游戏系统、机制与说明' },
   { id: 'quest', zh: '攻略·任务', ja: '攻略情報', desc: '主线、支线、活动与每日任务' },
   { id: 'dex', zh: '图鉴·角色', ja: 'キャラ情報', desc: '地魂男儿、妖怪与登场角色' },
-  { id: 'misc', zh: '资料·其他', ja: 'その他情報', desc: '豆知识、图集、外部链接' },
+  { id: 'misc', zh: '资料·其他', ja: 'その他情報', desc: '小趣闻、图集、外部链接' },
 ]
 
 const P = (slug: string, ja: string, zh: string, cat: string, kind = 'page'): PageMeta => ({ slug, ja, zh, cat, kind })
@@ -184,6 +184,7 @@ export const manifest = [
   P('hyakuta', '百太', '百太（Hyakuta）', 'dex', 'char'),
   P('shirafu', '白布', '白布（Shirafu）', 'dex', 'char'),
   P('hatori', '羽鳥', '羽鸟（Hatori）', 'dex', 'char'),
+  P('b', 'B', 'B（Bee）', 'dex', 'char'),
 
   // —— 本地人（NPC）——
   P('genchijin-main1', '現地人/メイン第一話', 'NPC · 主线第一话', 'dex', 'list'),
@@ -197,14 +198,14 @@ export const manifest = [
   P('genchijin-shouen2025', '現地人/荘園の夏、日本の夏2025', 'NPC · 庄园之夏 2025', 'dex', 'list'),
 
   // ============ 资料·其他 ============
-  P('neta', '小ネタ', '豆知识', 'misc'),
-  P('neta-hanko', '小ネタ/ハンコ集', '豆知识 · 印章集', 'misc'),
-  P('neta-cutin', '小ネタ/カットイン集', '豆知识 · 特写（Cut-in）集', 'misc'),
-  P('neta-kucho', '小ネタ/キャラ口調表', '豆知识 · 角色语气表', 'misc'),
-  P('neta-isho', '小ネタ/衣装表', '豆知识 · 服装表', 'misc'),
-  P('neta-calendar', '小ネタ/ハレの日カレンダー', '豆知识 · 节庆日日历', 'misc'),
-  P('neta-era', '小ネタ/時代区分', '豆知识 · 时代划分表', 'misc'),
-  P('neta-kuu', '小ネタ/喰魂集', '豆知识 · 噬魂集', 'misc'),
+  P('neta', '小ネタ', '小趣闻', 'misc'),
+  P('neta-hanko', '小ネタ/ハンコ集', '小趣闻 · 印章集', 'misc'),
+  P('neta-cutin', '小ネタ/カットイン集', '小趣闻 · 特写（Cut-in）集', 'misc'),
+  P('neta-kucho', '小ネタ/キャラ口調表', '小趣闻 · 角色语气表', 'misc'),
+  P('neta-isho', '小ネタ/衣装表', '小趣闻 · 服装表', 'misc'),
+  P('neta-calendar', '小ネタ/ハレの日カレンダー', '小趣闻 · 节庆日日历', 'misc'),
+  P('neta-era', '小ネタ/時代区分', '小趣闻 · 时代划分表', 'misc'),
+  P('neta-kuu', '小ネタ/喰魂集', '小趣闻 · 噬魂集', 'misc'),
   P('ranking', '人気100', '人气 100', 'misc'),
   P('today100', '今日100', '今日 100', 'misc'),
   P('board-chat', '雑談掲示板', '闲聊板', 'misc'),
@@ -213,7 +214,8 @@ export const manifest = [
   P('wiki-opinion', 'wiki編集に関する意見交換', 'Wiki 编辑意见交换', 'misc'),
   P('edit-task', '編集タスク情報', '编辑任务情报', 'misc'),
   P('format-rule', '整形ルール', '排版规则', 'misc'),
-  P('wiki-syntax', '本Wiki拡張記法', '本站扩展语法', 'misc'),
+  // 本站自建页（原 wiki 无对应页面）：自定义 Markdown 语法说明
+  P('wiki-syntax', '—', '本站扩展语法', 'misc'),
   P('wiki-help', 'ヘルプ', 'Wiki 帮助', 'misc'),
   P('help-ayakashi', 'あやかし・ヘルプ', '妖怪页面编辑帮助', 'misc'),
   P('help-kunidama', '地魂男児・ヘルプ', '地魂男儿页面编辑帮助', 'misc'),

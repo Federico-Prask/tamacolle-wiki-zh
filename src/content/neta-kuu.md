@@ -1,83 +1,223 @@
 ---
 id: neta-kuu
-title: "豆知识 · 噬魂集"
+title: "小趣闻 · 噬魂集"
 ja: "小ネタ/喰魂集"
 source: https://wikiwiki.jp/tamacolle/%E5%B0%8F%E3%83%8D%E3%82%BF/%E5%96%B0%E9%AD%82%E9%9B%86
 ---
 
-## 噬魂集（喰魂集）
+## 概要
 
-> 剧透注意。收录作中登场的噬魂（喰魂）图鉴。
+:::spoiler 剧透注意
+本页收集作中登场的噬魂（喰魂）。图片数量较多，请注意流量。
+:::
 
-<div class="illust-grid">
-<figure class="illust-item"><img src="/images/neta/kuu_0.jpg" alt="噬魂 1" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 1</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_1.jpg" alt="噬魂 2" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 2</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_2.jpg" alt="噬魂 3" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 3</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_3.jpg" alt="噬魂 4" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 4</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_4.jpg" alt="噬魂 5" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 5</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_5.jpg" alt="噬魂 6" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 6</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_6.jpg" alt="噬魂 7" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 7</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_7.jpg" alt="噬魂 8" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 8</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_8.jpg" alt="噬魂 9" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 9</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_9.jpg" alt="噬魂 10" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 10</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_10.jpg" alt="噬魂 11" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 11</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_11.jpg" alt="噬魂 12" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 12</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_12.jpg" alt="噬魂 13" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 13</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_13.jpg" alt="噬魂 14" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 14</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_14.jpg" alt="噬魂 15" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 15</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_15.jpg" alt="噬魂 16" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 16</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_16.jpg" alt="噬魂 17" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 17</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_17.jpg" alt="噬魂 18" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 18</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_18.jpg" alt="噬魂 19" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 19</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_19.jpg" alt="噬魂 20" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 20</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_20.jpg" alt="噬魂 21" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 21</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_21.jpg" alt="噬魂 22" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 22</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_22.jpg" alt="噬魂 23" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 23</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_23.jpg" alt="噬魂 24" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 24</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_24.jpg" alt="噬魂 25" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 25</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_25.jpg" alt="噬魂 26" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 26</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_26.jpg" alt="噬魂 27" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 27</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_27.jpg" alt="噬魂 28" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 28</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_28.jpg" alt="噬魂 29" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 29</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_29.jpg" alt="噬魂 30" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 30</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_30.jpg" alt="噬魂 31" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 31</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_31.jpg" alt="噬魂 32" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 32</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_32.jpg" alt="噬魂 33" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 33</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_33.jpg" alt="噬魂 34" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 34</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_34.jpg" alt="噬魂 35" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 35</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_35.jpg" alt="噬魂 36" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 36</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_36.jpg" alt="噬魂 37" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 37</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_37.jpg" alt="噬魂 38" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 38</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_38.jpg" alt="噬魂 39" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 39</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_39.jpg" alt="噬魂 40" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 40</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_40.jpg" alt="噬魂 41" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 41</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_41.jpg" alt="噬魂 42" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 42</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_42.jpg" alt="噬魂 43" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 43</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_43.jpg" alt="噬魂 44" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 44</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_44.jpg" alt="噬魂 45" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 45</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_45.jpg" alt="噬魂 46" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 46</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_46.jpg" alt="噬魂 47" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 47</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_47.jpg" alt="噬魂 48" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 48</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_48.jpg" alt="噬魂 49" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 49</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_49.jpg" alt="噬魂 50" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 50</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_50.jpg" alt="噬魂 51" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 51</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_51.jpg" alt="噬魂 52" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 52</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_52.jpg" alt="噬魂 53" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 53</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_53.jpg" alt="噬魂 54" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 54</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_54.jpg" alt="噬魂 55" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 55</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_55.jpg" alt="噬魂 56" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 56</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_56.jpg" alt="噬魂 57" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 57</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_57.jpg" alt="噬魂 58" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 58</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_58.jpg" alt="噬魂 59" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 59</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_59.jpg" alt="噬魂 60" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 60</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_60.jpg" alt="噬魂 61" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 61</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_61.jpg" alt="噬魂 62" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 62</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_62.jpg" alt="噬魂 63" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 63</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_63.jpg" alt="噬魂 64" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 64</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_64.jpg" alt="噬魂 65" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 65</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_65.jpg" alt="噬魂 66" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 66</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_66.jpg" alt="噬魂 67" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 67</figcaption></figure>
-<figure class="illust-item"><img src="/images/neta/kuu_67.jpg" alt="噬魂 68" loading="lazy" onerror="this.parentElement.style.display='none'" /><figcaption>噬魂 68</figcaption></figure>
+- 本页只是把作中登场的噬魂收集起来的页面。
+- 游戏内没有图鉴模式，因此无法在作中看到全貌；这里放的也仅限游戏中出现过的图像。
+- **为方便起见而定义了名称，但作中并未出现敌人的名称** —— 也就是说全部都是「（暂定）」，敬请谅解。
+- 作为敌人登场的妖怪在此省略，请到各妖怪的角色页确认。
+
+## 噬魂
+
+### 球型（ボール型）
+
+**战斗图标**
+
+<div class="kuu-icons">
+<img class="kuu-icon" src="/images/kuu/ball_k_i.png" alt="球型 变体 1" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/ball_b_i.png" alt="球型 变体 2" loading="lazy" />
 </div>
 
-> 完整噬魂图鉴（按类型分组：球型 / 史莱姆型 / 兽型 / 动物型 / 人型 / 幽灵型 / 现象型 / 合体型 / 力士型等）见[原文噬魂集](https://wikiwiki.jp/tamacolle/%E5%B0%8F%E3%83%8D%E3%82%BF/%E5%96%B0%E9%AD%82%E9%9B%86)。
+**立绘**
+
+<div class="illust-grid">
+<figure class="illust-item"><img src="/images/kuu/ball_k.jpg" alt="球型 变体 1" loading="lazy" /><figcaption>变体 1</figcaption></figure>
+<figure class="illust-item"><img src="/images/kuu/ball_b.jpg" alt="球型 变体 2" loading="lazy" /><figcaption>变体 2</figcaption></figure>
+</div>
+
+### 史莱姆型（スライム型）
+
+> ※ 立绘全种共通。※ 活动周回的派生型也相同。
+
+**战斗图标**
+
+<div class="kuu-icons">
+<img class="kuu-icon" src="/images/kuu/slime_t_i.png" alt="史莱姆型 变体 1" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/slime_k_i.png" alt="史莱姆型 变体 2" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/slime_y_i.png" alt="史莱姆型 变体 3" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/slime_o_i.png" alt="史莱姆型 变体 4" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/slime_b_i.png" alt="史莱姆型 变体 5" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/slime_c_i.png" alt="史莱姆型 变体 6" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/slime_j_i.png" alt="史莱姆型 变体 7" loading="lazy" />
+</div>
+
+**立绘**
+
+<div class="illust-grid">
+<figure class="illust-item"><img src="/images/kuu/slime.jpg" alt="史莱姆型 立绘" loading="lazy" /><figcaption>立绘</figcaption></figure>
+</div>
+
+### 摩罗神型（マーラ様型）
+
+> ※ 立绘全种共通。
+
+**战斗图标**
+
+<div class="kuu-icons">
+<img class="kuu-icon" src="/images/kuu/mara_t_i.png" alt="摩罗神型 变体 1" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/mara_k_i.png" alt="摩罗神型 变体 2" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/mara_y_i.png" alt="摩罗神型 变体 3" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/mara_o_i.png" alt="摩罗神型 变体 4" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/mara_b_i.png" alt="摩罗神型 变体 5" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/mara_c_i.png" alt="摩罗神型 变体 6" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/mara_j_i.png" alt="摩罗神型 变体 7" loading="lazy" />
+</div>
+
+**立绘**
+
+<div class="illust-grid">
+<figure class="illust-item"><img src="/images/kuu/mara.jpg" alt="摩罗神型 立绘" loading="lazy" /><figcaption>立绘</figcaption></figure>
+</div>
+
+### 兽型（ケモノ型）
+
+**战斗图标**
+
+<div class="kuu-icons">
+<img class="kuu-icon" src="/images/kuu/kemono_t_i.png" alt="兽型 变体 1" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/kemono_k_i.png" alt="兽型 变体 2" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/kemono_y_i.png" alt="兽型 变体 3" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/kemono_o_i.png" alt="兽型 变体 4" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/kemono_b_i.png" alt="兽型 变体 5" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/kemono_c_i.png" alt="兽型 变体 6" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/kemono_j_i.png" alt="兽型 变体 7" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/kemono_t2_i.png" alt="兽型 变体 8" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/kemono_k2_i.png" alt="兽型 变体 9" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/kemono_y2_i.png" alt="兽型 变体 10" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/kemono_o2_i.png" alt="兽型 变体 11" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/kemono_b2_i.png" alt="兽型 变体 12" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/kemono_c2_i.png" alt="兽型 变体 13" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/kemono_j2_i.png" alt="兽型 变体 14" loading="lazy" />
+</div>
+
+**立绘**
+
+<div class="illust-grid">
+<figure class="illust-item"><img src="/images/kuu/kemono_t.jpg" alt="兽型 变体 1" loading="lazy" /><figcaption>变体 1</figcaption></figure>
+<figure class="illust-item"><img src="/images/kuu/kemono_k.jpg" alt="兽型 变体 2" loading="lazy" /><figcaption>变体 2</figcaption></figure>
+<figure class="illust-item"><img src="/images/kuu/kemono_y.jpg" alt="兽型 变体 3" loading="lazy" /><figcaption>变体 3</figcaption></figure>
+<figure class="illust-item"><img src="/images/kuu/kemono_o.jpg" alt="兽型 变体 4" loading="lazy" /><figcaption>变体 4</figcaption></figure>
+<figure class="illust-item"><img src="/images/kuu/kemono_b.jpg" alt="兽型 变体 5" loading="lazy" /><figcaption>变体 5</figcaption></figure>
+<figure class="illust-item"><img src="/images/kuu/kemono_c.jpg" alt="兽型 变体 6" loading="lazy" /><figcaption>变体 6</figcaption></figure>
+<figure class="illust-item"><img src="/images/kuu/kemono_j.jpg" alt="兽型 变体 7" loading="lazy" /><figcaption>变体 7</figcaption></figure>
+<figure class="illust-item"><img src="/images/kuu/kemono_t2.jpg" alt="兽型 变体 8" loading="lazy" /><figcaption>变体 8</figcaption></figure>
+<figure class="illust-item"><img src="/images/kuu/kemono_k2.jpg" alt="兽型 变体 9" loading="lazy" /><figcaption>变体 9</figcaption></figure>
+<figure class="illust-item"><img src="/images/kuu/kemono_y2.jpg" alt="兽型 变体 10" loading="lazy" /><figcaption>变体 10</figcaption></figure>
+<figure class="illust-item"><img src="/images/kuu/kemono_o2.jpg" alt="兽型 变体 11" loading="lazy" /><figcaption>变体 11</figcaption></figure>
+<figure class="illust-item"><img src="/images/kuu/kemono_b2.jpg" alt="兽型 变体 12" loading="lazy" /><figcaption>变体 12</figcaption></figure>
+<figure class="illust-item"><img src="/images/kuu/kemono_c2.jpg" alt="兽型 变体 13" loading="lazy" /><figcaption>变体 13</figcaption></figure>
+<figure class="illust-item"><img src="/images/kuu/kemono_j2.jpg" alt="兽型 变体 14" loading="lazy" /><figcaption>变体 14</figcaption></figure>
+</div>
+
+### 动物型（ドウブツ型）
+
+> ※ 第三种（beast_y）的立绘原 wiki 尚未上传。
+
+**战斗图标**
+
+<div class="kuu-icons">
+<img class="kuu-icon" src="/images/kuu/beast_i_i.png" alt="动物型 变体 1" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/beast_k_i.png" alt="动物型 变体 2" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/beast_y_i.png" alt="动物型 变体 3" loading="lazy" />
+</div>
+
+**立绘**
+
+<div class="illust-grid">
+<figure class="illust-item"><img src="/images/kuu/beast_i.jpg" alt="动物型 变体 1" loading="lazy" /><figcaption>变体 1</figcaption></figure>
+<figure class="illust-item"><img src="/images/kuu/beast_k.jpg" alt="动物型 变体 2" loading="lazy" /><figcaption>变体 2</figcaption></figure>
+</div>
+
+### 人型（ヒト型）
+
+**战斗图标**
+
+<div class="kuu-icons">
+<img class="kuu-icon" src="/images/kuu/human_t_i.png" alt="人型 变体 1" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/human_y_i.png" alt="人型 变体 2" loading="lazy" />
+</div>
+
+**立绘**
+
+<div class="illust-grid">
+<figure class="illust-item"><img src="/images/kuu/human_t.jpg" alt="人型 变体 1" loading="lazy" /><figcaption>变体 1</figcaption></figure>
+<figure class="illust-item"><img src="/images/kuu/human_y.jpg" alt="人型 变体 2" loading="lazy" /><figcaption>变体 2</figcaption></figure>
+</div>
+
+### 幽灵型（ユウレイ型）
+
+**战斗图标**
+
+<div class="kuu-icons">
+<img class="kuu-icon" src="/images/kuu/ghost_k_i.png" alt="幽灵型 变体 1" loading="lazy" />
+<img class="kuu-icon" src="/images/kuu/ghost_j_i.png" alt="幽灵型 变体 2" loading="lazy" />
+</div>
+
+**立绘**
+
+<div class="illust-grid">
+<figure class="illust-item"><img src="/images/kuu/ghost_k.jpg" alt="幽灵型 变体 1" loading="lazy" /><figcaption>变体 1</figcaption></figure>
+<figure class="illust-item"><img src="/images/kuu/ghost_j.jpg" alt="幽灵型 变体 2" loading="lazy" /><figcaption>变体 2</figcaption></figure>
+</div>
+
+### 现象型（ゲンショウ型）
+
+**战斗图标**
+
+<div class="kuu-icons">
+<img class="kuu-icon" src="/images/kuu/fire_i.png" alt="现象型 变体 1" loading="lazy" />
+</div>
+
+**立绘**
+
+<div class="illust-grid">
+<figure class="illust-item"><img src="/images/kuu/fire.jpg" alt="现象型 立绘" loading="lazy" /><figcaption>立绘</figcaption></figure>
+</div>
+
+### 合体型（ガッタイ型）
+
+> ※ 原 wiki 此节的图标与立绘均为未上传的添付占位，暂无图片。
+
+_原 wiki 此节暂无图片。_
+
+## 限定噬魂
+
+### 力士型（リキシ型）
+
+**战斗图标**
+
+<div class="kuu-icons">
+<img class="kuu-icon" src="/images/kuu/sumou_b.png" alt="力士型 变体 1" loading="lazy" />
+</div>
+
+**立绘**
+
+<div class="illust-grid">
+<figure class="illust-item"><img src="/images/kuu/sumou_b01.jpg" alt="力士型 变体 1" loading="lazy" /><figcaption>变体 1</figcaption></figure>
+<figure class="illust-item"><img src="/images/kuu/sumou_b2.jpg" alt="力士型 变体 2" loading="lazy" /><figcaption>变体 2</figcaption></figure>
+</div>
+
+## 噬魂以外
+
+### 现地人（現地人）
+
+**战斗图标**
+
+<div class="kuu-icons">
+<img class="kuu-icon" src="/images/kuu/onitokage.png" alt="现地人 变体 1" loading="lazy" />
+</div>
+
+**立绘**
+
+<div class="illust-grid">
+<figure class="illust-item"><img src="/images/kuu/onitokage_b1.jpg" alt="现地人 立绘" loading="lazy" /><figcaption>立绘</figcaption></figure>
+</div>

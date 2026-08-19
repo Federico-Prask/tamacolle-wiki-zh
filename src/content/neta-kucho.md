@@ -1,6 +1,6 @@
 ---
 id: neta-kucho
-title: "豆知识 · 角色语气表"
+title: "小趣闻 · 角色语气表"
 ja: "小ネタ/キャラ口調表"
 source: https://wikiwiki.jp/tamacolle/%E5%B0%8F%E3%83%8D%E3%82%BF/%E3%82%AD%E3%83%A3%E3%83%A9%E5%8F%A3%E8%AA%BF%E8%A1%A8
 ---

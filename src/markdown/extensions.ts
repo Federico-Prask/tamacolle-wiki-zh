@@ -11,6 +11,9 @@
  *   [ruby:かな]漢字[/ruby]        振假名（ruby 注音）
  *   [spoiler]剧透内容[/spoiler]   涂黑，悬停/点击显形
  *   [kbd]Ctrl[/kbd]               按键样式
+ *   [char:iga]                    角色引用：头像 + 名字 + 站内链接
+ *   [char:iga|]                   同上，但只要头像
+ *   [char:iga|伊賀]               同上，自定义显示名
  *
  * 块级语法
  * --------
@@ -29,6 +32,7 @@
 
 import type { MarkedExtension, Tokens, TokenizerThis, RendererThis } from 'marked'
 import { resolveColor, resolveBgColor } from './colors'
+import { lookupChar } from './chars'
 
 /* ------------------------------------------------------------------ *
  * 工具
@@ -189,6 +193,61 @@ function makeSimpleTagExtension(
       return render(this.parser.parseInline(token.tokens as never))
     },
   }
+}
+
+/* ------------------------------------------------------------------ *
+ * 行内：[char:slug] —— 角色引用（头像 + 名字 + 站内链接）
+ *
+ * 原 wiki 的表格单元格里放的是头像图 + 名字 + 指向角色页的链接，
+ * 例如 衣装表、速度表、ハレの日カレンダー。本扩展提供等价写法：
+ *
+ *   [char:iga]          头像 + 「伊贺」+ 链接（默认，纵向排列）
+ *   [char:iga|]         仅头像，不显示名字
+ *   [char:iga|伊賀]     自定义显示名（用于原文保留日文名的场合）
+ *   [char:伊賀]         也可直接用日文原名或中文名当键
+ *
+ * 查不到的键会降级成纯文字（外加一个 title 提示），不会炸掉整页。
+ * ------------------------------------------------------------------ */
+
+const charRefExtension: NonNullable<MarkedExtension['extensions']>[number] = {
+  name: 'tcCharRef',
+  level: 'inline',
+  start(src: string) {
+    const i = src.indexOf('[char:')
+    return i < 0 ? undefined : i
+  },
+  tokenizer(this: TokenizerThis, src: string) {
+    const m = /^\[char:([^\]|]+)(?:\|([^\]]*))?\]/.exec(src)
+    if (!m) return undefined
+    return {
+      type: 'tcCharRef',
+      raw: m[0],
+      key: m[1].trim(),
+      // undefined = 用默认名；'' = 显式要求不显示名字
+      label: m[2] === undefined ? undefined : m[2].trim(),
+    } as Tokens.Generic
+  },
+  renderer(token: Tokens.Generic) {
+    const key = String(token.key)
+    const ref = lookupChar(key)
+    if (!ref) {
+      // 未知角色：保留文字，标注出来便于排查，而不是静默丢失
+      return `<span class="tc-charref tc-charref-unknown" title="未知角色引用：${escapeHtml(
+        key,
+      )}">${escapeHtml(key)}</span>`
+    }
+    const label = token.label === undefined ? ref.zh : String(token.label)
+    const name = label ? `<span class="tc-charref-name">${escapeHtml(label)}</span>` : ''
+    const alt = escapeHtml(label || ref.zh)
+    return (
+      `<a class="tc-charref" href="#/page/${ref.slug}" title="${escapeHtml(ref.zh)}（${escapeHtml(
+        ref.ja,
+      )}）">` +
+      `<img class="tc-charref-icon" src="${ref.icon}" alt="${alt}" loading="lazy" />` +
+      name +
+      `</a>`
+    )
+  },
 }
 
 /* ------------------------------------------------------------------ *
@@ -565,6 +624,7 @@ export const tamacolleExtension: MarkedExtension = {
     ...(makeWrapExtension('tcBg', 'bg', 'background', resolveBgColor) || []),
     ...(makeWrapExtension('tcMark', 'mark', 'background', resolveBgColor) || []),
     rubyExtension,
+    charRefExtension,
     makeSimpleTagExtension(
       'tcSpoiler',
       'spoiler',

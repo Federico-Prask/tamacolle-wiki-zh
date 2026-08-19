@@ -9,13 +9,13 @@ source: https://wikiwiki.jp/tamacolle/%E3%82%B5%E3%82%A4%E3%83%89%E3%82%B9%E3%83
 
 ### 登场人物
 
-> ※ 含剧透，请注意
-
-| 主要登场 | | | | |
-| --- | --- | --- | --- | --- |
-| 初期男儿（自选） | [大和](#/page/yamato) | [河内](#/page/kawachi) | [信浓](#/page/shinano) | [安房](#/page/awa) |
-| [常陆](#/page/hitachi) | [若狭](#/page/wakasa) | [加贺](#/page/kaga) | [播磨](#/page/harima) | [备后](#/page/bingo) |
-| [但马](#/page/tajima) | [因幡](#/page/inaba) | [肥前](#/page/hizen) | | |
+:::spoiler 剧透注意
+| 地魂男儿 | [<] | [<] | [<] | [<] |
+| :-- | :-: | :-: | :-: | :-: |
+| <img class="gacha-icon" src="/images/gacha/kunidama.gif" alt="初期男儿" loading="lazy" /><br>初期男儿 | [char:yamato] | [char:kawachi] | [char:shinano] | [char:awa] |
+| [char:hitachi] | [char:wakasa] | [char:kaga] | [char:harima] | [char:bingo] |
+| [char:tajima] | [char:inaba] | [char:hizen] |  |  |
+:::
 
 ### 章节流程
 

@@ -7,13 +7,13 @@ source: https://wikiwiki.jp/tamacolle/%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%B9%E3%83
 
 ## 登场人物
 
-> ※ 含剧透，请注意
+:::spoiler 剧透注意
+| 地魂男儿 | [<] | [<] | [<] |
+| :-- | :-: | :-: | :-: |
+| <img class="gacha-icon" src="/images/gacha/kunidama.gif" alt="初期男儿" loading="lazy" /><br>初期男儿 | [char:sanuki] | [char:iyo] | [char:tosa] |
 
-| 主要登场 | | | |
-| --- | --- | --- | --- |
-| 初期男儿（自选） | [讃岐](#/page/sanuki) | [伊予](#/page/iyo) | [土佐](#/page/tosa) |
-
-部分登场：[但马](#/page/tajima)
+部分登场：[char:tajima]
+:::
 
 ## 传递心愿 讃岐街道
 

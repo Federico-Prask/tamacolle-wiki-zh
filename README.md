@@ -1,3 +1,5 @@
+> **仓库地址**：<https://github.com/Federico-Prask/tamacolle-wiki-zh>
+
 # 写在前面
 
 > [!IMPORTANT]
@@ -9,6 +11,7 @@
 
 将日本同人游戏《魂これ やまとまほろば 地魂これくしょん》的非官方 Wiki（[wikiwiki.jp/tamacolle](https://wikiwiki.jp/tamacolle/)）翻译成中文的站点。
 
+- 源码：[github.com/Federico-Prask/tamacolle-wiki-zh](https://github.com/Federico-Prask/tamacolle-wiki-zh)
 - 图片：原 Wiki 图片经代理下载后保存，本地引用
 
 ## 快速开始

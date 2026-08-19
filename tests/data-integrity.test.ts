@@ -27,6 +27,11 @@ interface Char {
   tactics?: Tactic[]
   voiceMd?: string
   motifZh?: string
+  kv?: [string, string][]
+  illusts?: { local?: string }[]
+  status?: [string, string][]
+  triviaZh?: string
+  descZh?: string
 }
 interface Page {
   id: string
@@ -176,5 +181,144 @@ describe('译文', () => {
       if (!c.motifZh) continue
       expect(() => renderMarkdown(c.motifZh as string), id).not.toThrow()
     }
+  })
+})
+
+describe('角色 kv 字段完整性（批次 12）', () => {
+  const KUNI_KEYS = ['武器种', '所属', '国势', '节庆日', '实装', '擅长地形', '拔魂技巧名', '效果', '拔魂速度']
+
+  it('51 名地魂的 kv 九项齐全（伊予曾缺「武器种」）', () => {
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      if (c.type !== 'kunidama') continue
+      const kv = Object.fromEntries((c.kv ?? []) as [string, string][])
+      const miss = KUNI_KEYS.filter((k) => !(k in kv))
+      if (miss.length) bad.push(`${id}: 缺 ${miss.join('/')}`)
+    }
+    expect(bad).toEqual([])
+  })
+
+  it('武器种取值只用原 wiki 出现过的写法', () => {
+    // 原 wiki 对同一类存在两种写法：武蔵=砲撃，其余=大砲。按原文保留，不擅自统一数据
+    const OK = new Set(['短刀', '刀', '槍', '重装', '弓', '大砲', '砲撃', '術'])
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      if (c.type !== 'kunidama') continue
+      const w = Object.fromEntries((c.kv ?? []) as [string, string][])['武器种']
+      if (!OK.has(w)) bad.push(`${id}: ${w}`)
+    }
+    expect(bad).toEqual([])
+  })
+
+  it('立绘引用的本地文件都存在', () => {
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      for (const il of (c.illusts ?? []) as { local?: string }[]) {
+        if (il.local && !fs.existsSync('public' + il.local)) bad.push(`${id}: ${il.local}`)
+      }
+    }
+    expect(bad).toEqual([])
+  })
+
+  it('语音表每张的列数一致', () => {
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      const rows = (c.voiceMd ?? '').split('\n').filter((r) => r.trim().startsWith('|'))
+      if (!rows.length) continue
+      const widths = new Set(rows.map((r) => r.trim().replace(/^\||\|$/g, '').split('|').length))
+      if (widths.size > 1) bad.push(`${id}: ${[...widths].join('/')}`)
+    }
+    expect(bad).toEqual([])
+  })
+})
+
+describe('角色 status 完整性（批次 13）', () => {
+  const ST_KEYS = ['HP', '攻击值', '力量', '魂压值', '技巧', '命中', '丰满足', '速度']
+
+  it('51 名地魂的初始能力值八项齐全且顺序一致', () => {
+    // 原页把这一项写作「技」或「技術」，早期转换只认「技」，
+    // 导致石見・筑前漏了「技巧」（各只有 7 项）
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      if (c.type !== 'kunidama') continue
+      const keys = ((c.status ?? []) as [string, string][]).map(([k]) => k)
+      if (keys.join(',') !== ST_KEYS.join(',')) bad.push(`${id}: ${keys.join('/')}`)
+    }
+    expect(bad).toEqual([])
+  })
+
+  it('六原职员相馬聯有语音表（曾整块缺失）', () => {
+    const soma = chars.find((x) => x.id === 'soma')!
+    expect((soma.c.voiceMd ?? '').length).toBeGreaterThan(200)
+    expect(soma.c.voiceMd).toContain('资料室')
+  })
+
+  it('全站没有原 wiki 的编辑占位提示残留', () => {
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      for (const f of ['voiceMd', 'motifZh', 'triviaZh', 'descZh'] as const) {
+        const t = (c[f] ?? '') as string
+        if (/ここに.*記入|記述してください/.test(t)) bad.push(`${id}.${f}`)
+      }
+    }
+    expect(bad).toEqual([])
+  })
+})
+
+describe('译文覆盖与新角色数据（批次 14）', () => {
+  it('凡有日文原文的字段都有对应译文', () => {
+    // 比「译文字段非空」更准确的判据：原页本来就没写的内容不算漏译
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      for (const [ja, zh] of [['motif', 'motifZh'], ['trivia', 'triviaZh'], ['desc', 'descZh']] as const) {
+        const src = ((c as Record<string, unknown>)[ja] ?? '') as string
+        const dst = ((c as Record<string, unknown>)[zh] ?? '') as string
+        if (src.trim() && !dst.trim()) bad.push(`${id}.${zh}`)
+      }
+    }
+    expect(bad).toEqual([])
+  })
+
+  it('薩摩有语音表（2026/8 新实装，曾整块缺失）', () => {
+    const s = chars.find((x) => x.id === 'satsuma')!
+    expect((s.c.voiceMd ?? '').length).toBeGreaterThan(500)
+    expect(s.c.voiceMd).toContain('切斯托')
+  })
+
+  it('六原/妖怪的 kv 非空（アルクトス与 6 名六原职员曾为空）', () => {
+    // riku / azukiarai 在原页确实没有属性表（りく为 NPC 式存在、小豆洗い无数据栏），属实
+    const NO_KV = ['riku', 'azukiarai']
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      if (c.type === 'kunidama' || NO_KV.includes(id)) continue
+      if (!(c.kv ?? []).length) bad.push(id)
+    }
+    expect(bad).toEqual([])
+  })
+})
+
+describe('妖怪与六原职员（批次 15 · 收尾）', () => {
+  it('全站语音表统一为四列（分类/场景/子场景/台词）', () => {
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      const rows = (c.voiceMd ?? '').split('\n').filter((r) => r.trim().startsWith('|'))
+      if (!rows.length) continue
+      const w = new Set(rows.map((r) => r.trim().replace(/^\||\|$/g, '').split('|').length))
+      if (w.size !== 1 || !w.has(4)) bad.push(`${id}: ${[...w].join('/')}`)
+    }
+    expect(bad).toEqual([])
+  })
+
+  it('夜行先生有语音表与小知识（曾双双缺失）', () => {
+    const y = chars.find((x) => x.id === 'yakou-san')!
+    expect((y.c.voiceMd ?? '').length).toBeGreaterThan(200)
+    expect(y.c.triviaZh).toContain('黑铁')
+  })
+
+  it('每个角色都有语音表（原页确无者除外）', () => {
+    // 原页「声」一节为空或仅占位的角色
+    const NO_VOICE: string[] = []
+    const bad = chars.filter((x) => !NO_VOICE.includes(x.id) && !(x.c.voiceMd ?? '').trim())
+    expect(bad.map((x) => x.id)).toEqual([])
   })
 })

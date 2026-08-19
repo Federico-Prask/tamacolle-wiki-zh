@@ -9,11 +9,11 @@ source: https://wikiwiki.jp/tamacolle/%E3%82%B5%E3%82%A4%E3%83%89%E3%82%B9%E3%83
 
 ### 登场人物
 
-> ※ 含剧透，请注意
-
-| 地魂男儿 | | |
-| --- | --- | --- |
-| 山城 | 志摩 | 纪伊 |
+:::spoiler 剧透注意
+| 地魂男儿 | [<] | [<] |
+| :-- | :-: | :-: |
+| [char:yamashiro] | [char:shima] | [char:kii] |
+:::
 
 ### 章节流程
 

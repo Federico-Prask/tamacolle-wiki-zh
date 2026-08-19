@@ -21,7 +21,14 @@ source: https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82
 - 初回报酬：星阳石 x10（无战斗章节）
 - '25 年实装了「兜裆布服装」的地魂以该身姿登场。
 
-**登场地魂**（※剧透注意）：大和、河内、和泉、信浓、伊贺、尾张、远江、伊豆、相模、上总、能登、纪伊、阿波、播磨、备中、周防、长门、因幡、隐岐、筑前。
+:::spoiler 登场地魂（剧透注意）
+| 地魂男儿 | [<] | [<] | [<] | [<] |
+| :-: | :-: | :-: | :-: | :-: |
+| [char:yamato] | [char:kawachi] | [char:izumi] | [char:shinano] | [char:iga] |
+| [char:owari] | [char:totomi] | [char:izu] | [char:sagami] | [char:kazusa] |
+| [char:noto] | [char:kii] | [char:awa2] | [char:harima] | [char:bichu] |
+| [char:suo] | [char:nagato] | [char:inaba] | [char:oki] | [char:chikuzen] |
+:::
 
 #### 第三届奉纳相扑大会 · 噬魂比赛
 
@@ -29,15 +36,29 @@ source: https://wikiwiki.jp/tamacolle/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82
 
 **比赛概要**（※剧透注意）：展开「地魂男儿 vs 噬魂力士」2 场比赛。从一、二场比赛各自规定的地魂男儿中选出。基本随机，但可在部队编成中把想选的地魂放到左起第一、二位来尝试指定。
 
-- **第一场**：隐岐、上总、能登、备中、播磨、因幡
-- **第二场**：远江、长门、筑前、伊豆、纪伊、相模
+| 场次 | 候补地魂 | [<] | [<] | [<] | [<] | [<] |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| 第一场 | [char:oki] | [char:kazusa] | [char:noto] | [char:bichu] | [char:harima] | [char:inaba] |
+| 第二场 | [char:totomi] | [char:nagato] | [char:chikuzen] | [char:izu] | [char:kii] | [char:sagami] |
 
 #### 第三届奉纳相扑大会 · 本届福男儿是！？
 
 - 初回报酬：星阳石 x10
 - 剧情通关报酬：**周防 手办（福男儿）x1**
 
-**登场地魂**（※剧透注意）：大和、河内、伊贺、志摩、尾张、三河、远江、骏河、伊豆、甲斐、相模、武藏、下总、上总、安房、常陆、若狭、越前、加贺、能登、越后、纪伊、阿波、讃岐、伊予、土佐、播磨、备前、备中、备后、周防、长门、丹波、但马、因幡、石见、隐岐、丰后、筑前、筑后、肥前、日向、大隅、壹岐。
+:::spoiler 登场地魂（剧透注意）
+| 地魂男儿 | [<] | [<] | [<] | [<] |
+| :-: | :-: | :-: | :-: | :-: |
+| [char:yamato] | [char:kawachi] | [char:iga] | [char:shima] | [char:owari] |
+| [char:mikawa] | [char:totomi] | [char:suruga] | [char:izu] | [char:kai] |
+| [char:sagami] | [char:musashi] | [char:shimousa] | [char:kazusa] | [char:awa] |
+| [char:hitachi] | [char:wakasa] | [char:echizen] | [char:kaga] | [char:noto] |
+| [char:echigo] | [char:kii] | [char:awa2] | [char:sanuki] | [char:iyo] |
+| [char:tosa] | [char:harima] | [char:bizen] | [char:bichu] | [char:bingo] |
+| [char:suo] | [char:nagato] | [char:tanba] | [char:tajima] | [char:inaba] |
+| [char:iwami] | [char:oki] | [char:bungo] | [char:chikuzen] | [char:chikugo] |
+| [char:hizen] | [char:hyuga] | [char:osumi] | [char:iki] |  |
+:::
 
 ### 本剧中的用语 · 梗解说
 

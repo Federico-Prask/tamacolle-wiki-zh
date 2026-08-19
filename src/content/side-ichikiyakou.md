@@ -9,11 +9,11 @@ source: https://wikiwiki.jp/tamacolle/%E3%82%B5%E3%82%A4%E3%83%89%E3%82%B9%E3%83
 
 ### 登场人物
 
-> ※ 含剧透，请注意
-
-| 主要登场 | | | |
-| --- | --- | --- | --- |
-| 初期男儿（自选） | [伊予](#/page/iyo) | [土佐](#/page/tosa) | 部队员×2 |
+:::spoiler 剧透注意
+| 地魂男儿 | [<] | [<] | [<] |
+| :-- | :-: | :-: | :-: |
+| <img class="gacha-icon" src="/images/gacha/kunidama.gif" alt="初期男儿" loading="lazy" /><br>初期男儿 | [char:iyo] | [char:tosa] | 部队员 ×2 |
+:::
 
 ### 章节流程
 

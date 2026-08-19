@@ -9,7 +9,7 @@ source: https://wikiwiki.jp/tamacolle/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3
 
 にじたま官方也有 Q&A 页面，请先确认：[官方 Q&A](https://www.fanbox.cc/@nijitama/posts/4705559)。
 
-另外[豆知识页](#/page/neta)、[用语集](#/page/glossary)里也有相关数据（均有剧透，请注意）。
+另外[小趣闻页](#/page/neta)、[用语集](#/page/glossary)里也有相关数据（均有剧透，请注意）。
 
 ## 开始游戏之前
 

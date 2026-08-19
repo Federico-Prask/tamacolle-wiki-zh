@@ -32,6 +32,12 @@ const rokuhara = computed(() => all.value.filter((c) => c.type === 'rokuhara'))
 
 const REGION_ORDER = ['畿内', '東海道', '東山道', '北陸道', '山陰道', '山陽道', '南海道', '西海道']
 const WEAPON_ORDER = ['短刀', '刀', '槍', '重装', '弓', '大砲', '術']
+/**
+ * 原 wiki 对同一武器种存在两种写法：武蔵的资料室写「砲撃」，
+ * 肥前・讃岐・豊後写「大砲」。按原文如实保留在角色数据里，
+ * 但分类时归一，否则武蔵会单独成一组掉队。
+ */
+const WEAPON_ALIAS: Record<string, string> = { 砲撃: '大砲' }
 /** 擅长环境：与 kv 里的「擅长地形」对应 */
 const ENV_ORDER = ['自然', '街', '水边', '难所']
 /**
@@ -140,7 +146,8 @@ const sections = computed<DexSection[]>(() => {
   if (m === 'weapon') {
     const map: Record<string, DexChar[]> = {}
     kunidama.value.forEach((c) => {
-      const w = (c.kv && Object.fromEntries(c.kv)['武器种']) || '未确认'
+      const raw = (c.kv && Object.fromEntries(c.kv)['武器种']) || '未确认'
+      const w = WEAPON_ALIAS[raw] || raw
       ;(map[w] ||= []).push(c)
     })
     const keys = [...WEAPON_ORDER, ...Object.keys(map).filter((k) => !WEAPON_ORDER.includes(k))]

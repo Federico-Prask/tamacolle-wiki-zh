@@ -7,11 +7,11 @@ source: https://wikiwiki.jp/tamacolle/%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%B9%E3%83
 
 ## 登场人物
 
-> ※ 含剧透，请注意
-
-| 主要登场 | | | | |
-| --- | --- | --- | --- | --- |
-| 初期男儿（自选） | [越前](#/page/echizen) | [加贺](#/page/kaga) | [能登](#/page/noto) | [越后](#/page/echigo) |
+:::spoiler 剧透注意
+| 地魂男儿 | [<] | [<] | [<] | [<] |
+| :-- | :-: | :-: | :-: | :-: |
+| <img class="gacha-icon" src="/images/gacha/kunidama.gif" alt="初期男儿" loading="lazy" /><br>初期男儿 | [char:echizen] | [char:kaga] | [char:noto] | [char:echigo] |
+:::
 
 ## 强者们的雪路 北陆道
 

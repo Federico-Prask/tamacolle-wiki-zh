@@ -1,11 +1,17 @@
 ---
 id: wiki-syntax
 title: "本站扩展语法"
-ja: "本Wiki拡張記法"
+ja: "—"
 source: ""
 ---
 
 ## 本站扩展语法
+
+:::note
+本页是**中文站自建**的说明页，原 Wiki 没有对应页面。
+这里记录的是本站 Markdown 解释器额外支持的语法，供本站编辑者参考。
+原 Wiki 自身的排版规则请见[排版规则](#/page/format-rule)。
+:::
 
 本站正文用 Markdown 书写，并在其上扩展了几种原版 Markdown 没有、
 但翻译原 Wiki 时确实需要的写法（文字颜色、注音、合并单元格表格等）。

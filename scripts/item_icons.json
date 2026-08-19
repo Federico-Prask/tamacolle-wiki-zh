@@ -1,0 +1,842 @@
+{
+  "急急如律令札": {
+    "file": "item_fuda.png",
+    "slug": "fuda",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_fuda.png"
+  },
+  "浓缩魂汁": {
+    "file": "item_nousyuku.png",
+    "slug": "nousyuku",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_nousyuku.png"
+  },
+  "灵种碎片": {
+    "file": "item_reishu.png",
+    "slug": "reishu",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_reishu.png"
+  },
+  "银之衣装札": {
+    "file": "ishoufuda_silver.png",
+    "slug": "ishoufuda_silver",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/ishoufuda_silver.png"
+  },
+  "金之衣装札": {
+    "file": "ishoufuda_gold.png",
+    "slug": "ishoufuda_gold",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/ishoufuda_gold.png"
+  },
+  "泳装交换札": {
+    "file": "mizugikoukanfuda.png",
+    "slug": "mizugikoukanfuda",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/mizugikoukanfuda.png"
+  },
+  "汤桶": {
+    "file": "item_yuoke.png",
+    "slug": "yuoke",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_yuoke.png"
+  },
+  "搬家道具": {
+    "file": "item_hikkoshi.png",
+    "slug": "hikkoshi",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_hikkoshi.png"
+  },
+  "利き魂袋（鉴魂袋）": {
+    "file": "item_smn.png",
+    "slug": "smn",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_smn.png"
+  },
+  "安眠枕（限定）": {
+    "file": "item_anmin_gentei.png",
+    "slug": "anmin_gentei",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_anmin_gentei.png"
+  },
+  "闪耀奖牌": {
+    "file": "kagayakumedal_item.png",
+    "slug": "medal_kagayaku",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/kagayakumedal_item.png"
+  },
+  "虹色奖牌": {
+    "file": "nijimedal_item.png",
+    "slug": "medal_niji",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/nijimedal_item.png"
+  },
+  "马克杯": {
+    "file": "item_cup.PNG",
+    "slug": "cup",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_cup.PNG"
+  },
+  "记事本": {
+    "file": "item_memo.PNG",
+    "slug": "memo",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_memo.PNG"
+  },
+  "纸巾盒": {
+    "file": "item_tish.PNG",
+    "slug": "tish",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_tish.PNG"
+  },
+  "仙人掌": {
+    "file": "item_sabo.PNG",
+    "slug": "sabo",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_sabo.PNG"
+  },
+  "江户探索": {
+    "file": "item_ani1.PNG",
+    "slug": "ani1",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_ani1.PNG"
+  },
+  "溪流垂钓": {
+    "file": "item_keiryu.png",
+    "slug": "keiryu",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_keiryu.png"
+  },
+  "草莓蛋糕": {
+    "file": "item_cake.png",
+    "slug": "cake",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_cake.png"
+  },
+  "心形巧克力": {
+    "file": "item_chocolate.png",
+    "slug": "chocolate",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_chocolate.png"
+  },
+  "金比罗参拜": {
+    "file": "item_kompira.png",
+    "slug": "kompira",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_kompira.png"
+  },
+  "四国喀斯特": {
+    "file": "item_shikoku_culst.png",
+    "slug": "shikoku_culst",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_shikoku_culst.png"
+  },
+  "三途川": {
+    "file": "item_sanzunokawa.png",
+    "slug": "sanzunokawa",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_sanzunokawa.png"
+  },
+  "星夜": {
+    "file": "item_seiya.png",
+    "slug": "seiya",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_seiya.png"
+  },
+  "雪之北陆": {
+    "file": "item_yukinohokuriku-0.png",
+    "slug": "yukinohokuriku",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_yukinohokuriku-0.png"
+  },
+  "雪消之丘": {
+    "file": "item_yukigenooka-0.png",
+    "slug": "yukigenooka",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_yukigenooka-0.png"
+  },
+  "跨年荞麦面": {
+    "file": "item_toshikoshi_soba.png",
+    "slug": "toshikoshi_soba",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_toshikoshi_soba.png"
+  },
+  "正月装饰": {
+    "file": "item_newyear_decoration.png",
+    "slug": "newyear_decoration",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_newyear_decoration.png"
+  },
+  "慰劳品": {
+    "file": "item_sashiire.png",
+    "slug": "sashiire",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_sashiire.png"
+  },
+  "[地魂]之心": {
+    "file": "heart.gif",
+    "slug": "heart",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/heart.gif"
+  },
+  "畿内的记文": {
+    "file": "kinai.jpg",
+    "slug": "kinai",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/kinai.jpg"
+  },
+  "东山的记文": {
+    "file": "tousan.png",
+    "slug": "tousan",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/tousan.png"
+  },
+  "东海的记文": {
+    "file": "toukai.png",
+    "slug": "toukai",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/toukai.png"
+  },
+  "北陆的记文": {
+    "file": "hokuriku.png",
+    "slug": "hokuriku",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/hokuriku.png"
+  },
+  "南海的记文": {
+    "file": "nankai.jpg",
+    "slug": "nankai",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/nankai.jpg"
+  },
+  "山阳的记文": {
+    "file": "sanyo.jpg",
+    "slug": "sanyo",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/sanyo.jpg"
+  },
+  "山阴的记文": {
+    "file": "sanin.jpg",
+    "slug": "sanin",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/sanin.jpg"
+  },
+  "西海的记文": {
+    "file": "seikai.jpg",
+    "slug": "seikai",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/seikai.jpg"
+  },
+  "短刀的智识": {
+    "file": "dagger.jpg",
+    "slug": "dagger",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/dagger.jpg"
+  },
+  "刀的智识": {
+    "file": "katana.png",
+    "slug": "katana",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/katana.png"
+  },
+  "枪的智识": {
+    "file": "yari.png",
+    "slug": "yari",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/yari.png"
+  },
+  "重装的智识": {
+    "file": "ax.jpg",
+    "slug": "ax",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/ax.jpg"
+  },
+  "弓的智识": {
+    "file": "bow.jpg",
+    "slug": "bow",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/bow.jpg"
+  },
+  "大炮的智识": {
+    "file": "canon.jpg",
+    "slug": "canon",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/canon.jpg"
+  },
+  "术的智识": {
+    "file": "jutsu.jpg",
+    "slug": "jutsu",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/jutsu.jpg"
+  },
+  "柔毛": {
+    "file": "yawatama.jpg",
+    "slug": "yawatama",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/yawatama.jpg"
+  },
+  "雄角": {
+    "file": "tuno.jpg",
+    "slug": "tuno",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/tuno.jpg"
+  },
+  "营养丸": {
+    "file": "eiyogan.jpg",
+    "slug": "eiyogan",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/eiyogan.jpg"
+  },
+  "兽脂": {
+    "file": "jushi.jpg",
+    "slug": "jushi",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/jushi.jpg"
+  },
+  "大众春画": {
+    "file": "shunga.png",
+    "slug": "shunga",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/shunga.png"
+  },
+  "精致木芥子": {
+    "file": "kokeshi.png",
+    "slug": "kokeshi",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/kokeshi.png"
+  },
+  "清净潮水": {
+    "file": "item_holywater.png",
+    "slug": "holywater",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_holywater.png"
+  },
+  "阴阳丹": {
+    "file": "item_yinyang.png",
+    "slug": "yinyang",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_yinyang.png"
+  },
+  "小魂守": {
+    "file": "item_小魂守.png",
+    "slug": "mamori_small",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_%E5%B0%8F%E9%AD%82%E5%AE%88.png"
+  },
+  "中魂守·青": {
+    "file": "中魂守1.png",
+    "slug": "mamori_m1",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/%E4%B8%AD%E9%AD%82%E5%AE%881.png"
+  },
+  "中魂守·紫": {
+    "file": "中魂守2.png",
+    "slug": "mamori_m2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/%E4%B8%AD%E9%AD%82%E5%AE%882.png"
+  },
+  "中魂守·黄": {
+    "file": "中魂守3.png",
+    "slug": "mamori_m3",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/%E4%B8%AD%E9%AD%82%E5%AE%883.png"
+  },
+  "大魂守·青": {
+    "file": "大魂守1.png",
+    "slug": "mamori_l1",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/%E5%A4%A7%E9%AD%82%E5%AE%881.png"
+  },
+  "大魂守·橙": {
+    "file": "大魂守2.png",
+    "slug": "mamori_l2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/%E5%A4%A7%E9%AD%82%E5%AE%882.png"
+  },
+  "大魂守·绿": {
+    "file": "大魂守3.png",
+    "slug": "mamori_l3",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/%E5%A4%A7%E9%AD%82%E5%AE%883.png"
+  },
+  "大魂守·朱": {
+    "file": "大魂守4.png",
+    "slug": "mamori_l4",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/%E5%A4%A7%E9%AD%82%E5%AE%884.png"
+  },
+  "大魂守·黄": {
+    "file": "大魂守5.png",
+    "slug": "mamori_l5",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/%E5%A4%A7%E9%AD%82%E5%AE%885.png"
+  },
+  "大魂守·牡丹": {
+    "file": "大魂守6.PNG",
+    "slug": "mamori_l6",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/%E5%A4%A7%E9%AD%82%E5%AE%886.PNG"
+  },
+  "大魂守·濡羽": {
+    "file": "大魂守7.png",
+    "slug": "mamori_l7",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/%E5%A4%A7%E9%AD%82%E5%AE%887.png"
+  },
+  "大魂守·纯白": {
+    "file": "大魂守8.png",
+    "slug": "mamori_l8",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/%E5%A4%A7%E9%AD%82%E5%AE%888.png"
+  },
+  "入浴毛巾": {
+    "file": "towel.png",
+    "slug": "towel",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/towel.png"
+  },
+  "春夏服": {
+    "file": "春夏.png",
+    "slug": "haruna",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/%E6%98%A5%E5%A4%8F.png"
+  },
+  "秋冬服": {
+    "file": "akihuyuhuku.png",
+    "slug": "akifuyu",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/akihuyuhuku.png"
+  },
+  "泳装": {
+    "file": "水着_icon.png",
+    "slug": "mizugi",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/%E6%B0%B4%E7%9D%80_icon.png"
+  },
+  "晴服": {
+    "file": "晴れ着.png",
+    "slug": "haregi",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/%E6%99%B4%E3%82%8C%E7%9D%80.png"
+  },
+  "浴衣": {
+    "file": "yukata_item.png",
+    "slug": "yukata",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/yukata_item.png"
+  },
+  "圣诞装扮": {
+    "file": "クリスマス.png",
+    "slug": "christmas",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9.png"
+  },
+  "兜裆布": {
+    "file": "まわし.png",
+    "slug": "mawashi",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/%E3%81%BE%E3%82%8F%E3%81%97.png"
+  },
+  "きぐぱ（玩偶睡衣）": {
+    "file": "kigupa_item.png",
+    "slug": "kigupa",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/kigupa_item.png"
+  },
+  "西点师服": {
+    "file": "patissier.png",
+    "slug": "patissier",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/patissier.png"
+  },
+  "座卓": {
+    "file": "k_zataku.png",
+    "slug": "k_zataku",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/k_zataku.png"
+  },
+  "沙发": {
+    "file": "k_sofa.png",
+    "slug": "k_sofa",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/k_sofa.png"
+  },
+  "床": {
+    "file": "k_bed.png",
+    "slug": "k_bed",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/k_bed.png"
+  },
+  "按摩椅": {
+    "file": "k_massagechair.png",
+    "slug": "k_massagechair",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/k_massagechair.png"
+  },
+  "懒人豆袋": {
+    "file": "k_beadscushion.png",
+    "slug": "k_beadscushion",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/k_beadscushion.png"
+  },
+  "学习桌": {
+    "file": "K_gakusyuutsukue.png",
+    "slug": "k_gakusyuutsukue",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/K_gakusyuutsukue.png"
+  },
+  "浴缸": {
+    "file": "k_yubune.png",
+    "slug": "k_yubune",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/k_yubune.png"
+  },
+  "足浴": {
+    "file": "k_ashiyu.png",
+    "slug": "k_ashiyu",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/k_ashiyu.png"
+  },
+  "教室课桌": {
+    "file": "k_kyoushitsutsukue.png",
+    "slug": "k_kyoushitsutsukue",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/k_kyoushitsutsukue.png"
+  },
+  "晚安语音": {
+    "file": "oyasumi.gif",
+    "slug": "oyasumi",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/oyasumi.gif"
+  },
+  "坪庭": {
+    "file": "h_tsuboniwa.png",
+    "slug": "h_tsuboniwa",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/h_tsuboniwa.png"
+  },
+  "菜园": {
+    "file": "h_hatake.png",
+    "slug": "h_hatake",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/h_hatake.png"
+  },
+  "竹林": {
+    "file": "h_chikurin.png",
+    "slug": "h_chikurin",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/h_chikurin.png"
+  },
+  "日本庭园": {
+    "file": "h_nihonteien.png",
+    "slug": "h_nihonteien",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/h_nihonteien.png"
+  },
+  "油菜花田": {
+    "file": "h_nanohana.png",
+    "slug": "h_nanohana",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/h_nanohana.png"
+  },
+  "和室": {
+    "file": "r_washitsu.png",
+    "slug": "r_washitsu",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/r_washitsu.png"
+  },
+  "带缘侧的和室": {
+    "file": "r_washitsu_e.png",
+    "slug": "r_washitsu_e",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/r_washitsu_e.png"
+  },
+  "洋室": {
+    "file": "r_youshitsu.png",
+    "slug": "r_youshitsu",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/r_youshitsu.png"
+  },
+  "浴室": {
+    "file": "r_yokushitsu.png",
+    "slug": "r_yokushitsu",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/r_yokushitsu.png"
+  },
+  "教室": {
+    "file": "r_kyousihitsu.png",
+    "slug": "r_kyousihitsu",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/r_kyousihitsu.png"
+  },
+  "桐木衣柜": {
+    "file": "t_kiritansu.png",
+    "slug": "t_kiritansu",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/t_kiritansu.png"
+  },
+  "桐木衣柜（茶）": {
+    "file": "t_kiritansu_b.png",
+    "slug": "t_kiritansu_b",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/t_kiritansu_b.png"
+  },
+  "便签本": {
+    "file": "item_memo.PNG",
+    "slug": "memo",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_memo.PNG"
+  },
+  "声闻士入门": {
+    "file": "item_book.PNG",
+    "slug": "book",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_book.PNG"
+  },
+  "金刀比罗参拜": {
+    "file": "item_kompira.png",
+    "slug": "kompira",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_kompira.png"
+  },
+  "封印着什么的破旧佛像": {
+    "file": "item_buddha_statue.png",
+    "slug": "buddha_statue",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_buddha_statue.png"
+  },
+  "绝对不能按的发光神秘开关": {
+    "file": "item_switch.png",
+    "slug": "switch",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_switch.png"
+  },
+  "坠落的UFO": {
+    "file": "item_ufo.png",
+    "slug": "ufo",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_ufo.png"
+  },
+  "满是颗粒的带状物体": {
+    "file": "item_tsubutsubu.png",
+    "slug": "tsubutsubu",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_tsubutsubu.png"
+  },
+  "三途之川": {
+    "file": "item_sanzunokawa.png",
+    "slug": "sanzunokawa",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_sanzunokawa.png"
+  },
+  "黄金赤熊像": {
+    "file": "item_momota.png",
+    "slug": "momota",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_momota.png"
+  },
+  "跨年荞麦": {
+    "file": "item_toshikoshi_soba.png",
+    "slug": "toshikoshi_soba",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_toshikoshi_soba.png"
+  },
+  "呼唤主人之声": {
+    "file": "voice.gif",
+    "slug": "voice",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/voice.gif"
+  },
+  "きぐぱ": {
+    "file": "kigupa_item.png",
+    "slug": "kigupa_item",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/kigupa_item.png"
+  },
+  "糕点师服": {
+    "file": "patissier.png",
+    "slug": "patissier",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/patissier.png"
+  },
+  "教师服": {
+    "file": "patissier.png",
+    "slug": "patissier",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/patissier.png"
+  },
+  "黄金肥前像": {
+    "file": "IMG_1094.jpeg",
+    "slug": "hizen_gold",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/IMG_1094.jpeg"
+  },
+  "黄金常陆像": {
+    "file": "1118_2025.png",
+    "slug": "hitachi_gold",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/1118_2025.png"
+  },
+  "伊贺手办": {
+    "file": "iga_f01-0.png",
+    "slug": "fig_iga",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/iga_f01-0.png"
+  },
+  "伊贺手办（照）": {
+    "file": "iga_f02-0.png",
+    "slug": "fig_iga_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/iga_f02-0.png"
+  },
+  "志摩手办": {
+    "file": "shima_f01-0.png",
+    "slug": "fig_shima",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/shima_f01-0.png"
+  },
+  "志摩手办（喜）": {
+    "file": "shima_f02-0.png",
+    "slug": "fig_shima_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/shima_f02-0.png"
+  },
+  "尾张手办": {
+    "file": "owari_f01-0.png",
+    "slug": "fig_owari",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/owari_f01-0.png"
+  },
+  "尾张手办（惊）": {
+    "file": "owari_f02-0.png",
+    "slug": "fig_owari_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/owari_f02-0.png"
+  },
+  "河内手办": {
+    "file": "kawaxhi_f01-0.png",
+    "slug": "fig_kawachi",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/kawaxhi_f01-0.png"
+  },
+  "河内手办（喜）": {
+    "file": "kawachi_f02-0.png",
+    "slug": "fig_kawachi_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/kawachi_f02-0.png"
+  },
+  "大和手办": {
+    "file": "yamato_f01-0.png",
+    "slug": "fig_yamato",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/yamato_f01-0.png"
+  },
+  "大和手办（照）": {
+    "file": "yamato_f02-0.png",
+    "slug": "fig_yamato_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/yamato_f02-0.png"
+  },
+  "三河手办": {
+    "file": "mikawa_f01-0.png",
+    "slug": "fig_mikawa",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/mikawa_f01-0.png"
+  },
+  "三河手办（照）": {
+    "file": "mikawa_f02-0.png",
+    "slug": "fig_mikawa_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/mikawa_f02-0.png"
+  },
+  "甲斐手办": {
+    "file": "kai_f01-0.png",
+    "slug": "fig_kai",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/kai_f01-0.png"
+  },
+  "甲斐手办（喜）": {
+    "file": "kai_f02-0.png",
+    "slug": "fig_kai_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/kai_f02-0.png"
+  },
+  "相模手办": {
+    "file": "sagami_f01-0.png",
+    "slug": "fig_sagami",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/sagami_f01-0.png"
+  },
+  "相模手办（喜）": {
+    "file": "sagami_f02-0.png",
+    "slug": "fig_sagami_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/sagami_f02-0.png"
+  },
+  "上总手办": {
+    "file": "kazusa_f01-0.png",
+    "slug": "fig_kazusa",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/kazusa_f01-0.png"
+  },
+  "上总手办（喜）": {
+    "file": "kazusa_f02-0.png",
+    "slug": "fig_kazusa_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/kazusa_f02-0.png"
+  },
+  "安房手办": {
+    "file": "awa1_f01-0.png",
+    "slug": "fig_awa1",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/awa1_f01-0.png"
+  },
+  "安房手办（喜）": {
+    "file": "awa1_f02-0.png",
+    "slug": "fig_awa1_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/awa1_f02-0.png"
+  },
+  "常陆手办": {
+    "file": "hitachi_f01-0.png",
+    "slug": "fig_hitachi",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/hitachi_f01-0.png"
+  },
+  "常陆手办（喜）": {
+    "file": "hitachi_f02-0.png",
+    "slug": "fig_hitachi_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/hitachi_f02-0.png"
+  },
+  "越后手办": {
+    "file": "echigo_f01-0.png",
+    "slug": "fig_echigo",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/echigo_f01-0.png"
+  },
+  "越后手办（照）": {
+    "file": "echigo_f02-0.png",
+    "slug": "fig_echigo_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/echigo_f02-0.png"
+  },
+  "纪伊手办": {
+    "file": "kii_f01-0.png",
+    "slug": "fig_kii",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/kii_f01-0.png"
+  },
+  "纪伊手办（喜）": {
+    "file": "kii_f02-0.png",
+    "slug": "fig_kii_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/kii_f02-0.png"
+  },
+  "讃岐手办": {
+    "file": "sanuki_f01-0.png",
+    "slug": "fig_sanuki",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/sanuki_f01-0.png"
+  },
+  "讃岐手办（照）": {
+    "file": "sanuki_f02-0.png",
+    "slug": "fig_sanuki_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/sanuki_f02-0.png"
+  },
+  "伊予手办": {
+    "file": "iyo_f01-0.png",
+    "slug": "fig_iyo",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/iyo_f01-0.png"
+  },
+  "伊予手办（喜）": {
+    "file": "iyo_f02-0.png",
+    "slug": "fig_iyo_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/iyo_f02-0.png"
+  },
+  "土佐手办": {
+    "file": "tosa_f01-0.png",
+    "slug": "fig_tosa",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/tosa_f01-0.png"
+  },
+  "土佐手办（照）": {
+    "file": "tosa_f02-0.png",
+    "slug": "fig_tosa_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/tosa_f02-0.png"
+  },
+  "备前手办": {
+    "file": "bizen_f01-0.png",
+    "slug": "fig_bizen",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/bizen_f01-0.png"
+  },
+  "备前手办（照）": {
+    "file": "bizen_f02-0.png",
+    "slug": "fig_bizen_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/bizen_f02-0.png"
+  },
+  "伊予手办（店员·kemoket13）": {
+    "file": "item_event_kemoket13.png",
+    "slug": "figev_kemoket13",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_event_kemoket13.png"
+  },
+  "大和手办（店员·kemoket14）": {
+    "file": "item_event_kemoket14.png",
+    "slug": "figev_kemoket14",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_event_kemoket14.png"
+  },
+  "越后手办（店员·nichoketmini）": {
+    "file": "item_event_nichoketmini.png",
+    "slug": "figev_nichoketmini",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_event_nichoketmini.png"
+  },
+  "下总手办（店员·shinshunkemoket10）": {
+    "file": "item_event_shinshunkemoket10.png",
+    "slug": "figev_shinshunkemoket10",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_event_shinshunkemoket10.png"
+  },
+  "武藏手办（店员·kansaikemoket9）": {
+    "file": "item_event_kansaikemoket9-0.png",
+    "slug": "figev_kansaikemoket9",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_event_kansaikemoket9-0.png"
+  },
+  "备后手办（店员·boost3）": {
+    "file": "item_event_boost3-0.png",
+    "slug": "figev_boost3",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_event_boost3-0.png"
+  },
+  "常陆手办（店员·kemoket15）": {
+    "file": "item_event_kemoket15.png",
+    "slug": "figev_kemoket15",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_event_kemoket15.png"
+  },
+  "讃岐手办（店员·kunitamajichinsai）": {
+    "file": "item_event_kunitamajichinsai-0.png",
+    "slug": "figev_kunitamajichinsai",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_event_kunitamajichinsai-0.png"
+  },
+  "骏河手办（店员·kansaikemoket10）": {
+    "file": "item_event_kansaikemoket10-0.png",
+    "slug": "figev_kansaikemoket10",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_event_kansaikemoket10-0.png"
+  },
+  "相模手办（店员·boost4）": {
+    "file": "item_event_boost4-0.png",
+    "slug": "figev_boost4",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_event_boost4-0.png"
+  },
+  "甲斐手办（店员·kemoket16）": {
+    "file": "item_event_kemoket16.png",
+    "slug": "figev_kemoket16",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_event_kemoket16.png"
+  },
+  "壱岐手办（店员·kunitamajichinsai2）": {
+    "file": "item_event_kunitamajichinsai2-0.png",
+    "slug": "figev_kunitamajichinsai2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_event_kunitamajichinsai2-0.png"
+  },
+  "筑前手办（店员·kansaikemoket11）": {
+    "file": "item_event_kansaikemoket11-0.png",
+    "slug": "figev_kansaikemoket11",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_event_kansaikemoket11-0.png"
+  },
+  "备前手办（店员·kunitamajichinsai3）": {
+    "file": "item_event_kunitamajichinsai3-0.png",
+    "slug": "figev_kunitamajichinsai3",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/item_event_kunitamajichinsai3-0.png"
+  },
+  "丹波手办（福男儿）": {
+    "file": "tamba_f00-0.png",
+    "slug": "fig_tamba_fuku",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/tamba_f00-0.png"
+  },
+  "骏河手办（福男儿）": {
+    "file": "suruga_f00-0.png",
+    "slug": "fig_suruga_fuku",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/suruga_f00-0.png"
+  },
+  "周防手办（福男儿）": {
+    "file": "suo_f00-0.png",
+    "slug": "fig_suo_fuku",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/suo_f00-0.png"
+  },
+  "鵺手办": {
+    "file": "nue_f01_0.png",
+    "slug": "fig_nue",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/nue_f01_0.png"
+  },
+  "鵺手办（喜）": {
+    "file": "nue_f02_0.png",
+    "slug": "fig_nue_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/nue_f02_0.png"
+  },
+  "垢尝手办": {
+    "file": "akaname_f01-0.png",
+    "slug": "fig_akaname",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/akaname_f01-0.png"
+  },
+  "垢尝手办（照）": {
+    "file": "akaname_f02-0.png",
+    "slug": "fig_akaname_2",
+    "url": "https://cdn.wikiwiki.jp/to/w/tamacolle/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/::ref/akaname_f02-0.png"
+  }
+}
