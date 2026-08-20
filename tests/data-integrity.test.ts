@@ -13,6 +13,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { renderMarkdown } from '../src/markdown/index'
+import { charBySlug } from '../src/data/characters'
 
 const PAGES_DIR = 'src/data/pages'
 
@@ -325,6 +326,32 @@ describe('译文覆盖与新角色数据（批次 14）', () => {
   })
 
   // 回原页逐字核对过的实装日，曾有 3 人写错（inomori/hatori 误作 v1.30、kotetsumaru 误作 v1.53）
+  // ===== D14 双数据源一致性（批次 25）=====
+  // 项目里有两份角色名单：src/data/pages/*.json（列表页用）与 src/data/characters.ts
+  // （侧边栏 SideNav 用）。D9-a 改分类时只改了前者，导致侧边栏六原一直显示 8 人。
+  // 这是「同一事实存两处」的典型漂移，必须双向锁死。
+  it('characters.ts 与角色 JSON 的 type 完全一致', () => {
+    const bad: string[] = []
+    for (const { id, c } of chars) {
+      const sum = charBySlug[id]
+      if (!sum) {
+        bad.push(`${id}: characters.ts 中缺失`)
+        continue
+      }
+      if (sum.type !== c.type) bad.push(`${id}: JSON=${c.type} ≠ characters.ts=${sum.type}`)
+    }
+    expect(bad).toEqual([])
+  })
+
+  it('两份名单的三类人数都是 51 / 11 / 10', () => {
+    const countJson = (t: string) => chars.filter((x) => x.c.type === t).length
+    const countTs = (t: string) => Object.values(charBySlug).filter((c) => c.type === t).length
+    for (const [t, n] of [['kunidama', 51], ['rokuhara', 11], ['ayakashi', 10]] as const) {
+      expect({ type: t, json: countJson(t) }).toEqual({ type: t, json: n })
+      expect({ type: t, ts: countTs(t) }).toEqual({ type: t, ts: n })
+    }
+  })
+
   // ===== D13 跨字段交叉校验（批次 24）=====
   // D11/D12 的教训：既有测试只看形式（列数/键数/假名占比），
   // 一张「别人的、但格式完整」的表能全部通过。以下比对字段之间的一致性。

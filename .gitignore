@@ -1,6 +1,8 @@
 node_modules/
 dist/
-
+# 抓取脚本不入库，但内容构建脚本需要随仓库分发（可复现）
+# 注意：这里必须写 scripts/* 而不是 scripts/，
+# 否则目录整体被排除，下面的 ! 否定规则不会生效。
 scripts/*
 !scripts/build_voice_tables.py
 !scripts/normalize_motif.py

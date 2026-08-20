@@ -68,15 +68,16 @@ export const characters: CharacterSummary[] = [
   { slug: 'namomihagi', name: 'ナモミハギ', kana: 'ナモミハギ', zh: '南无剥', num: 8, region: 'あやかし', weapon: '', type: 'ayakashi', desc: '妖怪「ナモミハギ」，妖怪编号 8。' },
   { slug: 'shirafu', name: '白布', kana: '', zh: '白布', num: 9, region: 'あやかし', weapon: '', type: 'ayakashi', desc: '妖怪「白布」，妖怪编号 9。' },
   { slug: 'karasutengu', name: '烏天狗', kana: 'からすてんぐ', zh: '乌鸦天狗', num: 10, region: 'あやかし', weapon: '', type: 'ayakashi', desc: '天狗一族的「乌鸦天狗」，妖怪编号 10。' },
-  { slug: 'arctos', name: '富良野アルクトス', kana: 'ふらのアルクトス', zh: '富良野·阿克托斯', num: '九番', region: 'あやかし', weapon: '', type: 'ayakashi', desc: '熊的もっけもの，被猪森发掘的天才研究者。' },
+  { slug: 'arctos', name: '富良野アルクトス', kana: 'ふらのアルクトス', zh: '富良野·阿克托斯', num: '九番', region: 'ロクハラ', weapon: '', type: 'rokuhara', desc: '六原职员：熊的もっけもの，被猪森发掘的天才研究者。' },
   { slug: 'riku', name: '雲龍院りく', kana: 'うんりゅういんりく', zh: '云龙院·陆', num: '六番', region: 'ロクハラ', weapon: '', type: 'rokuhara', desc: '云龙院集团的少爷，坐高科技自走沙发床。' },
-  { slug: 'azukiarai', name: '小豆洗い', kana: 'あずきあらい', zh: '洗红豆', num: '', region: 'あやかし', weapon: '', type: 'ayakashi', desc: '在水边淘洗红豆的妖怪「小豆洗い」。' },
+  { slug: 'azukiarai', name: '小豆洗い', kana: 'あずきあらい', zh: '洗红豆', num: '', region: 'ロクハラ', weapon: '', type: 'rokuhara', desc: '六原职员：栖居于六原的谜之妖怪，经营着自己的店「あずきや」。' },
   { slug: 'natsuhito', name: '夏人', kana: '', zh: '夏人', num: '', region: 'ロクハラ', weapon: '', type: 'rokuhara', desc: '六原职员「夏人」。' },
   { slug: 'inomori', name: '猪森', kana: '', zh: '猪森', num: '', region: 'ロクハラ', weapon: '', type: 'rokuhara', desc: '六原职员「猪森」。' },
   { slug: 'nekonoya', name: '猫乃屋', kana: '', zh: '猫乃屋', num: '', region: 'ロクハラ', weapon: '', type: 'rokuhara', desc: '六原职员「猫乃屋」。' },
   { slug: 'kotetsumaru', name: '虎鉄丸', kana: '', zh: '虎铁丸', num: '', region: 'ロクハラ', weapon: '', type: 'rokuhara', desc: '六原职员「虎铁丸」。' },
   { slug: 'hyakuta', name: '百太', kana: '', zh: '百太', num: '', region: 'ロクハラ', weapon: '', type: 'rokuhara', desc: '六原职员「百太」。' },
   { slug: 'hatori', name: '羽鳥', kana: '', zh: '羽鸟', num: '', region: 'ロクハラ', weapon: '', type: 'rokuhara', desc: '六原职员「羽鸟」。' },
+  { slug: 'b', name: 'B', kana: '', zh: 'B', num: '七番', region: 'ロクハラ', weapon: '', type: 'rokuhara', desc: '六原职员：所属里组织与政界关联极深，组织目的不明。' },
 ]
 
 export const charBySlug: Record<string, CharacterSummary> = Object.fromEntries(
